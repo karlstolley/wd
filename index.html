@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>COM381/530: Standards-Based Web Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" type="text/css" href="screen.css" />
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('html').addClass('hasjs');
+      // Get the current time as a Unix timestamp
+      currentTime = new Date();
+      currentTime = Math.round(currentTime.getTime() / 1000);
+      //var currentTime = 1361844099;
+      // Grab all of the weeks
+      // allWeeks = $('.week');
+      // Grab each week's data-expires attribute
+      var futureWeeks = []
+      $('.week').each(function() {
+          weekTime = $(this).attr('data-expires');
+          //myDiff = weekTime - currentTime;
+          if ((weekTime - currentTime) > 0) {
+            futureWeeks.push($(this));
+          }
+
+      });
+      futureWeeks[0].addClass('is-current');
+      futureWeeks[0].attr('id','current-week');
+      futureWeeks[1].addClass('is-next');
+      $('.week.is-next').append('<p><a id="show-calendar" href="#current-week">Show Full Calendar</a></p>');
+
+      $('#show-calendar').click(function() {
+        $(this).hide();
+        $('.week').addClass('is-visible');
+        $('.week').last().append('<p><a id="hide-calendar" href="#current-week">Hide Full Calendar</a></p>');
+        $('#hide-calendar').click(function() {
+          $('#show-calendar').show();
+          $(this).remove();
+          $('.week').removeClass('is-visible');
+        });
+      });
+
+      $('h2.label').click(function() {
+        $(this).toggleClass('is-active');
+        $(this).next('.content').toggleClass('is-visible');
+      });
+
+      $('h2.label.calendar').click(function() {
+        $('.week').toggleClass('is-visible');
+      });
+
+      // See if it's non-negative (in the future)
+
+      // First one gets the 'is-current' class
+
+      // Next one gets the 'is-next' class
+      //$('#snoop').html(futureWeeks.length);
+    });
+  </script>
+  <script type="text/javascript" src="//use.typekit.net/njk3tye.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+<div id="snoop"></div>
+<div id="page">
+  <div id="header">
+    <h1>Standards-Based Web Design</h1>
+    <p class="tagline">
+      A course in the theory &amp; applied practice of modern web writing and design. Meets Monday
+      nights, 6:25-9:05pm.
+    </p>
+  </div>
+
+  <div id="calendar">
+    <h2 class="label calendar">Calendar</h2>
+    <ol>
+      <li class="week" data-expires="1359424800">
+        <h3>Week XXX: Theme <small>January 14</small></h3>
+        <div class="agenda">
+          <h4>In Class</h4>
+          <ol>
+            <li>Thing</li>
+          </ol>
+        </div>
+        <div class="assigned">
+          <h4>For Next Class</h4>
+          <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+            <dt>To Do</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="week" data-expires="1359424800">
+        <h3>Week XXX: Theme <small>January 21</small></h3>
+        <div class="agenda">
+          <h4>In Class</h4>
+          <ol>
+            <li>Thing</li>
+          </ol>
+        </div>
+        <div class="assigned">
+          <h4>For Next Class</h4>
+          <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+            <dt>To Do</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="week" data-expires="1360029600">
+        <h3>Week XXX: Theme <small>January 28</small></h3>
+        <div class="agenda">
+          <h4>In Class</h4>
+          <ol>
+            <li>Thing</li>
+          </ol>
+        </div>
+        <div class="assigned">
+          <h4>For Next Class</h4>
+          <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+            <dt>To Do</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="week" data-expires="1360634400">
+        <h3>Week XXX: Theme <small>February 4</small></h3>
+        <div class="agenda">
+          <h4>In Class</h4>
+          <ol>
+            <li>Thing</li>
+          </ol>
+        </div>
+        <div class="assigned">
+          <h4>For Next Class</h4>
+          <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+            <dt>To Do</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="week" data-expires="1361239200">
+        <h3>Week XXX: Theme <small>February 11</small></h3>
+        <div class="agenda">
+          <h4>In Class</h4>
+          <ol>
+            <li>Thing</li>
+          </ol>
+        </div>
+        <div class="assigned">
+          <h4>For Next Class</h4>
+          <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+            <dt>To Do</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="week" data-expires="1361844000">
+        <h3>Week XXX: Theme <small>February 18</small></h3>
+        <div class="agenda">
+          <h4>In Class</h4>
+          <ol>
+            <li>Thing</li>
+          </ol>
+        </div>
+        <div class="assigned">
+          <h4>For Next Class</h4>
+          <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+            <dt>To Do</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="week" data-expires="1362448800">
+        <h3>Week XXX: Theme <small>February 25</small></h3>
+        <div class="agenda">
+          <h4>In Class</h4>
+          <ol>
+            <li>Thing</li>
+          </ol>
+        </div>
+        <div class="assigned">
+          <h4>For Next Class</h4>
+          <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+            <dt>To Do</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="week" data-expires="1363053600">
+        <h3>Week XXX: Theme <small>March 4</small></h3>
+        <div class="agenda">
+          <h4>In Class</h4>
+          <ol>
+            <li>Thing</li>
+          </ol>
+        </div>
+        <div class="assigned">
+          <h4>For Next Class</h4>
+          <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+            <dt>To Do</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="week" data-expires="1364263200">
+        <h3>Week XXX: Theme <small>March 11</small></h3>
+        <div class="agenda">
+          <h4>In Class</h4>
+          <ol>
+            <li>Thing</li>
+          </ol>
+        </div>
+        <div class="assigned">
+          <h4>For Next Class</h4>
+          <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+            <dt>To Do</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="week" data-expires="1364263200">
+        <h3>Week XXX: Theme <small>March 18</small></h3>
+        <div class="agenda">
+          <h4>In Class</h4>
+          <ol>
+            <li>Thing</li>
+          </ol>
+        </div>
+        <div class="assigned">
+          <h4>For Next Class</h4>
+          <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+            <dt>To Do</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="week" data-expires="1364868000">
+        <h3>Week XXX: Theme <small>March 25</small></h3>
+        <div class="agenda">
+          <h4>In Class</h4>
+          <ol>
+            <li>Thing</li>
+          </ol>
+        </div>
+        <div class="assigned">
+          <h4>For Next Class</h4>
+          <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+            <dt>To Do</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="week" data-expires="1365472800">
+        <h3>Week XXX: Theme <small>April 1</small></h3>
+        <div class="agenda">
+          <h4>In Class</h4>
+          <ol>
+            <li>Thing</li>
+          </ol>
+        </div>
+        <div class="assigned">
+          <h4>For Next Class</h4>
+          <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+            <dt>To Do</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="week" data-expires="1366077600">
+        <h3>Week XXX: Theme <small>April 8</small></h3>
+        <div class="agenda">
+          <h4>In Class</h4>
+          <ol>
+            <li>Thing</li>
+          </ol>
+        </div>
+        <div class="assigned">
+          <h4>For Next Class</h4>
+          <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+            <dt>To Do</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="week" data-expires="1366682400">
+        <h3>Week XXX: Theme <small>April 15</small></h3>
+        <div class="agenda">
+          <h4>In Class</h4>
+          <ol>
+            <li>Thing</li>
+          </ol>
+        </div>
+        <div class="assigned">
+          <h4>For Next Class</h4>
+          <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+            <dt>To Do</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="week" data-expires="1367287200">
+        <h3>Week XXX: Theme <small>April 22</small></h3>
+        <div class="agenda">
+          <h4>In Class</h4>
+          <ol>
+            <li>Thing</li>
+          </ol>
+        </div>
+        <div class="assigned">
+          <h4>For Next Class</h4>
+          <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+            <dt>To Do</dt>
+            <dd>
+              <ol>
+                <li>Thing</li>
+              </ol>
+            </dd>
+          </dl>
+        </div>
+      </li>
+      <li class="week" data-expires="1368496800">
+        <h3>Week Sixteen: Site Enhancement Project Presentations <small>April 29</small></h3>
+        <h4>In Class</h4>
+        <ol>
+          <li>Presentations</li>
+        </ol>
+      </li>
+      <li class="week" data-expires="1368496800">
+        <h3>Finals Week</h3>
+        <h4>Site Enhancement Project due to instructor by 5:00pm on May 8, 2013</h4>
+      </li>
+    </ol>
+  </div>
+
+  <div id="instructor">
+    <h2 class="label">Instructor</h2>
+    <ul class="content">
+      <li><a href="http://karlstolley.com/">Prof. Karl Stolley</a></li>
+      <li>karl.stolley@gmail.com</li>
+      <li>karlstolley on <a href="http://twitter.com/karlstolley">Twitter</a>,
+        <a href="https://alpha.app.net/karlstolley">App.net</a>, &amp;
+        <a href="http://kik.com/">Kik</a>.
+      </li>
+      <li>Office in Siegel Hall 218</li>
+      <li>Office hours on Mondays, 4pm to 5pm &amp; by appointment</li>
+    </ul>
+  </div>
+
+  <div id="projects">
+    <h2 class="label">Projects</h2>
+    <div class="content">
+      Project descriptions...
+    </div>
+  </div>
+
+  <div id="policies">
+    <h2 class="label">Policies</h2>
+    <div class="content">
+      Course policies...
+    </div>
+  </div>
+
+  <div id="footer">
+    <p>Course design by Karl Stolley. Licensed under Creative Commons. Source hosted on GitHub.</p>
+  </div>
+
+</div>
+</body>
+</html>
