@@ -23,9 +23,9 @@
           }
       });
 
-      futureWeeks[0].addClass('is-current');
+      futureWeeks[0].addClass('is-current is-visible');
       futureWeeks[0].attr('id','current-week');
-      futureWeeks[1].addClass('is-next');
+      futureWeeks[1].addClass('is-next is-visible');
 
       $('.week.is-next').append('<p><a id="show-calendar" href="#current-week">Show Full Calendar</a></p>');
 
@@ -48,7 +48,10 @@
       });
 
       $('h2.label.calendar').click(function() {
-        $('.week').toggleClass('is-visible');
+        $('.week').addClass('is-visible');
+        $(this).click(function() {
+          $('.week').toggleClass('is-visible');
+        });
       });
 
     });
@@ -644,7 +647,6 @@
         students do not volunteer, the instructor will just call on people to present. Always come
         prepared to show new work to the class.
       </p>
-      </p>
       <h4>Deliverables &amp; Milestones</h4>
       <ol class="deliverables">
         <li>
@@ -707,6 +709,7 @@
           </ul>
         </dd>
         <dt>Your HTML must:</dt>
+        <dd>
           <ul>
             <li>
               Feature semantic markup in a sensible source order (structured for content, not

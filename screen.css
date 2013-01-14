@@ -53,6 +53,9 @@ legend {
   color: #000; }
 
 /* Base */
+html {
+  background-color: #eeeef6; }
+
 body {
   font-family: "ff-tisa-web-pro", Arial, "Times New Roman", Times, serif;
   font-size: 16px;
@@ -115,7 +118,8 @@ ul > li {
 
 /* Layout */
 #header {
-  padding: 1em; }
+  padding: 1em;
+  border-bottom: 1px solid #cc0000; }
 
 /* Module */
 .tagline,
@@ -134,7 +138,15 @@ h2.label {
   padding: 26px 16px 25px 16px;
   border-bottom: 1px solid #cc0000; }
 
-h2.label + * {
+h2.label + .content {
+  margin: 16px; }
+
+.content > li,
+.content > li {
+  margin-left: 0;
+  padding-left: 0; }
+
+h2.label.calendar + ol > li {
   margin: 16px; }
 
 .week {
@@ -148,23 +160,25 @@ h2.label + * {
 .bye-week {
   margin: 26px 0 13px 0; }
 
-#calendar {
-  border-top: 1px solid #cc0000;
-  border-bottom: 1px solid #cc0000; }
-
 #calendar > ol > li,
 #instructor > ul > li {
-  list-style-type: none;
-  margin-left: 0; }
+  list-style-type: none; }
 
 #policies ol > li {
-  list-style-type: none; }
+  list-style-type: none;
+  margin-left: 0; }
 
 .agenda, .assigned {
   margin-top: 13px; }
 
 .agenda ol {
   padding-top: 6.5px; }
+
+.goals, .deliverables {
+  margin-left: 16px; }
+
+ol.goals, ol.deliverables {
+  margin-left: 25.6px; }
 
 .content h3 {
   margin-top: 13px; }
@@ -173,6 +187,9 @@ h2.label + * {
   margin-bottom: 13px; }
 .content p, .content ol, .content ul {
   margin-bottom: 26px; }
+
+div.content * ol, div.content * ul {
+  margin-left: 16px; }
 
 /* State */
 .hasjs .label {
@@ -189,15 +206,11 @@ h2.label + * {
   display: none; }
 .hasjs .week.is-visible {
   display: block; }
-.hasjs .week.is-current {
-  display: block; }
-  .hasjs .week.is-current .assigned {
-    background-color: #FF6;
-    padding: 13px; }
-    .hasjs .week.is-current .assigned h4 {
-      color: black; }
-.hasjs .week.is-next {
-  display: block; }
+.hasjs .week.is-current .assigned {
+  background-color: #FF6;
+  padding: 13px; }
+  .hasjs .week.is-current .assigned h4 {
+    color: black; }
 
 /* === Media Queries === */
 /* Tiny */

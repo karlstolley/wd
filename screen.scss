@@ -14,7 +14,9 @@ $fsans: "proxima-nova-alt-ext-cond",Helvetica,Arial,sans-serif;
 $lineheight: 26px;
 $fontsize: 16px;
 $accentcolor: #C00;
+
 /* Base */
+html { background-color: $background; }
 body {
   font-family: $fserif;
   font-size: $fontsize;
@@ -85,6 +87,7 @@ ul > li {
 }
 #header {
   padding: 1em;
+  border-bottom: 1px solid $accentcolor;
 }
 /* Module */
 .tagline,
@@ -103,7 +106,19 @@ h2.label {
   padding: $lineheight $fontsize $lineheight - 1 $fontsize;
   border-bottom: 1px solid $accentcolor;
 }
-h2.label + * { margin: $fontsize; }
+
+h2.label + .content { margin: $fontsize; }
+
+.content > li,
+.content > li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+h2.label.calendar + ol > li {
+  margin: $fontsize;
+}
+
 .week {
   margin-bottom: $lineheight;
   dt { padding-top: $lineheight/4; }
@@ -116,18 +131,19 @@ h2.label + * { margin: $fontsize; }
   margin: $lineheight 0 $lineheight/2 0;
 }
 #calendar {
-  border-top: 1px solid $accentcolor;
-  border-bottom: 1px solid $accentcolor;
 }
 #calendar > ol,
 #instructor > ul {
   > li {
     list-style-type: none;
-    margin-left: 0;
   }
 }
+
 #policies ol {
-  > li { list-style-type: none; }
+  > li {
+   list-style-type: none;
+   margin-left: 0;
+  }
 }
 .agenda,.assigned {
   margin-top: $lineheight/2;
@@ -136,14 +152,28 @@ h2.label + * { margin: $fontsize; }
   padding-top: $lineheight/4;
 }
 
+.goals,.deliverables {
+  margin-left: $fontsize;
+}
+ol.goals,ol.deliverables {
+  margin-left: $fontsize * 1.6;
+}
 .content {
-  h3 { margin-top: $lineheight/2; }
+  h3 {
+    margin-top: $lineheight/2;
+  }
   h4 {
     margin-top: $lineheight * .25;
     margin-bottom: $lineheight * .5;
   }
-  p, ol, ul {
+  p,ol,ul {
     margin-bottom: $lineheight;
+  }
+}
+
+div.content {
+  * ol, * ul {
+    margin-left: $fontsize;
   }
 }
 
@@ -161,7 +191,6 @@ h2.label + * { margin: $fontsize; }
   .week { display: none; }
   .week.is-visible { display: block; }
   .week.is-current {
-    display: block;
     .assigned {
       background-color: #FF6;
       padding: $lineheight/2;
@@ -169,7 +198,6 @@ h2.label + * { margin: $fontsize; }
     }
   }
   .week.is-next {
-    display: block;
   }
 }
 /* === Media Queries === */
