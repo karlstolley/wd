@@ -56,6 +56,13 @@ h1 {
   font-size: 36px;
   line-height: 39px;
 }
+h3 {
+  small {
+    letter-spacing: .1em;
+    color: #999;
+    display: block;
+  }
+}
 h4 {
   color: #777;
 }
@@ -80,16 +87,21 @@ ul > li {
   padding: 1em;
 }
 /* Module */
-.tagline {
+.tagline,
+.fineprint {
   color: #888;
   font-style: italic;
+}
+.fineprint {
+  padding: $lineheight $fontsize;
 }
 .label {
   background: white;
   color: $accentcolor;
 }
 h2.label {
-  padding: $lineheight $fontsize;
+  padding: $lineheight $fontsize $lineheight - 1 $fontsize;
+  border-bottom: 1px solid $accentcolor;
 }
 h2.label + * { margin: $fontsize; }
 .week {
@@ -99,21 +111,23 @@ h2.label + * { margin: $fontsize; }
 .week ol {
   margin-left: 1em;
 }
-.week h3 {
-  small {
-    letter-spacing: .1em;
-    color: #999;
-    display: block;
-  }
-}
+
 .bye-week {
   margin: $lineheight 0 $lineheight/2 0;
 }
-#calendar > ol {
+#calendar {
+  border-top: 1px solid $accentcolor;
+  border-bottom: 1px solid $accentcolor;
+}
+#calendar > ol,
+#instructor > ul {
   > li {
     list-style-type: none;
     margin-left: 0;
   }
+}
+#policies ol {
+  > li { list-style-type: none; }
 }
 .agenda,.assigned {
   margin-top: $lineheight/2;
@@ -121,9 +135,27 @@ h2.label + * { margin: $fontsize; }
 .agenda ol {
   padding-top: $lineheight/4;
 }
+
+.content {
+  h3 { margin-top: $lineheight/2; }
+  h4 {
+    margin-top: $lineheight * .25;
+    margin-bottom: $lineheight * .5;
+  }
+  p, ol, ul {
+    margin-bottom: $lineheight;
+  }
+}
+
+
 /* State */
 .hasjs {
   .label { cursor: pointer; }
+  .label.is-active,
+  .label:hover {
+    background-color: $accentcolor;
+    color: white;
+  }
   .content { display: none; }
   .content.is-visible { display: block; }
   .week { display: none; }

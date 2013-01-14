@@ -94,6 +94,11 @@ h1 {
   font-size: 36px;
   line-height: 39px; }
 
+h3 small {
+  letter-spacing: .1em;
+  color: #999;
+  display: block; }
+
 h4 {
   color: #777; }
 
@@ -113,16 +118,21 @@ ul > li {
   padding: 1em; }
 
 /* Module */
-.tagline {
+.tagline,
+.fineprint {
   color: #888;
   font-style: italic; }
+
+.fineprint {
+  padding: 26px 16px; }
 
 .label {
   background: white;
   color: #cc0000; }
 
 h2.label {
-  padding: 26px 16px; }
+  padding: 26px 16px 25px 16px;
+  border-bottom: 1px solid #cc0000; }
 
 h2.label + * {
   margin: 16px; }
@@ -135,17 +145,20 @@ h2.label + * {
 .week ol {
   margin-left: 1em; }
 
-.week h3 small {
-  letter-spacing: .1em;
-  color: #999;
-  display: block; }
-
 .bye-week {
   margin: 26px 0 13px 0; }
 
-#calendar > ol > li {
+#calendar {
+  border-top: 1px solid #cc0000;
+  border-bottom: 1px solid #cc0000; }
+
+#calendar > ol > li,
+#instructor > ul > li {
   list-style-type: none;
   margin-left: 0; }
+
+#policies ol > li {
+  list-style-type: none; }
 
 .agenda, .assigned {
   margin-top: 13px; }
@@ -153,9 +166,21 @@ h2.label + * {
 .agenda ol {
   padding-top: 6.5px; }
 
+.content h3 {
+  margin-top: 13px; }
+.content h4 {
+  margin-top: 6.5px;
+  margin-bottom: 13px; }
+.content p, .content ol, .content ul {
+  margin-bottom: 26px; }
+
 /* State */
 .hasjs .label {
   cursor: pointer; }
+.hasjs .label.is-active,
+.hasjs .label:hover {
+  background-color: #cc0000;
+  color: white; }
 .hasjs .content {
   display: none; }
 .hasjs .content.is-visible {

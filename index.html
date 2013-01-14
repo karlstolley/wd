@@ -41,7 +41,7 @@
           $('.week').removeClass('is-visible');
         });
       });
-
+      $('h2.label').append(' »')
       $('h2.label').click(function() {
         $(this).toggleClass('is-active');
         $(this).next('.content').toggleClass('is-visible');
@@ -542,19 +542,546 @@
   <div id="projects">
     <h2 class="label">Projects</h2>
     <div class="content">
-      Project descriptions...
+
+      <h3>Project 1: Website Foundations <small>Due February 4</small></h3>
+      <p>
+        This project will be an introduction to standards-based web design. You will be creating two
+        valid, well-formed XHTML 1.0 Strict web pages: your resume or curriculum vitae, and one item
+        from your professional portfolio.
+      </p>
+      <p>
+        Both of your pages will be styled via two stylesheets written in CSS: one for screen
+        (<code>media="screen"</code>) and one for print (<code>media="print"</code>). For this
+        project, you only have to style basic page typography and colors. (You will work on more
+        advanced layout and design matters in the Professional Web Presence project.)
+      </p>
+      <h4>Project Goals</h4>
+      <ul class="goals">
+       <li>
+          Develop a clean, effective web-writing style: both in your text content, and in your
+          source code
+        </li>
+        <li>
+          Begin to develop a foundation in XHTML for accurately describing the structure of text
+        </li>
+        <li>
+          Begin to develop a foundation in CSS for describing the typography and color of content
+          structured in XHTML
+        </li>
+      </ul>
+      <h4>Deliverables &amp; Milestones</h4>
+      <ol class="deliverables">
+        <li>
+          2 XHTML files (resume/vita and portfolio page) and 2 CSS files (screen and print) draft by
+          1/24; final on 2/4)
+        </li>
+        <li>
+          A self-critique memo that evaluates your project and your progress in the class to this
+          point (2-3 paragraphs; due 2/4 via email or as a <code>README.md</code> in your GitHub
+          repository for the project)
+        </li>
+        <li>
+          A GitHub repository of your files, tagged as <code>p1</code> (we will do this together in
+          class on 2/4)
+        </li>
+      </ol>
+      <h4>Requirements</h4>
+      <dl class="requirements">
+        <dt>Your XHTML pages must:</dt>
+        <dd>
+          <ul>
+            <li>Validate against the XHTML 1.0 Strict DOCTYPE</li>
+            <li>
+              Use only valid, structural tags (e.g., headers, paragraphs, and lists) and
+              <code>class</code>/<code>id</code> attributes
+            </li>
+            <li>
+              Be hand-written and original; do not use Dreamweaver’s WYSIWYG editor or any pre-made
+              templates, although you can start with
+              <a href="http://gist.github.com/544075">this bare-bones skeletal XHTML file</a>
+            </li>
+            <li><strong>Not</strong> use tables, except for tabular data (if you have any)</li>
+            <li>Validate against the <a href="http://validator.w3.org/">W3C Markup Validation Service</a></li>
+          </ul>
+        </dd>
+        <dt>Your CSS files must:</dt>
+        <dd>
+          <ul>
+            <li>
+              Be built over the top of a reset CSS file, such as the
+              <a href="http://developer.yahoo.com/yui/reset/">Yahoo! Reset-Min CSS</a>
+            </li>
+            <li>
+              Use only valid CSS 1 &amp; 2 selectors, properties, and attributes (CSS3 will be
+              covered in the next project)
+            </li>
+            <li>
+              Be loaded into your XHTML pages via the <code>&lt;link&gt;</code> tag in the head area
+              (no inline styles via the <code>style=""</code> attribute or embedded in the head with
+              the <code>&lt;style&gt;</code> tag) using the appropriate <code>media</code> attribute
+              value.
+            </li>
+            <li>
+              Be hand-written and original; do not use Dreamweaver’s CSS property dialog boxes or
+              any pre-made templates, although you should use the
+              <a  href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css">Yahoo! reset-min.css</a>
+              file.
+            </li>
+            <li>
+              Validate against the
+              <a href="http://jigsaw.w3.org/css-validator/">W3C CSS Validation Service</a>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+
+      <h3>Project 2: Professional Web Presence <small>Due April 1</small></h3>
+      <p>
+        This is the major project of Standards-Based Web Design: the creation of your full
+        professional web presence in a way that will allow you to continue to add to and revise the
+        site into the future. Your site should include a content-rich overview page (no splash
+        pages), an “about me”/biography page, your resume or vita, and at least 5 pages of portfolio
+        items. You will also use CSS to add a compelling layout to your pages, enhance your
+        navigation, and increase the accessibility and usability of your pages. DOM scripting might
+        also be a part of your pages in a way that progressively enhances either their visual
+        presentation or interactivity.
+      </p>
+      <p>
+        At least two students will present each night of class prior to 4/1; if at least two
+        students do not volunteer, the instructor will just call on people to present. Always come
+        prepared to show new work to the class.
+      </p>
+      </p>
+      <h4>Deliverables &amp; Milestones</h4>
+      <ol class="deliverables">
+        <li>
+          <strong>Your complete site</strong> at your own openly-available URL (preferably
+          yourname.com; due 4/1)
+        </li>
+        <li>
+          <strong>Your site’s Git repository</strong>, hosted at GitHub.com (updated regularly;
+          final due 4/1)
+        </li>
+        <li>
+          <strong>A self-critique memo</strong> that evaluates your project and your progress in
+          the class to this point (due 4/1 via email or as a <code>README.md</code> in your
+          GitHub repository for the project)
+        </li>
+        <li>
+          <strong>Final presentation</strong> of your project (due 4/1)
+        </li>
+        <li>
+          At least <strong>one in-progress presentation</strong> of your work to the class (due
+          before 4/1)
+        </li>
+      </ol>
+      <h4>Requirements</h4>
+      <dl class="requirements">
+        <dt>Your site must:</dt>
+        <dd>
+          <ul>
+            <li>
+              Be hosted and appear at your own openly-available URL (preferably
+              <code>yourname.com</code>)
+            </li>
+            <li>
+              Have its source hosted at GitHub or another Git-based project host; if you opt to
+              protect your repository, the instructor must be given access for grading purposes
+            </li>
+            <li>
+              Use a meaningful, search-engine-friendly URL structure
+            </li>
+          </ul>
+        </dd>
+        <dt>Your pages must:</dt>
+        <dd>
+          <ul>
+            <li>
+              Display appropriately (though not necessarily exactly the same) in Lynx, Firefox,
+              Safari (or Google Chrome, if you have no Mac access), Opera, and Internet Explorer 8+
+              (IE);
+            </li>
+            <li>
+              Use responsive web design techniques (e.g., media queries, scalable images, flexible
+              layouts) to display on mobile, tablet, and desktop devices
+            </li>
+            <li>
+              Use pixel-doubled images for retina displays
+            </li>
+            <li>
+              Make use of conditional comments to load CSS for IE, when necessary
+            </li>
+          </ul>
+        </dd>
+        <dt>Your HTML must:</dt>
+          <ul>
+            <li>
+              Feature semantic markup in a sensible source order (structured for content, not
+              presentation/design)
+            </li>
+            <li>
+              Include accessibility features, such as links for skipping to navigation or content
+              sections
+            </li>
+            <li>
+              Use the HTML5 DOCTYPE
+            </li>
+            <li>
+              Use valid, structural tags (e.g., headers, paragraphs, and lists) and
+              <code>class</code>/<code>id</code> attributes, written in XHTML-Strict style;
+              new, well-supported HTML5 semantic tags are acceptable
+            </li>
+            <li>
+              Be hand-written and original; do not use Dreamweaver’s WYSIWYG editor or any pre-made
+              templates, although you can start with the
+              <a href="http://sustainablewebdesign.com/book/rpk/">Rapid Prototyping Kit</a> or
+              another site foundation/grid system of your choice (seek approval from instructor
+              first)
+            </li>
+            <li>
+              <strong>Not</strong> use tables, except for tabular data (if you have any)
+            </li>
+            <li>
+              Validate as HTML5 against the
+              <a href="http://validator.w3.org/">W3C Markup Validation Service</a>
+            </li>
+          </ul>
+        </dd>
+        <dt>Your CSS must:</dt>
+        <dd>
+          <ul>
+            <li>
+              Be built over the top of a reset CSS file, such as the
+              <a href="http://developer.yahoo.com/yui/reset/">Yahoo! Reset-Min CSS</a> or a
+              CSS normalization file
+            </li>
+            <li>
+              Use only valid CSS 1 &amp; 2 and widely-supported CSS3 selectors, properties,
+              and attributes (CSS3 should only be used on the experience layer, and with all
+              necessary vendor prefixes; see the Cederholm book)
+            </li>
+            <li>Not use hacks; use conditional comments instead</li>
+            <li>
+              Be loaded into your HTML pages via the <code>&lt;link&gt;</code> tag in the head area
+              (no inline styles via the <code>style=""</code> attribute or embedded in the head with
+              the <code>&lt;style&gt;</code> tag) using the appropriate <code>media</code> attribute
+              value.
+            </li>
+            <li>
+              Be hand-written and original; do not use of Dreamweaver's CSS property dialog boxes or
+              any pre-made templates, although you should use the <a class="ext"
+              href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css">Yahoo! reset-min.css</a>
+              file.
+            </li>
+            <li>
+              Make use of media-queries for responsive design across mobile, tablet, desktop, and
+              other screens
+            </li>
+            <li>
+              Validate against the <a class="ext" href="http://jigsaw.w3.org/css-validator/">W3C CSS
+              Validation Service</a> (at least all CSS 1 &amp; 2; consider segregating CSS3 with
+              vendor prefixes to its own file)
+            </li>
+          </ul>
+        </dd>
+        <dt>If you include any JavaScript/DOM Scripting, it must:</dt>
+        <dd>
+          <ul>
+            <li>
+              Be built using jQuery, MooTools, or another actively developed, standards-compliant
+              library/framework
+            </li>
+            <li>
+              Adhere to progressive enhancement design principles (in other words, your site must
+              still work in JavaScript-less environments)
+            </li>
+            <li>
+              Not throw any errors (e.g., in the Web Developer plugin)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <h4>Project Goals</h4>
+      <ul class="goals">
+        <li>
+          Establish a solid and sound representation of yourself and your skills, based on your
+          career or field of study/area of expertise
+        </li>
+        <li>
+          Organize and style your professional site using responsive design techniques for maximum
+          rhetorical effect under particular viewing conditions (mobile, tablet, desktop)
+        </li>
+        <li>
+          Learn to prepare and organize appropriate materials to represent yourself on the web
+        </li>
+        <li>
+          Learn to use CSS to control the layout and design of HTML pages, using grid-based
+          design methods for layout and typography
+        </li>
+        <li>
+          Use, if necessary, JavaScript on the DOM to progressively enhance your pages for
+          JavaScript-capable browsers and devices
+        </li>
+        <li>
+          Learn to develop your site in a baseline browser, test in other browsers, and use
+          conditional comments to address the oddities of Internet Explorer
+        </li>
+        <li>
+          Use a version control system (Git) for agile incremental development of your site,
+          including feature branches for experimentation and parallel development
+        </li>
+      </ul>
+
+      <h3>Project 3: Website Enhancement <small>Due April 1</small></h3>
+      <p>
+        For project three, you will extend your website from project two in some way. Full
+        project description TBA.
+      </p>
+      <h4>Deliverables &amp; Milestones</h4>
+      <p>TBA</p>
+      <h4>Requirements</h4>
+      <p>TBA</p>
+      <h4>Project Goals</h4>
+      <p>TBA</p>
+
+      <h3>(COM530 Students Only) Project 4: TBA</h3>
+      <p>
+        Description TBA.
+      </p>
+      <h4>Deliverables &amp; Milestones</h4>
+      <p>TBA</p>
+      <h4>Requirements</h4>
+      <p>TBA</p>
+      <h4>Project Goals</h4>
+      <p>TBA</p>
     </div>
   </div>
 
   <div id="policies">
     <h2 class="label">Policies</h2>
     <div class="content">
-      Course policies...
+      <ol>
+        <li>
+          <h3>Course Description</h3>
+          <p>
+            This course introduces the theory and practice of standards-based web design and
+            development. The course focuses on an agile, incremental approach to building
+            accessible, usable, and sustainable web pages that work across all modern browsers and
+            web-enabled mobile devices. Beyond web design, the course provides a rhetorical and
+            technological foundation for quickly establishing competencies in other areas of digital
+            communication, such as web application development.
+          </p>
+        </li>
+        <li>
+          <h3>Course Goals</h3>
+          <ul>
+            <li>
+              Learn to create, prepare, and maintain web- and audience-appropriate text and media
+            </li>
+            <li>
+              Learn to structure web pages that are both valid and well-formed according to the
+              Extensible Hypertext Markup Language (XHTML) and HTML5
+            </li>
+            <li>
+              Learn to create page designs using the Cascading Style Sheet (CSS) design language
+            </li>
+            <li>
+              Understand and implement web standards from the World Wide Web Consortium (W3C), Ecma,
+              ISO, and other standards-issuing groups
+            </li>
+            <li>
+              Understand and apply progressive enhancement and responsive design in web development
+            </li>
+            <li>
+              Develop an agile approach to web writing and design, supplemented by the use of a
+              version control system (Git)
+            </li>
+            <li>
+              Apply course concepts and adjust/extend course projects to fit your own academic and
+              professional interests
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>Materials and Technologies</h3>
+          <h4>Required Texts</h4>
+          <ul>
+            <li>
+              Cederholm, D. (2010). <cite>CSS3 for web designers</cite>. New York, NY: A Book Apart. (available for purchase from <a href="http://www.abookapart.com/products/css3-for-web-designers">A Book Apart</a>)
+            </li>
+            <li>
+              Maeda, J. (2006). <cite>The laws of simplicity: Design, business, technology, life</cite>. Cambridge, MA: The MIT Press.
+            </li>
+            <li>
+              Marcotte, E. (2011). <cite>Responsive web design</cite>. New York, NY: A Book Apart. (available for purchase from <a href="http://www.abookapart.com/products/responsive-web-design">A Book Apart</a>)
+            </li>
+            <li>
+              Stolley, K. (2011). <cite>How to design and write web pages today</cite>. Santa Barbara, CA: Greenwood Press.
+            </li>
+            <li>
+              Swicegood, T. (2008). <cite>Pragmatic version control using Git</cite>. Pragmatic Bookshelf. (available at the bookstore or as an ebook from <a href="http://pragprog.com/titles/tsgit/pragmatic-version-control-using-git">Pragmatic Bookshelf</a>
+            </li>
+            <li>
+              Vinh, K. (2011). <cite>Ordering disorder: Grid principles for web design</cite>. Berkeley, CA: New Riders.
+            </li>
+            <li>
+              Wroblewski, L. (2012) <cite>Mobile first</cite>. New York, NY: A Book Apart. (available for purchase from <a href="http://www.abookapart.com/products/mobile-first">A Book Apart</a>)
+            </li>
+            <li>
+              Plus other electronic books, articles, and materials linked to from the course
+              calendar
+            </li>
+          </ul>
+          <h4>Required Technologies</h4>
+          <ul>
+            <li>Ad-free, commercially hosted Web space that you control and the domain of your name</li>
+            <li>A <a href="https://github.com/">GitHub</a> account (free/public or pay/private)</li>
+            <li>A private/public RSA key pair (we will create these in class if you don't yet have them)</li>
+            <li>Firefox, Google Chrome, and other non-Internet Explorer browsers</li>
+            <li><a href="http://www.apachefriends.org/en/xampp.html">XAMPP</a> or a similar web server for testing, installed on a USB stick or your computer</li>
+            <li>A sketchbook</li>
+          </ul>
+          <h4>Recommended Technologies</h4>
+          <ul>
+            <li>A Ubuntu installation (or Ubuntu Live CD) to run Ubuntu Linux on your own computer</li>
+            <li>A Twitter account</li>
+            <li>A Delicious or Diigo account for social bookmarking</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Grading Policy: COM381 Students</h3>
+          <ul>
+            <li>Project 1: 20pts</li>
+            <li>Project 2: 30pts</li>
+            <li>Project 3: 10pts</li>
+            <li>Class Participation: 40pts</li>
+            <li>TOTAL: 100pts</li>
+            </ul>
+          <p>A = 90+ pts; B = 80-89pts; C = 70-79pts; D = 60-69pts; E =&lt; 59 pts</p>
+          <h4>Grading Criteria</h4>
+          <ul>
+            <li>
+              A - Student has turned in all required components of a project, the work is
+              exceptional in quality, and reflects the student’s dedication to adjusting the project
+              to his or her own interests.
+            </li>
+            <li>
+              B - Student has turned in all required components of a project, and the work is
+              exceptional for undergraduate work.
+            </li>
+            <li>
+              C - Student has turned in all required components of a project and submitted work that
+              is acceptable as undergraduate level.
+            </li>
+            <li>
+              D - Student has turned in all required components of a project, but the work is below
+              undergraduate level.
+            </li>
+            <li>
+              E - Student has not turned in all required components of a project.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>Grading Policy: COM530 Students</h3>
+          <ul>
+            <li>Project 1: 20pts</li>
+            <li>Project 2: 30pts</li>
+            <li>Project 3: 10pts</li>
+            <li>Class Participation: 40pts</li>
+            <li>TOTAL: 100pts</li>
+            </ul>
+          <p>A = 90+ pts; B= 80-89pts; C=70-79pts; E =&lt; 69 pts</p>
+          <h4>Grading Criteria</h4>
+          <ul>
+            <li>
+              A - Student has turned in all required components of a project, the work is
+              exceptional in quality, and reflects the student's dedication to adjusting the project
+              to his or her own interests.
+            </li>
+            <li>
+              B - Student has turned in all required components of a project and submitted work that
+              is acceptable as graduate level.
+            </li>
+            <li>
+              C - Student has turned in all required components of a project, but the work is below
+              graduate level.
+            </li>
+            <li>
+              E - Student has not turned in all required components of a project.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h3>Course Technology Policy</h3>
+          <p>
+            Because technology is an essential part of web design and development, it is essential to
+            this class. You are just as responsible for learning to command various technologies
+            (XHTML and CSS in particular) as for any other course content. Difficulty with technology
+            is not an acceptable excuse for being unprepared for class.
+          </p>
+          <p>
+            If you are having trouble with technology or any other material covered in this course, it
+            is your professional responsibility to do research beyond the resources and guidance
+            provided in class and find materials that work for you. I also encourage all students to
+            meet with me during my office hours or at another arranged time outside of class or to
+            contact me via email or GChat well in advance of project deadlines.
+          </p>
+          <p>
+            Note that coming to class with broken or malfunctioning work is far better than showing up
+            with nothing but an excuse like “I just didn’t get it.” For most of the semester, it is
+            <em>expected</em> that you’ll show up with broken work. When you’re learning, effort is
+            more important than perfection. Just be sure to put in the effort early, and not the night
+            before a project is due.
+          </p>
+        </li>
+        <li>
+          <h3>Attendance and Participation</h3>
+          <p>
+            Your attendance and active participation are required both for your own success in the
+            class, and for the success of the class as a whole. However, if you absolutely must miss,
+            please <a href="#contact">contact me</a> ahead of time via email.
+          </p>
+        </li>
+        <li>
+          <h3>Academic Honesty</h3>
+          <p>
+            As with any course at IIT, you are expected to uphold the Code of Academic Honesty (p. 48
+            of the <a href="http://www.iit.edu/graduate_college/bulletin/pdfs/bulletin10-12.pdf">IIT
+            Graduate Bulletin 2010-2012</a>). All work for this course should be your own original
+            effort, including print and digital page design and computer code. Summarizations and
+            quotations of text, as well as any use of open-source code libraries and images not of
+            your own making, should be clearly cited as legally and ethically warranted and
+            rhetorically appropriate.
+          </p>
+          <p>
+            If you are at all uncertain as to whether you are submitting work that in whole or in part
+            may violate the Code of Academic Honesty, please contact me immediately and before the
+            work is due. The consequences of academic dishonesty are severe. Any student who violates
+            the Code of Academic Honesty will be subject to expulsion from this course with a failing
+            grade, and I will report the student to the Chair of the Department of Humanities and the
+            Associate Dean of Graduate Academic Affairs, who may take additional disciplinary action.
+          </p>
+        </li>
+        <li>
+          <h3>Special Needs Statement</h3>
+          <p>
+            Reasonable accommodations will be made for students with documented disabilities. In order to receive accommodations, students must obtain a letter of accommodation from the Center for Disability Resources. The Center for Disability Resources (CDR) is located in Life Sciences Room 218. Contact the Center by telephone at 312-567-5744 or via email at disabilities@iit.edu
+          </p>
+          <p>
+            Students who have any difficulty (either permanent or temporary) that might affect their ability to perform in class should contact me privately, either in person or via email, at the start of the semester. Methods, materials, or deadlines will be adapted as required to ensure equitable participation.
+          </p>
+        </li>
+      </ol>
     </div>
   </div>
 
   <div id="footer">
-    <p>Course design by Karl Stolley. Licensed under Creative Commons. Source hosted on GitHub.</p>
+    <p class="fineprint">
+      Course &amp; site design by <a href="http://karlstolley.com/">Karl Stolley</a>. Licensed under
+      <a href="http://creativecommons.org/licenses/by-nc/2.0/" rel="license">Creative Commons</a>.
+      <a href="https://github.com/karlstolley/wd/">Source hosted on GitHub</a>.
+    </p>
   </div>
 
 </div>
