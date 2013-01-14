@@ -54,21 +54,104 @@ legend {
 
 /* Base */
 body {
-  font-family: "pt-sans",Helvetica,Arial,sans-serif; }
+  font-family: "ff-tisa-web-pro", Arial, "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #eeeef6;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+i, em, cite {
+  font-style: italic; }
+
+b, strong {
+  font-weight: bold; }
+
+code {
+  font-family: Monaco, Courier, monospace;
+  font-size: 14px;
+  background-color: #d7d7ea; }
+
+a {
+  color: #cc0000;
+  text-decoration: none;
+  border-bottom: 1px dotted; }
+  a:visited {
+    color: #660000; }
+  a:hover {
+    color: #cc0000;
+    border-bottom: 1px solid; }
+  a:active {
+    border-bottom: 1px solid; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "proxima-nova-alt-ext-cond", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 36px;
+  line-height: 39px; }
+
+h4 {
+  color: #777; }
+
+dt {
+  text-transform: uppercase; }
+
+ol > li {
+  list-style-type: decimal;
+  margin-left: .5em; }
+
+ul > li {
+  list-style-type: disc;
+  margin-left: 1em; }
 
 /* Layout */
+#header {
+  padding: 1em; }
+
 /* Module */
+.tagline {
+  color: #888;
+  font-style: italic; }
+
 .label {
-  background: red;
-  color: white; }
+  background: white;
+  color: #cc0000; }
 
-h2.label:after {
-  content: "+";
-  float: right;
-  padding-right: 1em; }
+h2.label {
+  padding: 26px 16px; }
 
-h2.label.is-active:after {
-  content: "-"; }
+h2.label + * {
+  margin: 16px; }
+
+.week {
+  margin-bottom: 26px; }
+  .week dt {
+    padding-top: 6.5px; }
+
+.week ol {
+  margin-left: 1em; }
+
+.week h3 small {
+  letter-spacing: .1em;
+  color: #999;
+  display: block; }
+
+.bye-week {
+  margin: 26px 0 13px 0; }
+
+#calendar > ol > li {
+  list-style-type: none;
+  margin-left: 0; }
+
+.agenda, .assigned {
+  margin-top: 13px; }
+
+.agenda ol {
+  padding-top: 6.5px; }
 
 /* State */
 .hasjs .label {
@@ -83,6 +166,11 @@ h2.label.is-active:after {
   display: block; }
 .hasjs .week.is-current {
   display: block; }
+  .hasjs .week.is-current .assigned {
+    background-color: #FF6;
+    padding: 13px; }
+    .hasjs .week.is-current .assigned h4 {
+      color: black; }
 .hasjs .week.is-next {
   display: block; }
 
