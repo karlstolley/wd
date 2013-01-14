@@ -13,22 +13,20 @@
       // Get the current time as a Unix timestamp
       currentTime = new Date();
       currentTime = Math.round(currentTime.getTime() / 1000);
-      //var currentTime = 1361844099;
-      // Grab all of the weeks
-      // allWeeks = $('.week');
-      // Grab each week's data-expires attribute
+      // Highlight the current and next wek
       var futureWeeks = []
+
       $('.week').each(function() {
           weekTime = $(this).attr('data-expires');
-          //myDiff = weekTime - currentTime;
           if ((weekTime - currentTime) > 0) {
             futureWeeks.push($(this));
           }
-
       });
+
       futureWeeks[0].addClass('is-current');
       futureWeeks[0].attr('id','current-week');
       futureWeeks[1].addClass('is-next');
+
       $('.week.is-next').append('<p><a id="show-calendar" href="#current-week">Show Full Calendar</a></p>');
 
       $('#show-calendar').click(function() {
@@ -41,6 +39,8 @@
           $('.week').removeClass('is-visible');
         });
       });
+
+      // Show/hide content
       $('h2.label').append(' »')
       $('h2.label').click(function() {
         $(this).toggleClass('is-active');
@@ -51,19 +51,12 @@
         $('.week').toggleClass('is-visible');
       });
 
-      // See if it's non-negative (in the future)
-
-      // First one gets the 'is-current' class
-
-      // Next one gets the 'is-next' class
-      //$('#snoop').html(futureWeeks.length);
     });
   </script>
   <script type="text/javascript" src="//use.typekit.net/njk3tye.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
-<div id="snoop"></div>
 <div id="page">
   <div id="header">
     <h1>Standards-Based Web Design</h1>
