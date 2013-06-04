@@ -23,22 +23,24 @@
           }
       });
 
-      futureWeeks[0].addClass('is-current is-visible');
-      futureWeeks[0].attr('id','current-week');
-      futureWeeks[1].addClass('is-next is-visible');
+      if (futureWeeks.length > 0) {
+        futureWeeks[0].addClass('is-current is-visible');
+        futureWeeks[0].attr('id','current-week');
+        futureWeeks[1].addClass('is-next is-visible');
+        $('.week.is-next').append('<p><a id="show-calendar" href="#current-week">Show Full Calendar</a></p>');
 
-      $('.week.is-next').append('<p><a id="show-calendar" href="#current-week">Show Full Calendar</a></p>');
-
-      $('#show-calendar').click(function() {
-        $(this).hide();
-        $('.week').addClass('is-visible');
-        $('.week').last().append('<p><a id="hide-calendar" href="#current-week">Hide Full Calendar</a></p>');
-        $('#hide-calendar').click(function() {
-          $('#show-calendar').show();
-          $(this).remove();
-          $('.week').removeClass('is-visible');
+        $('#show-calendar').click(function() {
+          $(this).hide();
+          $('.week').addClass('is-visible');
+          $('.week').last().append('<p><a id="hide-calendar" href="#current-week">Hide Full Calendar</a></p>');
+          $('#hide-calendar').click(function() {
+            $('#show-calendar').show();
+            $(this).remove();
+            $('.week').removeClass('is-visible');
+          });
         });
-      });
+      }
+
 
       // Show/hide content
       $('h2.label').append(' »')
@@ -47,11 +49,10 @@
         $(this).next('.content').toggleClass('is-visible');
       });
 
+      $('.week').addClass('is-visible');
+
       $('h2.label.calendar').click(function() {
-        $('.week').addClass('is-visible');
-        $(this).click(function() {
-          $('.week').toggleClass('is-visible');
-        });
+        $('.week').toggleClass('is-visible');
       });
 
     });
