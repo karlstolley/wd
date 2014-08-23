@@ -1,0 +1,102 @@
+# COM530/COM327: Standards-Based Web Design
+
+## Instructor Information
+Prof. Karl Stolley
+karl.stolley@gmail.com
+http://karlstolley.com/
+@karlstolley
+Siegel Hall 208
+Office Hours on Tuesdays, 4-5pm and by appointment
+
+## Course Policies
+
+### Description
+
+This course introduces the theory and applied practice of designing for the web according to standardized forms of the web's core languages (HTML5, CSS, and JavaScript). The course focuses on an agile, incremental approach to building accessible, usable, and sustainable websites that work across all modern browsers and web-enabled mobile devices. The course also provides a rhetorical and technological foundation for establishing competence in other areas of web-based experience design and communication, such as web application development.
+
+### Course Goals
+
+Learn to create, prepare, and maintain web- and audience-appropriate text and media
+Learn to structure web pages that are both valid and well-formed according to the Extensible Hypertext Markup Language (XHTML) and HTML5
+Learn to create page designs using the Cascading Style Sheet (CSS) design language
+Understand and implement web standards from the World Wide Web Consortium (W3C), Ecma, ISO, and other standards-issuing groups
+Understand and apply progressive enhancement and responsive design in web development
+Develop an agile approach to web writing and design, supplemented by the use of a version control system (Git)
+Apply course concepts and adjust/extend course projects to fit your own academic and professional interests
+
+### Required Books
+
+1. Maeda, J. (2006). The laws of simplicity: Design, business, technology, life. Cambridge, MA: The MIT Press.
+2. Stolley, K. (2011). How to design and write web pages today. Santa Barbara, CA: Greenwood Press.
+3. Wroblewski, L. (2012) Mobile first. New York, NY: A Book Apart. (available for purchase from A Book Apart)
+
+### Required Materials & Technology
+
+
+
+### Grading: COM327
+
+### Grading: COM530
+
+### Attendance and Participation
+
+### Academic Integrity
+
+### Technology Policy
+
+### Accessibility and Special Needs Statement
+
+
+
+## Course Calendar
+
+### AUG 26 ESSENTIAL TOOLS: Editor, Command Line, Git; Files and Paths
+Before diving into the languages of web design, we’ll work for a week with essential tools: plain-text editors and the version-control system Git along with sensibly-named and findable files and directories (folders) and their paths on the command line.
+
+* Finding your workbench muse, https://signalvnoise.com/posts/3727-finding-your-workbench-muse
+
+### SEP 02 ESSENTIAL LANGUAGES: XHTML/HTML5, CSS, JavaScript
+Three languages make up the core of user-facing web design. We’ll look at the history, development, and standard usage of each.
+
+### SEP 09 FOUNDATIONAL TECHNIQUES: Semantic Structure; Mobile First; Typographic Scales
+Web design is daunting in the abstract. It can be simplified greatly by employing three foundational techniques that support mobile-friendly, future-proof pages.
+
+### SEP 16 ACCESSIBILITY & MEDIA: Image, Audio, Video [Designed Passage DUE]
+Although non-text media elements deserve their own careful study and treatment, they all present a shared set of accessibility challenges for diverse users and their devices.
+
+### SEP 23 LAYOUT: Typographic Scales, Grids & CSS/CSS3 Techniques
+We revisit the typographic scale and work closely with grid-based design aided by advanced CSS3 layout techniques that gracefully degrade or rely on effective polyfills.
+
+### SEP 30 REVIEW + GIT-BASED DEPLOYMENT?: [One-Page Presence DUE]
+FTP isn’t the only way to publish to the web. We’ll look at using Git to deploy web-based projects.
+
+### OCT 07 USABILITY & INTERFACE ELEMENTS: HTML5/CSS
+HTML form elements are essential for user-supplied information and interactivity beyond taps and clicks. We'll work with form-element semantics and styling across browsers and devices.
+
+### OCT 14 : NO CLASS // STOLLEY AT IEEE/IPCC (Fall break is 10/13)
+
+### OCT 21 SUSTAINABILITY, PERFORMANCE & PROGRESSIVE ENHANCEMENT: JavaScript & jQuery [Redesigned Login/Signup DUE]
+JavaScript is no longer the dirty word it once was.
+
+### OCT 28 WEB TYPOGRAPHY: @font-face, hosted solutions
+A brave new world beyond the limited set of system fonts.
+
+### NOV 04 REVIEW & WORK SESSION
+Finish your projects.
+
+### NOV 11 OPTIMIZATION: Server requests, minification [Revised/Expanded Presence DUE]
+Some basic techniques to speed up page loading and reduce the amount of weight your projects have.
+
+### NOV 18 PREPROCESSORS & AUTOMATION: HAML, SASS/SCSS
+You'll be angry all week.
+
+### NOV 25 : NO CLASS // THANKSGIVING BREAK
+
+### DEC 02 THEMING: Tumblr; WordPress, Drupal and Friends/Enemies
+Front-end design and development over readymade web platforms.
+
+### DEC 08 FINALS WEEK : [Tumblr Theme DUE]
+
+
+
+
