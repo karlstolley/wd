@@ -12,7 +12,7 @@ Office Hours on Tuesdays, 4-5pm and by appointment
 
 ### Description
 
-This course introduces the theory and applied practice of designing for the web according to standardized forms of the web's core languages (HTML5, CSS, and JavaScript). The course focuses on an agile, incremental approach to building accessible, usable, and sustainable websites that work across all modern browsers and web-enabled mobile devices. The course also provides a rhetorical and technological foundation for establishing competence in other areas of web-based experience design and communication, such as web application development.
+This course introduces the theory and applied practice of designing for the web according to standardized forms of the web’s core languages (HTML5, CSS, and JavaScript). The course focuses on an agile, incremental approach to building accessible, usable, and sustainable websites that work across all modern browsers and web-enabled mobile devices. The course also provides a rhetorical and technological foundation for establishing competence in other areas of web-based experience design and communication, such as web application development.
 
 ### Course Goals
 
@@ -71,7 +71,7 @@ We revisit the typographic scale and work closely with grid-based design aided b
 FTP isn’t the only way to publish to the web. We’ll look at using Git to deploy web-based projects.
 
 ### OCT 07 USABILITY & INTERFACE ELEMENTS: HTML5/CSS
-HTML form elements are essential for user-supplied information and interactivity beyond taps and clicks. We'll work with form-element semantics and styling across browsers and devices.
+HTML form elements are essential for user-supplied information and interactivity beyond taps and clicks. We’ll work with form-element semantics and styling across browsers and devices.
 
 ### OCT 14 : NO CLASS // STOLLEY AT IEEE/IPCC (Fall break is 10/13)
 
@@ -88,7 +88,7 @@ Finish your projects.
 Some basic techniques to speed up page loading and reduce the amount of weight your projects have.
 
 ### NOV 18 PREPROCESSORS & AUTOMATION: HAML, SASS/SCSS
-You'll be angry all week.
+You’ll be angry all week.
 
 ### NOV 25 : NO CLASS // THANKSGIVING BREAK
 
