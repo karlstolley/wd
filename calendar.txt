@@ -7,6 +7,7 @@
 Before diving into the languages of web design, we’ll work for a week with essential tools: plain-text editors and the version-control system Git along with sensibly-named and findable files and directories (folders) and their paths on the command line.
 
 * Stolley, Preface; chapters 1-5, 12
+* Pro Git, Chapter 2 (beginning at http://git-scm.com/book/en/Git-Basics -- read all sections)
 * Finding your workbench muse, https://signalvnoise.com/posts/3727-finding-your-workbench-muse
 
 ### SEP 02 ESSENTIAL LANGUAGES: XHTML/HTML5, CSS, JavaScript
@@ -15,6 +16,7 @@ Three languages make up the core of user-facing web design. We’ll look at the 
 
 * Stolley, chapters 9-12
 * Wroblewski, chapters 2 & 3
+* Zeldman, “Better Living Through XHTML”, http://alistapart.com/article/betterliving
 
 ### SEP 09 FOUNDATIONAL TECHNIQUES: Semantic Structure; Mobile First; Typographic Scales
 
@@ -22,8 +24,8 @@ Web design is daunting in the abstract. It can be simplified greatly by employin
 
 * Stolley, chapters 6 & 16
 * Wroblewski, chapters 4 & 5
-* Wilson Miner, "Setting Type on the Web to a Baseline Grid" http://alistapart.com/article/settingtypeontheweb
-* Richard Rutter, "Compose to a Vertical Rhythm" http://24ways.org/2006/compose-to-a-vertical-rhythm/
+* Wilson Miner, “Setting Type on the Web to a Baseline Grid” http://alistapart.com/article/settingtypeontheweb
+* Richard Rutter, “Compose to a Vertical Rhythm” http://24ways.org/2006/compose-to-a-vertical-rhythm/
 
 ### SEP 16 ACCESSIBILITY & MEDIA: Image, Audio, Video [Designed Passage DUE]
 
