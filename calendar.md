@@ -25,6 +25,7 @@ Before diving into the languages of web design, we’ll work for a week with ess
 * Sign up for Twitter, Tumblr, and GitHub accounts
 * Computer setup (Text editor, Node.js, Git); follow links at https://github.com/karlstolley/wd/wiki
 * Begin plain-text and Git work on Background and Ambitions project
+* Use your editor and Git for as much writing as possible (emails, to-do lists, etc. etc.)
 
 ### SEP 02 ESSENTIAL LANGUAGES: XHTML/HTML5, CSS, JavaScript
 
