@@ -22,7 +22,7 @@ Before diving into the languages of web design, we’ll work for a week with ess
 * Email instructor w/ your preferred email address
 * Sign up for Basecamp/Campfire account (invite coming via email)
 * Sign up for Twitter, Tumblr, and GitHub accounts
-* Computer setup (Text editor, Node.js, Git)
+* Computer setup (Text editor, Node.js, Git); follow links at https://github.com/karlstolley/wd/wiki
 * Begin plain-text and Git work on Background and Ambitions project
 
 ### SEP 02 ESSENTIAL LANGUAGES: XHTML/HTML5, CSS, JavaScript
