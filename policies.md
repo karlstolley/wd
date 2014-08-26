@@ -1,12 +1,12 @@
 # COM530/COM327: Standards-Based Web Design
 
 ## Instructor Information
-Prof. Karl Stolley
-karl.stolley@gmail.com
-http://karlstolley.com/
-@karlstolley
-Siegel Hall 208
-Office Hours on Tuesdays, 4-5pm and by appointment
+* Prof. Karl Stolley
+* karl.stolley@gmail.com
+* http://karlstolley.com/
+* @karlstolley
+* Siegel Hall 208
+* Office Hours on Tuesdays, 4-5pm and by appointment
 
 ## Course Policies
 
@@ -35,6 +35,7 @@ This course introduces the theory and applied practice of designing for the web 
 * Paper sketchbook
 * A plain-text editor
 * A command-line Git installation on personal computer
+* A Node.js installation
 * Firefox and Chrome browsers
 * Twitter account
 * GitHub account
