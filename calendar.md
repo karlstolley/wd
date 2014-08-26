@@ -10,6 +10,7 @@ Before diving into the languages of web design, we’ll work for a week with ess
 * Welcome & introductions
 * Course policies, calendar, projects
 * Working with the command-line interface (CLI)
+* Set up Git and GitHub with instrux at https://github.com/karlstolley/lab/wiki
 * Working with plain text and version control (Git)
 
 #### To Read for Next Week
