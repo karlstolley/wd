@@ -1,4 +1,4 @@
-# COM530/COM327: Standards-Based Web Design
+# COM530: Standards-Based Web Design
 
 ## Fall 2014 Course Calendar
 

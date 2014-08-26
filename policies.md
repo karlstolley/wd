@@ -1,4 +1,4 @@
-# COM530/COM327: Standards-Based Web Design
+# COM530: Standards-Based Web Design
 
 ## Instructor Information
 * Prof. Karl Stolley
@@ -49,27 +49,7 @@ This course introduces the theory and applied practice of designing for the web 
 * A Linux installation on personal computer (if not running Mac)
 * A mobile or tablet device
 
-### Grading: COM327
-
-Project 1: 10pts
-Project 2: 10pts
-Project 3: 10pts
-Project 4: 20pts
-Project 5: 10pts
-Participation: 40pts
-TOTAL: 100pts
-
-A = 90+ pts; B = 80-89pts; C = 70-79pts; D = 60-69pts; E =< 59 pts
-
-#### Grading Criteria: COM327
-A - Student has turned in all required project deliverables, the work is exceptional in quality, and reflects the student’s dedication to adjusting the project to his or her own interests.
-B - Student has turned in all required project deliverables, and the work is exceptional for undergraduate work.
-C - Student has turned in all required project deliverables and submitted work that is acceptable as undergraduate level.
-D - Student has turned in all required project deliverables, but the work is below undergraduate level.
-E - Student has not turned in all required project deliverables.
-
-### Grading: COM530
-
+### Grading
 Project 1: 10pts
 Project 2: 10pts
 Project 3: 10pts
@@ -81,8 +61,7 @@ TOTAL: 100pts
 
 A = 90+ pts; B= 80-89pts; C=70-79pts; E =< 69 pts
 
-#### Grading Criteria: COM530
-
+#### Grading Criteria
 A - Student has turned in all required project deliverables, the work is exceptional in quality, and reflects the student’s dedication to adjusting the project to his or her own interests.
 B - Student has turned in all required project deliverables and submitted work that is acceptable as graduate level.
 C - Student has turned in all required project deliverables, but the work is below graduate level.
