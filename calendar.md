@@ -27,7 +27,7 @@ Web design is daunting in the abstract. It can be simplified greatly by employin
 * Wilson Miner, “Setting Type on the Web to a Baseline Grid” http://alistapart.com/article/settingtypeontheweb
 * Richard Rutter, “Compose to a Vertical Rhythm” http://24ways.org/2006/compose-to-a-vertical-rhythm/
 
-### SEP 16 ACCESSIBILITY & MEDIA: Image, Audio, Video [Designed Passage DUE]
+### SEP 16 ACCESSIBILITY & MEDIA: Image, Audio, Video [Background and Ambitions DUE]
 
 Although non-text media elements deserve their own careful study and treatment, they all present a shared set of accessibility challenges for diverse users and their devices.
 
@@ -35,7 +35,7 @@ Although non-text media elements deserve their own careful study and treatment, 
 
 We revisit the typographic scale and work closely with grid-based design aided by advanced CSS3 layout techniques that gracefully degrade or rely on effective polyfills.
 
-### SEP 30 REVIEW + GIT-BASED DEPLOYMENT?: [One-Page Presence DUE]
+### SEP 30 REVIEW + GIT-BASED DEPLOYMENT?: [Single-Page Presence DUE]
 
 FTP isn’t the only way to publish to the web. We’ll look at using Git to deploy web-based projects.
 
