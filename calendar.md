@@ -6,10 +6,24 @@
 
 Before diving into the languages of web design, we’ll work for a week with essential tools: plain-text editors and the version-control system Git along with sensibly-named and findable files and directories (folders) and their paths on the command line.
 
+#### In Class
+* Welcome & introductions
+* Course policies, calendar, projects
+* Working with the command-line interface (CLI)
+* Working with plain text and version control (Git)
+
 #### To Read for Next Week
 * Stolley, Preface; chapters 1-5, 12
 * Pro Git, Chapter 2 (beginning at http://git-scm.com/book/en/Git-Basics -- read all sections)
 * Finding your workbench muse, https://signalvnoise.com/posts/3727-finding-your-workbench-muse
+* Inspiration: Ten Remarkable Website Typography Designs, http://www.sitepoint.com/10-remarkable-website-typography-designs-2/
+
+#### To Do for Next Week
+* Email instructor w/ your preferred email address
+* Sign up for Basecamp/Campfire account (invite coming via email)
+* Sign up for Twitter, Tumblr, and GitHub accounts
+* Computer setup (Text editor, Node.js, Git)
+* Begin plain-text and Git work on Background and Ambitions project
 
 ### SEP 02 ESSENTIAL LANGUAGES: XHTML/HTML5, CSS, JavaScript
 
@@ -18,7 +32,7 @@ Three languages make up the core of user-facing web design. We’ll look at the 
 #### To Read for Next Week
 * Stolley, chapters 9-12
 * Wroblewski, chapters 2 & 3
-* Zeldman, “Better Living Through XHTML”, http://alistapart.com/article/betterliving
+* Keith, chapters 1, 2, & 5 http://html5forwebdesigners.com/
 
 ### SEP 09 FOUNDATIONAL TECHNIQUES: Semantic Structure; Mobile First; Typographic Scales
 
@@ -34,6 +48,9 @@ Web design is daunting in the abstract. It can be simplified greatly by employin
 
 Although non-text media elements deserve their own careful study and treatment, they all present a shared set of accessibility challenges for diverse users and their devices.
 
+#### To Read for Next Week
+* Keith, chapter 3 http://html5forwebdesigners.com/
+
 ### SEP 23 LAYOUT: Typographic Scales, Grids & CSS/CSS3 Techniques
 
 We revisit the typographic scale and work closely with grid-based design aided by advanced CSS3 layout techniques that gracefully degrade or rely on effective polyfills.
@@ -44,6 +61,7 @@ FTP isn’t the only way to publish to the web. We’ll look at using Git to dep
 
 #### To Read for Next Week
 * Maeda, Laws 1-3
+* Keith, chapter 4 http://html5forwebdesigners.com/
 
 ### OCT 07 USABILITY & INTERFACE ELEMENTS: HTML5/CSS
 
