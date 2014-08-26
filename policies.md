@@ -32,7 +32,21 @@ This course introduces the theory and applied practice of designing for the web 
 
 ### Required Materials & Technology
 
-TODO.
+* Paper sketchbook
+* A plain-text editor
+* A command-line Git installation on personal computer
+* Firefox and Chrome browsers
+* Twitter account
+* GitHub account
+* Tumblr account
+* A Basecamp/Campfire account (invites coming)
+* Ad-free, commercial web hosting space (not on iit.edu domain)
+* Domain of your name
+
+### Recommended Technology
+
+* A Linux installation on personal computer (if not running Mac)
+* A mobile or tablet device
 
 ### Grading: COM327
 
