@@ -56,3 +56,7 @@ Building on your expanding capabilities with web design, you will revisit your s
 ### Tumblr Theme (DUE DEC 8)
 
 You will repurpose your visual design from the Expanded Web Presence project into a Tumblr theme that adds a blogging/social component to your site or the site for your organization. You will use both HAML and SASS to create a more manageable codebase.
+
+### Collaborative Style Guide (DUE DEC 8)
+
+You and one or two other students will collaborate over the course of the semester on a visual and structural style guide for a web presence TBD.
