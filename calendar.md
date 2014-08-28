@@ -2,7 +2,7 @@
 
 ## Fall 2014 Course Calendar
 
-### AUG 26 ESSENTIAL TOOLS: Editor, Command Line, Git; Files and Paths
+### AUG 27 ESSENTIAL TOOLS: Editor, Command Line, Git; Files and Paths
 
 Before diving into the languages of web design, we’ll work for a week with essential tools: plain-text editors and the version-control system Git along with sensibly-named and findable files and directories (folders) and their paths on the command line.
 
@@ -27,7 +27,7 @@ Before diving into the languages of web design, we’ll work for a week with ess
 * Begin plain-text and Git work on Background and Ambitions project
 * Use your editor and Git for as much writing as possible (emails, to-do lists, etc. etc.)
 
-### SEP 02 ESSENTIAL LANGUAGES: XHTML/HTML5, CSS, JavaScript
+### SEP 03 ESSENTIAL LANGUAGES: XHTML/HTML5, CSS, JavaScript
 
 Three languages make up the core of user-facing web design. We’ll look at the history, development, and standard usage of each.
 
@@ -36,7 +36,7 @@ Three languages make up the core of user-facing web design. We’ll look at the 
 * Wroblewski, chapters 2 & 3
 * Keith, chapters 1, 2, & 5 http://html5forwebdesigners.com/
 
-### SEP 09 FOUNDATIONAL TECHNIQUES: Semantic Structure; Mobile First; Typographic Scales
+### SEP 10 FOUNDATIONAL TECHNIQUES: Semantic Structure; Mobile First; Typographic Scales
 
 Web design is daunting in the abstract. It can be simplified greatly by employing three foundational techniques that support mobile-friendly, future-proof pages.
 
@@ -46,18 +46,18 @@ Web design is daunting in the abstract. It can be simplified greatly by employin
 * Wilson Miner, “Setting Type on the Web to a Baseline Grid” http://alistapart.com/article/settingtypeontheweb
 * Richard Rutter, “Compose to a Vertical Rhythm” http://24ways.org/2006/compose-to-a-vertical-rhythm/
 
-### SEP 16 ACCESSIBILITY & MEDIA: Image, Audio, Video [Background and Ambitions DUE]
+### SEP 17 ACCESSIBILITY & MEDIA: Image, Audio, Video [Background and Ambitions DUE]
 
 Although non-text media elements deserve their own careful study and treatment, they all present a shared set of accessibility challenges for diverse users and their devices.
 
 #### To Read for Next Week
 * Keith, chapter 3 http://html5forwebdesigners.com/
 
-### SEP 23 LAYOUT: Typographic Scales, Grids & CSS/CSS3 Techniques
+### SEP 24 LAYOUT: Typographic Scales, Grids & CSS/CSS3 Techniques
 
 We revisit the typographic scale and work closely with grid-based design aided by advanced CSS3 layout techniques that gracefully degrade or rely on effective polyfills.
 
-### SEP 30 REVIEW + GIT-BASED DEPLOYMENT?: [Single-Page Presence DUE]
+### OCT 01 REVIEW + GIT-BASED DEPLOYMENT?: [Single-Page Presence DUE]
 
 FTP isn’t the only way to publish to the web. We’ll look at using Git to deploy web-based projects.
 
@@ -65,39 +65,39 @@ FTP isn’t the only way to publish to the web. We’ll look at using Git to dep
 * Maeda, Laws 1-3
 * Keith, chapter 4 http://html5forwebdesigners.com/
 
-### OCT 07 USABILITY & INTERFACE ELEMENTS: HTML5/CSS
+### OCT 08 USABILITY & INTERFACE ELEMENTS: HTML5/CSS
 
 HTML form elements are essential for user-supplied information and interactivity beyond taps and clicks. We’ll work with form-element semantics and styling across browsers and devices.
 
 #### To Read for Next Week
 * Maeda, Laws 4-10, Three Keys
 
-### OCT 14 : NO CLASS // STOLLEY AT IEEE/IPCC (Fall break is 10/13)
+### OCT 15 : NO CLASS // STOLLEY AT IEEE/IPCC (Fall break is 10/13)
 
-### OCT 21 SUSTAINABILITY, PERFORMANCE & PROGRESSIVE ENHANCEMENT: JavaScript & jQuery [Redesigned Login/Signup DUE]
+### OCT 22 SUSTAINABILITY, PERFORMANCE & PROGRESSIVE ENHANCEMENT: JavaScript & jQuery [Redesigned Login/Signup DUE]
 
 JavaScript is no longer the dirty word it once was.
 
-### OCT 28 WEB TYPOGRAPHY: @font-face, hosted solutions
+### OCT 29 WEB TYPOGRAPHY: @font-face, hosted solutions
 
 A brave new world beyond the limited set of system fonts.
 
-### NOV 04 REVIEW & WORK SESSION
+### NOV 05 REVIEW & WORK SESSION
 
 Finish your projects.
 
-### NOV 11 OPTIMIZATION: Server requests, minification [Revised/Expanded Presence DUE]
+### NOV 12 OPTIMIZATION: Server requests, minification [Revised/Expanded Presence DUE]
 
 Some basic techniques to speed up page loading and reduce the amount of weight your projects have.
 
-### NOV 18 PREPROCESSORS & AUTOMATION: HAML, SASS/SCSS
+### NOV 19 PREPROCESSORS & AUTOMATION: HAML, SASS/SCSS
 
 You’ll be angry all week.
 
-### NOV 25 : NO CLASS // THANKSGIVING BREAK
+### NOV 26 : NO CLASS // THANKSGIVING BREAK
 
-### DEC 02 THEMING: Tumblr; WordPress, Drupal and Friends/Enemies
+### DEC 03 THEMING: Tumblr; WordPress, Drupal and Friends/Enemies
 
 Front-end design and development over readymade web platforms.
 
-### DEC 08 FINALS WEEK : [Tumblr Theme DUE]
+### DEC 09 FINALS WEEK : [Tumblr Theme DUE]
