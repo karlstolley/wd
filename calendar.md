@@ -35,6 +35,9 @@ Three languages make up the core of user-facing web design. We’ll look at the 
 * Stolley, chapters 9-12
 * Wroblewski, chapters 2 & 3
 * Keith, chapters 1, 2, & 5 http://html5forwebdesigners.com/
+* Web Standards Project, “History”, http://www.webstandards.org/about/history/
+* Video (40 mins): Jeffrey Zeldman: 20 Years of Web Design and Community, http://vimeo.com/104641191
+* Inspiration/History: CSS Zen Garden, http://www.csszengarden.com/ (browse as many designs as possible, on as many devices as possible)
 
 ### SEP 10 FOUNDATIONAL TECHNIQUES: Semantic Structure; Mobile First; Typographic Scales
 
@@ -45,6 +48,7 @@ Web design is daunting in the abstract. It can be simplified greatly by employin
 * Wroblewski, chapters 4 & 5
 * Wilson Miner, “Setting Type on the Web to a Baseline Grid” http://alistapart.com/article/settingtypeontheweb
 * Richard Rutter, “Compose to a Vertical Rhythm” http://24ways.org/2006/compose-to-a-vertical-rhythm/
+* Inspiration: Media Queries (gallery site), http://mediaqueri.es/ (browse as many designs as possible, on as many devices as possible)
 
 ### SEP 17 ACCESSIBILITY & MEDIA: Image, Audio, Video [Background and Ambitions DUE]
 
@@ -52,10 +56,16 @@ Although non-text media elements deserve their own careful study and treatment, 
 
 #### To Read for Next Week
 * Keith, chapter 3 http://html5forwebdesigners.com/
+* Clarissa Peterson, “Accessibility in HTML5”, http://www.clarissapeterson.com/2012/11/html5-accessibility/
+* W3C, “Using WAI-ARIA in HTML” (Introduction; first thru fifth rules of Aria use; browse remainder), http://w3c.github.io/aria-in-html/
 
-### SEP 24 LAYOUT: Typographic Scales, Grids & CSS/CSS3 Techniques
+### SEP 24 LAYOUT: Media Queries; More Typographic Scales, Grids & CSS/CSS3 Techniques
 
 We revisit the typographic scale and work closely with grid-based design aided by advanced CSS3 layout techniques that gracefully degrade or rely on effective polyfills.
+
+#### To Read for Next Week
+* Mark Boulton, “Five Simple Steps to Designing Grid Systems” (all five parts; links at bottom of page for Part 1), http://www.markboulton.co.uk/journal/five-simple-steps-to-designing-grid-systems-part-1
+* Nick Salloum, “Easy Responsive CSS Grid Layouts: 4 Methods”, http://www.sitepoint.com/easy-responsive-css-grid-layouts/
 
 ### OCT 01 REVIEW + GIT-BASED DEPLOYMENT?: [Single-Page Presence DUE]
 
