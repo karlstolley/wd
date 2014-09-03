@@ -1,0 +1,59 @@
+/* Base */
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+h1,h2,h3,h4,h5 { font-weight: bold; }
+h2,h3,h4 {
+  margin-top: 1.5em;
+  margin-bottom: .5em;
+}
+h2 b,
+h3 b,
+h4 b {
+  text-transform: uppercase;
+}
+a {
+  color: #57F;
+  text-decoration: none;
+}
+
+p + p,
+ul + p,
+ol + p { margin-top: .5em; }
+
+/* Layout */
+body {
+}
+#header h2 {
+  font-weight: normal;
+  margin: 0;
+}
+#header {
+  padding: 1.5em 5% .5em 5%;
+  background-color: black;
+  color: white;
+}
+#footer {
+  padding: 1.5em 5% 1.5em 5%;
+  background-color: black;
+  color: white;
+}
+#content {
+  padding: 0 5% 4em 5%;
+}
+#calendar ul, #policies ul, #projects ul {
+  padding-left: .5em;
+}
+#policies ol, #projects ol { padding-left: 1.75em; }
+#calendar ol > li,
+.project {
+  border-bottom: .5em solid #EEE;
+  padding-bottom: 1.5em;
+  margin-bottom: .5em;
+}
+#policies ol li, #projects ol li { list-style-type: decimal; }
+#calendar ul ul li, #policies ul li, #projects ul li { margin-left: 1em; list-style-type: square; }
+/* Module */
+
+/* State */
