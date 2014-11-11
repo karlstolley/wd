@@ -332,7 +332,7 @@
       </ul>
     </li>
 
-    <li id="current">
+    <li>
       <h3><b>Oct 29 Web Typography:</b> <code>@font-face</code>, hosted solutions [<a href="#redesigned-login">Redesigned Login/Sign-up Form</a> DUE Oct. 31 at 11:59pm]</h3>
       <p>
         A brave new world beyond the limited set of system fonts.
@@ -388,7 +388,7 @@
       </ul>
     </li>
 
-    <li>
+    <li id="current">
       <h3><b>NOV 12 Optimization:</b> Server requests, minification</h3>
       <p>
         Some basic techniques to speed up page loading and reduce the amount of weight your projects
@@ -398,6 +398,8 @@
         <li>
           <h4>In Class</h4>
           <ul>
+            <li>Introduce <a href="#tumblr-theme">Tumblr theme project</a></li>
+            <li>Overview of <a href="http://smacss.com">SMACSS</a> for organizing stylesheets</li>
             <li>Working with performance tools like <a href="https://developers.google.com/speed/pagespeed/">Google PageSpeed</a></li>
             <li><a href="http://coderaiser.github.io/minify/">minify</a>, a simple minification tool built on Node.js</li>
             <li>Work-time for Expanded Web Presence project</li>
@@ -407,21 +409,32 @@
           <h4>To Do</h4>
           <ul>
             <li>Finish Expanded Web Presence project</li>
+            <li>
+              Read through <a href="http://smacss.com">SMACSS chapters</a>:
+              <a href="http://smacss.com/book/categorizing">Categorizing CSS Rules</a>,
+              <a href="http://smacss.com/book/type-base">Base</a>,
+              <a href="http://smacss.com/book/type-layout">Layout</a>,
+              <a href="http://smacss.com/book/type-module">Module</a>
+            </li>
+            <li>
+              Review Stolley, Ch. 20 on Site Architecture
+            </li>
           </ul>
         </li>
       </ul>
     </li>
 
     <li>
-      <h3><b>Nov 19 Preprocessors &amp; Automation:</b> HAML, SASS/SCSS [Revised/Expanded Presence DUE]</h3>
+      <h3><b>Nov 19 Preprocessors:</b> HAML, LESS, and others [Revised/Expanded Presence DUE]</h3>
       <p>
-        You’ll be angry all week.
+        Working with preprocessors
       </p>
       <ul>
         <li>
           <h4>In Class</h4>
           <ul>
-            <li>Working with HTML &amp; CSS preprocessors</li>
+            <li><a href="https://github.com/netzpirat/haml-coffee">HAML HTML preprocessor</a> for Node</li>
+            <li><a href="http://lesscss.org/#">LESS CSS preprocessor</a></li>
           </ul>
         </li>
       </ul>
@@ -436,10 +449,25 @@
       <p>
         Front-end design and development over readymade web platforms, for fun and profit.
       </p>
+      <ul>
+        <li>
+          <h4>In Class</h4>
+          <ul>
+            <li><a href="https://www.tumblr.com/docs/en/custom_themes">Tumblr theming reference</a></li>
+            <li>Example: <a href="http://blog.karlstolley.com/">Stolley’s Tumblr</a> theme <a href="https://github.com/karlstolley/tumblrtheme">on GitHub</a> (shares same CSS with karlstolley.com)</li>
+          </ul>
+        </li>
+        <li>
+          <h4>To Do</h4>
+          <ul>
+            <li>Finish Tumblr theme project; due to Stolley by 5pm on Dec. 10</li>
+          </ul>
+        </li>
+      </ul>
     </li>
 
     <li>
-      <h3><b>Dec 08 Finals Week</b> [Tumblr Theme DUE]</h3>
+      <h3><b>Dec 08 Finals Week</b> [Tumblr Theme DUE 5pm Dec 10]</h3>
     </li>
 
   </ol>
@@ -651,11 +679,62 @@
     </ul>
   </div>
 
-  <div class="project">
-    <h3>Tumblr Theme (<b>Due Dec 8</b>)</h3>
-    <p>You will repurpose your visual design from the Expanded Web Presence project into a Tumblr
-    theme that adds a blogging/social component to your site or the site for your organization. You
-    will use both HAML and SASS to create a more manageable codebase.</p>
+  <div class="project" id="tumblr-theme">
+    <h3>Tumblr Theme (<b>Due Dec 10, 5:00pm</b>)</h3>
+    <p>
+      You will repurpose your visual design from the Expanded Web Presence project into a Tumblr
+      theme that adds a blogging/social component to your site or the site for your organization.
+      You must use HAML (or another HTML of your choosing) to create a more manageable codebase for
+      your theme’s HTML structure. You may optionally also use LESS or a CSS preprocessor, but your
+      CSS must be based on your stylesheets for the Expanded Presence project.
+    </p>
+    <h4>Goals</h4>
+    <ul>
+      <li>Learn the basics of front-end development</li>
+      <li>Learn to repurpose HTML and CSS to extend the look and feel of a website to another service</li>
+      <li>Increase your sophistication in writing HTML and CSS via preprocessors</li>
+      <li>Employ mobile-first, responsive design techniques and typographic grids/grid systems</li>
+    </ul>
+    <h4>Deliverables</h4>
+    <ul>
+      <li>An email to the instructor by the due date containing:
+        <ul>
+          <li>
+            The https:// link to your project’s GitHub repository containing your HAML/preprocessed
+            HTML and CSS files; and optionally also your compiled HTML file
+          </li>
+          <li>
+            The URL with your live, posted project on Tumblr (either at your own domain/subdomain or
+            at username.tumblr.com)
+          </li>
+          <li>
+            A 1-2 paragraph self-critique, including details of your experiences working with
+            HTML/CSS preprocessors (email to instructor by due date)</li>
+        </ul>
+      </li>
+    </ul>
+    <h4>Requirements</h4>
+    <ul>
+      <li>A Tumblr theme that handles at least three different Tumblr post types in addition to the Text post type (e.g., Photo, Quote, Link, Chat, Audio, Video, Answer)</li>
+      <li>Four posts to your Tumblr blog showing the Text post type and your three chosen post-types</li>
+      <li>Valid, well-formed HTML5 and CSS output from preprocessor source</li>
+      <li>A single CSS file for controlling the design of all site pages</li>
+      <li>HTML-based fallbacks for any media elements (image, audio, video) that you include</li>
+      <li>Thoughtful use of media-queries with breakpoints specified in em units</li>
+      <li>CSS3 transitions that enhance user experience, where appropriate</li>
+      <li>JavaScript that does not throw any errors, if project uses JavaScript</li>
+      <li>
+        Organized, readable source that is hand-written and original (no WYSIWYGs or
+        code-generators, other than your chosen preprocessor)
+      </li>
+    </ul>
+    <h4>Useful Resources</h4>
+    <ul>
+      <li><a href="https://www.tumblr.com/docs/en/custom_themes">Tumblr theming reference</a></li>
+      <li><a href="https://github.com/netzpirat/haml-coffee">HAML HTML preprocessor</a> for Node</li>
+      <li><a href="http://lesscss.org/#">LESS CSS preprocessor</a></li>
+      <li>Example: <a href="http://blog.karlstolley.com/">Stolley’s Tumblr</a> theme <a href="https://github.com/karlstolley/tumblrtheme">on GitHub</a> (shares same CSS with karlstolley.com)</li>
+    </ul>
   </div>
 
   <div class="project">
