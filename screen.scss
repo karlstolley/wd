@@ -1,0 +1,268 @@
+/* Reset */
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}
+
+// Variables
+
+/* Modular Scale http://www.modularscale.com/?19&px&1.25&web&text */
+
+$lineheight: 1.25em;
+$fontsize: 1.188em; /* 18px */
+
+/* Color Inspiration from http://www.colourlovers.com/palette/2991458/Bedroom */
+$forecolor: #333;
+$backcolor: #FCFBE3;
+$neutcolor: #CC5500;
+$acctcolor: #03C4C1;
+
+$neutgray: grayscale($neutcolor);
+$acctgray: grayscale($acctcolor);
+
+$serifam: "ff-tisa-web-pro", 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+$sansfam: "camingodos-web", Trebuchet, Verdana, Helvetica, sans-serif;
+
+/* Modular Scale: http://modularscale.com/scale/?px1=18&px2=24&ra1=1.25&ra2=0 */
+
+
+/* Base */
+html {
+  font-size: 100%;
+  background: $backcolor;
+  color: $forecolor;
+}
+body {
+  font-family: $sansfam;
+  font-size: $fontsize;
+  line-height: $lineheight;
+}
+dt,h1,h2,h3,h4 {
+  font-family: $sansfam;
+}
+h2 { color: $acctcolor; }
+i,em,cite { font-style: italic; }
+b,strong { font-weight: bold; }
+small {
+  font-size: $fontsize * 0.64;
+  font-weight: normal;
+}
+code {
+  font-family: Monaco, Courier, monospace;
+}
+a {
+  text-decoration: none;
+  color: $neutcolor;
+  &:link { }
+  &:visited {
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active {
+  }
+}
+h1 {
+  font-size: $fontsize * 1.25;
+}
+h2,h3,h4,h5,h6 {
+  font-weight: bold;
+}
+
+ol > li {
+  list-style-type: decimal;
+  margin-left: 1.953em;
+  margin-left: 1.3em;
+  padding-left: 0em;
+}
+ul > li {
+  list-style-type: square;
+  margin-left: 1.953em;
+  margin-left: 1.1em;
+  padding-left: .2em;
+}
+
+/* Layout */
+#page {
+}
+#content {
+  padding: $lineheight/2 0.64em;
+}
+#header,#footer {
+  padding: $lineheight 0.64em $lineheight/2 0.64em;
+}
+
+#header { padding-bottom: 0; }
+
+/* Module: Whole Page */
+
+.tagline,
+.fineprint {
+  color: $acctgray;
+  font-size: $fontsize * 0.8;
+  padding-top: ($lineheight/0.8)/2 /* 1.25 / .8 = 1.5625 */
+}
+
+.label {
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  padding: $lineheight 0em $lineheight/6 0em;
+  clear: both;
+  color: $neutgray;
+
+}
+
+.button {
+  clear: both;
+  display: none;
+  margin-bottom: $lineheight * 2;
+  color: $acctcolor;
+  font-weight: bold;
+  &:before {
+    content: "\00BB";
+    padding-right: .25em;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &.is-active {
+    color: $acctgray;
+  }
+}
+
+/* Module: Content Areas */
+.content,
+#calendar > ol,
+#policies ol {
+  > li {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+.content {
+  h3, h4 {
+    padding-top: $lineheight * .75;
+    padding-bottom: $lineheight * .25;
+  }
+  ul,ol,p {
+    margin-bottom: $lineheight/2;
+  }
+  li { margin-bottom: $lineheight * .25; }
+  dt { margin-bottom: $lineheight/2; }
+}
+
+#instructor li {
+
+}
+
+/* Module: Calendar */
+#calendar {
+  .button { margin-right: 0.64em; margin-top: $lineheight * .7; }
+  .content, h4 {
+    padding: 0;
+  }
+  ul,ol,li {
+    margin-bottom: 0;
+  }
+  h3,
+  .agenda,
+  .assigned {
+    padding: $lineheight/2 0;
+    margin-bottom: $lineheight/2;
+  }
+  .agenda {
+    margin-bottom: 0;
+  }
+  h3 {
+    margin-bottom: 0;
+    small {
+      display: block;
+    }
+  }
+  h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    small {
+      font-weight: normal;
+      font-size: 1em;
+      text-transform: none;
+    }
+  }
+  .agenda {
+    padding-top: 0;
+    h4 {
+      margin-bottom: $lineheight/2;
+    }
+  }
+  .assigned {
+    dt {
+      font-weight: bold;
+      margin-top: $lineheight/2;
+    }
+    dt:after {
+      content: ":";
+    }
+  }
+}
+
+#current-week .assigned {
+  padding: $lineheight/2 0.64em;
+  margin: 0 -0.64em $lineheight -0.64em;
+  background: transparentize($acctcolor, .8);
+}
+
+
+/* State */
+.hasjs {
+
+  .button { display: block; }
+
+  .label { cursor: pointer; }
+  .label.is-active,
+  .label:hover {
+
+  }
+
+  .extended { display: none; }
+  .content.is-visible {
+    .is-next, .extended { display: block; }
+  }
+  #show-calendar {
+    margin-bottom: $lineheight;
+  }
+
+}
+/* === Media Queries === */
+
+/* Tiny */
+
+/* Small */
+@media screen and (min-width: 37em) {
+  $fontsize: 1.2em;
+  body { font-size: $fontsize; }
+  #page {
+    padding: 10%;
+    max-width: 46em;
+  }
+  #header,#footer {
+    width: 50%;
+  }
+  #calendar h3 small { display: inline; }
+  .hasjs {
+    header .extended { display: inherit; }
+    .is-current, .is-next {
+      display: block;
+    }
+    .week { clear: both; }
+  }
+}
+/* Big */
+
+/* Massive */
