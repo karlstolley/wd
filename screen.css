@@ -94,6 +94,11 @@ a {
 
 h1 {
   font-size: 1.485em; }
+  h1 small {
+    display: block;
+    font-size: 0.60826em;
+    color: #666666;
+    padding-bottom: 0.9504em; }
 
 h2, h3, h4, h5, h6 {
   font-weight: bold; }
@@ -216,13 +221,6 @@ ul > li {
   cursor: pointer; }
 .hasjs .extended {
   display: none; }
-.hasjs #current-week .agenda {
-  color: #999;
-}
-.hasjs #current-week .agenda a {
-  color: inherit;
-  text-decoration: underline;
-}
 .hasjs .content.is-visible .is-next, .hasjs .content.is-visible .extended {
   display: block; }
 .hasjs #show-calendar {

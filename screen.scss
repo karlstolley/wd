@@ -67,6 +67,12 @@ a {
 }
 h1 {
   font-size: $fontsize * 1.25;
+  small {
+    display: block;
+    font-size: $fontsize / 1.25 * .64;
+    color: $neutgray;
+    padding-bottom: $fontsize / 1.25;
+  }
 }
 h2,h3,h4,h5,h6 {
   font-weight: bold;
