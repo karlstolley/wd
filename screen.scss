@@ -67,6 +67,7 @@ a {
 }
 h1 {
   font-size: $fontsize * 1.25;
+  line-height: ($lineheight * 1.5) / ($fontsize * 1.25);
   small {
     display: block;
     font-size: $fontsize / 1.25 * .64;

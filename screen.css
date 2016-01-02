@@ -93,7 +93,8 @@ a {
     text-decoration: underline; }
 
 h1 {
-  font-size: 1.485em; }
+  font-size: 1.485em;
+  line-height: 1.26263; }
   h1 small {
     display: block;
     font-size: 0.60826em;
