@@ -53,7 +53,8 @@ legend {
   color: #000; }
 
 /* Modular Scale http://www.modularscale.com/?19&px&1.25&web&text */
-/* 18px */
+/* 23.75 px */
+/* 19px */
 /* Color Inspiration from http://www.colourlovers.com/palette/2991458/Bedroom */
 /* Modular Scale: http://modularscale.com/scale/?px1=18&px2=24&ra1=1.25&ra2=0 */
 /* Base */
@@ -80,7 +81,8 @@ b, strong {
   font-weight: bold; }
 
 small {
-  font-size: 0.76032em;
+  font-size: .8em;
+  /* 15.2 px */
   font-weight: normal; }
 
 code {
@@ -93,13 +95,18 @@ a {
     text-decoration: underline; }
 
 h1 {
-  font-size: 1.485em;
-  line-height: 1.26263; }
+  font-size: 1.25em;
+  /* 23.75px */
+  line-height: 1; }
   h1 small {
     display: block;
-    font-size: 0.60826em;
+    font-size: .64em;
+    /* 15.2 px */
+    line-height: 1.5625em;
+    /* 23.75px */
     color: #666666;
-    padding-bottom: 0.9504em; }
+    padding-bottom: 1.5625em;
+    /* 23.75px */ }
 
 h2, h3, h4, h5, h6 {
   font-weight: bold; }
@@ -118,10 +125,12 @@ ul > li {
 
 /* Layout */
 #content {
-  padding: 0.625em 0.64em; }
+  padding: .625em 0.64em;
+  /* .625em = half a line-height (23.75px) at 19px em */ }
 
 #header, #footer {
-  padding: 1.25em 0.64em 0.625em 0.64em; }
+  padding: 1.25em 0.64em 0.625em 0.64em;
+  /* .625em = half a line-height (23.75px) at 19px em */ }
 
 #header {
   padding-bottom: 0; }
@@ -130,14 +139,17 @@ ul > li {
 .tagline,
 .fineprint {
   color: #646464;
-  font-size: 0.9504em;
+  font-size: .8em;
+  /* 15.2px */
+  line-height: 1.5625em;
   padding-top: 0.78125em; }
 
 .label {
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: .2em;
-  padding: 1.25em 0em 0.20833em 0em;
+  padding: 1.25em 0em 0.625em 0em;
+  /* .625em = half a line-height (23.75px) at 19px em */
   clear: both;
   color: #666666; }
 
@@ -149,7 +161,7 @@ ul > li {
   font-weight: bold; }
   .button:before {
     content: "\00BB";
-    padding-right: .25em; }
+    padding-right: .64em; }
     .button:before:hover {
       text-decoration: none; }
   .button.is-active {
@@ -164,54 +176,61 @@ ul > li {
   padding-left: 0; }
 
 .content h3, .content h4 {
-  padding-top: 0.9375em;
-  padding-bottom: 0.3125em; }
+  padding-top: .9375em;
+  /* 3/4 of a line-height at 19px */
+  padding-bottom: .3125em;
+  /* 1/4 of a line-height at 19px */ }
 .content ul, .content ol, .content p {
-  margin-bottom: 0.625em; }
+  margin-bottom: .625em; }
 .content li {
-  margin-bottom: 0.3125em; }
+  margin-bottom: .3125em; }
 .content dt {
-  margin-bottom: 0.625em; }
+  margin-bottom: .625em; }
 
 /* Module: Calendar */
-#calendar .button {
-  margin-right: 0.64em;
-  margin-top: 0.875em; }
-#calendar .content, #calendar h4 {
-  padding: 0; }
-#calendar ul, #calendar ol, #calendar li {
-  margin-bottom: 0; }
-#calendar h3,
-#calendar .agenda,
-#calendar .assigned {
-  padding: 0.625em 0;
-  margin-bottom: 0.625em; }
-#calendar .agenda {
-  margin-bottom: 0; }
-#calendar h3 {
-  margin-bottom: 0; }
-  #calendar h3 small {
-    display: block; }
-#calendar h4 {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.8em; }
-  #calendar h4 small {
-    font-weight: normal;
-    font-size: 1em;
-    text-transform: none; }
-#calendar .agenda {
-  padding-top: 0; }
-  #calendar .agenda h4 {
-    margin-bottom: 0.625em; }
-#calendar .assigned dt {
-  font-weight: bold;
-  margin-top: 0.625em; }
-#calendar .assigned dt:after {
-  content: ":"; }
+#calendar {
+  /* 3/4 of a line-height at 19px */ }
+  #calendar .button {
+    margin-right: 0.64em;
+    margin-top: .9375em; }
+  #calendar .content, #calendar h4 {
+    padding: 0; }
+  #calendar ul, #calendar ol, #calendar li {
+    margin-bottom: 0; }
+  #calendar h3,
+  #calendar .agenda,
+  #calendar .assigned {
+    padding: .625em 0;
+    margin-bottom: .625em; }
+  #calendar h3 {
+    margin-bottom: 0; }
+    #calendar h3 small {
+      display: block; }
+  #calendar h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    /* 15.2px */
+    line-height: 1.5625em;
+    /* 23.75px */ }
+    #calendar h4 small {
+      font-weight: normal;
+      font-size: 1em;
+      /* 15.2px */
+      text-transform: none; }
+  #calendar .agenda {
+    padding-top: 0; }
+    #calendar .agenda h4 {
+      margin-bottom: .78125em;
+      /* Half a line-height */ }
+  #calendar .assigned dt {
+    font-weight: bold;
+    margin-top: .625em; }
+  #calendar .assigned dt:after {
+    content: ":"; }
 
 #current-week .assigned {
-  padding: 0.625em 0.64em;
+  padding: .625em 0.64em;
   margin: 0 -0.64em 1.25em -0.64em;
   background: rgba(3, 196, 193, 0.2); }
 
@@ -231,8 +250,9 @@ ul > li {
 /* Tiny */
 /* Small */
 @media screen and (min-width: 37em) {
+  /* 23.75px; line-height becomes 29.688px */
   body {
-    font-size: 1.2em; }
+    font-size: 1.25em; }
 
   #page {
     padding: 10%;

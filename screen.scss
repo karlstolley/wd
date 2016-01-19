@@ -11,8 +11,8 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 
 /* Modular Scale http://www.modularscale.com/?19&px&1.25&web&text */
 
-$lineheight: 1.25em;
-$fontsize: 1.188em; /* 18px */
+$lineheight: 1.25em; /* 23.75 px */
+$fontsize: 1.188em; /* 19px */
 
 /* Color Inspiration from http://www.colourlovers.com/palette/2991458/Bedroom */
 $forecolor: #333;
@@ -47,7 +47,7 @@ h2 { color: $acctcolor; }
 i,em,cite { font-style: italic; }
 b,strong { font-weight: bold; }
 small {
-  font-size: $fontsize * 0.64;
+  font-size: .8em; /* 15.2 px */
   font-weight: normal;
 }
 code {
@@ -66,13 +66,14 @@ a {
   }
 }
 h1 {
-  font-size: $fontsize * 1.25;
-  line-height: ($lineheight * 1.5) / ($fontsize * 1.25);
+  font-size: 1.25em; /* 23.75px */
+  line-height: 1;
   small {
     display: block;
-    font-size: $fontsize / 1.25 * .64;
+    font-size: .64em; /* 15.2 px */
+    line-height: 1.5625em; /* 23.75px */
     color: $neutgray;
-    padding-bottom: $fontsize / 1.25;
+    padding-bottom: 1.5625em; /* 23.75px */
   }
 }
 h2,h3,h4,h5,h6 {
@@ -96,10 +97,10 @@ ul > li {
 #page {
 }
 #content {
-  padding: $lineheight/2 0.64em;
+  padding: .625em 0.64em; /* .625em = half a line-height (23.75px) at 19px em */
 }
 #header,#footer {
-  padding: $lineheight 0.64em $lineheight/2 0.64em;
+  padding: $lineheight 0.64em .625em 0.64em; /* .625em = half a line-height (23.75px) at 19px em */
 }
 
 #header { padding-bottom: 0; }
@@ -109,29 +110,29 @@ ul > li {
 .tagline,
 .fineprint {
   color: $acctgray;
-  font-size: $fontsize * 0.8;
-  padding-top: ($lineheight/0.8)/2 /* 1.25 / .8 = 1.5625 */
+  font-size: .8em; /* 15.2px */
+  line-height: 1.5625em;
+  padding-top: .78125em  /* half a line-height at 15.2px em */
 }
 
 .label {
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: .2em;
-  padding: $lineheight 0em $lineheight/6 0em;
+  padding: $lineheight 0em .625em 0em; /* .625em = half a line-height (23.75px) at 19px em */
   clear: both;
   color: $neutgray;
-
 }
 
 .button {
   clear: both;
   display: none;
-  margin-bottom: $lineheight * 2;
+  margin-bottom: 2.5em;
   color: $acctcolor;
   font-weight: bold;
   &:before {
     content: "\00BB";
-    padding-right: .25em;
+    padding-right: .64em;
     &:hover {
       text-decoration: none;
     }
@@ -154,14 +155,14 @@ ul > li {
 
 .content {
   h3, h4 {
-    padding-top: $lineheight * .75;
-    padding-bottom: $lineheight * .25;
+    padding-top: .9375em; /* 3/4 of a line-height at 19px */
+    padding-bottom: .3125em; /* 1/4 of a line-height at 19px */
   }
   ul,ol,p {
-    margin-bottom: $lineheight/2;
+    margin-bottom: .625em;
   }
-  li { margin-bottom: $lineheight * .25; }
-  dt { margin-bottom: $lineheight/2; }
+  li { margin-bottom: .3125em; }
+  dt { margin-bottom: .625em; }
 }
 
 #instructor li {
@@ -170,7 +171,7 @@ ul > li {
 
 /* Module: Calendar */
 #calendar {
-  .button { margin-right: 0.64em; margin-top: $lineheight * .7; }
+  .button { margin-right: 0.64em; margin-top: .9375em; } /* 3/4 of a line-height at 19px */
   .content, h4 {
     padding: 0;
   }
@@ -180,11 +181,10 @@ ul > li {
   h3,
   .agenda,
   .assigned {
-    padding: $lineheight/2 0;
-    margin-bottom: $lineheight/2;
+    padding: .625em 0;
+    margin-bottom: .625em;
   }
   .agenda {
-    margin-bottom: 0;
   }
   h3 {
     margin-bottom: 0;
@@ -195,23 +195,24 @@ ul > li {
   h4 {
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 0.8em;  /* 15.2px */
+    line-height: 1.5625em; /* 23.75px */
     small {
       font-weight: normal;
-      font-size: 1em;
+      font-size: 1em; /* 15.2px */
       text-transform: none;
     }
   }
   .agenda {
     padding-top: 0;
     h4 {
-      margin-bottom: $lineheight/2;
+      margin-bottom: .78125em; /* Half a line-height */
     }
   }
   .assigned {
     dt {
       font-weight: bold;
-      margin-top: $lineheight/2;
+      margin-top: .625em;
     }
     dt:after {
       content: ":";
@@ -220,7 +221,7 @@ ul > li {
 }
 
 #current-week .assigned {
-  padding: $lineheight/2 0.64em;
+  padding: .625em 0.64em;
   margin: 0 -0.64em $lineheight -0.64em;
   background: transparentize($acctcolor, .8);
 }
@@ -252,7 +253,7 @@ ul > li {
 
 /* Small */
 @media screen and (min-width: 37em) {
-  $fontsize: 1.2em;
+  $fontsize: 1.25em; /* 23.75px; line-height becomes 29.688px */
   body { font-size: $fontsize; }
   #page {
     padding: 10%;
