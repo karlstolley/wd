@@ -933,6 +933,7 @@
       // Go through each week to build the array of future weeks
       $('.week').each(function() {
           weekTime = new Date($(this).attr('data-expires'));
+          weekTime = Math.round(weekTime.getTime() / 1000);
           if ((weekTime - currentTime) > 0) {
             futureWeeks.push($(this));
           }
