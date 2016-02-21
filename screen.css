@@ -86,7 +86,8 @@ small {
   font-weight: normal; }
 
 code {
-  font-family: Monaco, Courier, monospace; }
+  font-family: Monaco, Courier, monospace;
+  font-size: .8em; }
 
 a {
   text-decoration: none;
