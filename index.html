@@ -331,7 +331,6 @@
                 </li>
                 <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries">Media Queries</a></li>
                 <li><a href="http://unmatchedstyle.com/news/working-with-media-queries-and-min-width.php">Working with media queries and min-width</a></li>
-                <li>Stolley, Chapter 20</li>
                 <li><a href="http://practicaltypography.com/">Butterick’s Practical Typography</a> (all)</li>
                 <li>
                   <a href="http://www.smashingmagazine.com/2014/09/29/balancing-line-length-font-size-responsive-web-design/">Balancing Line Length and Font Size in RWD</a>
@@ -353,24 +352,15 @@
         <h3>Spring Break NO CLASS <small>March 14, 2016</small></h3>
       </li>
       <li class="week" data-expires="2016-03-28T12:00:00">
-        <h3>Web Typography: <code>@font-face</code>, Hosted Solutions; Sustainability, Performance, and Progressive Enhancement: JavaScript &amp; jQuery <small>March 21, 2016</small></h3>
+        <h3>Web Typography: <code>@font-face</code>, Hosted Solutions <small>March 21, 2016</small></h3>
         <div class="agenda">
           <h4>Class Agenda</h4>
           <ol>
+            <li>Review calendar through end of the semester</li>
             <li>Web fonts, FOUT, and font-stacks</li>
+            <li>OpenType features and the limits of free fonts</li>
             <li>Progressively-enhanced approaches to Web fonts, including <a href="https://github.com/typekit/webfontloader">Web Font Loader</a> events</li>
             <li>Single-Page Presence Project Due</li>
-            <li>JavaScript and jQuery</li>
-            <li>The JavaScript console</li>
-            <li>Styling HTML5 form/interface elements</li>
-            <!--
-            <li>Working with accessible non-text media in HTML5:
-              <ul>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture"><code>picture</code> element</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source"><code>source</code> element</a></li>
-                <li>More at <a href="https://responsiveimages.org/">Responsive Images Community Group</a></li>
-              </ul>
-            </li>
-            -->
           </ol>
         </div>
         <div class="assigned">
@@ -379,7 +369,7 @@
             <dt>To Read</dt>
             <dd>
               <ol>
-                <li>Stolley, chapters 19, 21</li>
+                <li>Stolley, chapters 20</li>
                 <li>Haverbeke, <a href="http://eloquentjavascript.net/">Eloquent JavaScript</a>, 12-14, 18</li>
                 <li>Keith, chapter 4 (Web Forms 2.0) of <a href="http://html5forwebdesigners.com">HTML5 for Web Designers</a></li>
                 <li>MDN Guide to <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms">HTML Forms</a>, articles 1-4 (through all of the styling sections)</li>
@@ -402,13 +392,14 @@
         </div>
       </li>
       <li class="week" data-expires="2016-04-04T12:00:00">
-        <h3>Preprocessors: HAML, LESS, and Others <small>March 28, 2016</small></h3>
+        <h3>Site Architecture; Optimization: Minification, Lint Tools <small>March 28, 2016</small></h3>
         <div class="agenda">
           <h4>Class Agenda</h4>
           <ol>
-            <li><a href="https://github.com/karlstolley/wd/wiki/HAML-and-LESS-Lab-Workaround">Necessary computer setup</a>
-            <li><a href="https://github.com/netzpirat/haml-coffee">HAML HTML preprocessor</a> for Node (<a href="http://haml.info/docs/yardoc/file.REFERENCE.html#html_elements">HAML HTML elements reference</a>)</li>
-            <li><a href="http://lesscss.org/#">LESS CSS preprocessor</a></li>
+            <li>Developing and adhering to a solid site architecture</li>
+            <li>Working with performance tools like <a href="https://developers.google.com/speed/pagespeed/">Google PageSpeed</a></li>
+            <li>Lint tools: <a href="http://www.html-tidy.org">HTML Tidy (CLI)</a>, <a href="https://github.com/CSSLint/csslint/wiki/Command-line-interface">CSS Lint (CLI)</a>, <a href="http://jshint.com">JSHint (CLI)</a></li>
+            <li><a href="http://coderaiser.github.io/minify/">minify</a>, a simple minification tool built on Node.js</li>
           </ol>
         </div>
         <div class="assigned">
@@ -417,13 +408,15 @@
             <dt>To Read</dt>
             <dd>
               <ol>
-                <li>...</li>
+                <li>Stolley, Chapters 22 &amp; 25</li>
+                <li>Haverbeke, <a href="http://eloquentjavascript.net/">Eloquent JavaScript</a>, Introduction and chapters 1-6 (assigned again, if by some strange chance you didn’t read it over spring break)</li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture"><code>picture</code> element</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source"><code>source</code> element</a></li>
+<li>More at <a href="https://responsiveimages.org/">Responsive Images Community Group</a></li>
               </ol>
             </dd>
             <dt>To Do</dt>
             <dd>
               <ol>
-                <li>Set up HAML &amp; Less on your computer by running <code>$ npm install -g coffee-script haml-coffee less</code> in your terminal</li>
                 <li>Continue work on Expanded Web Presence project</li>
               </ol>
             </dd>
@@ -431,16 +424,24 @@
         </div>
       </li>
       <li class="week" data-expires="2016-04-11T12:00:00">
-      <h3>Review &amp; Work Session <small>April 4, 2016</small></h3>
+      <h3>Sustainability, Performance, and Progressive Enhancement: JavaScript &amp; jQuery; Revisiting picture elements <small>April 4, 2016</small></h3>
         <div class="agenda">
           <h4>Class Agenda</h4>
           <ol>
-            <li>Q&amp;A and open work-time</li>
+            <li>JavaScript and jQuery</li>
+            <li>The JavaScript console</li>
           </ol>
         </div>
         <div class="assigned">
           <h4>Assigned Work</h4>
           <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Stolley, Chapters 9 &amp; 13</li>
+                <li>Haverbeke, <a href="http://eloquentjavascript.net/">Eloquent JavaScript</a>, Introduction and chapters 12-14</li>
+              </ol>
+            </dd>
             <dt>To Do</dt>
             <dd>
               <ol>
@@ -451,23 +452,31 @@
         </div>
       </li>
       <li class="week" data-expires="2016-04-18T12:00:00">
-      <h3>Optimization: Minification, Async; Reducing Server Requests <small>April 11, 2016</small></h3>
+      <h3>Preprocessors: HAML, LESS, and Others<small>April 11, 2016</small></h3>
         <div class="agenda">
           <h4>Class Agenda</h4>
           <ol>
             <li>Expanded Web Presence project due; presentations</li>
             <li>Introduce <a href="#tumblr-theme">Tumblr theme project</a></li>
             <li>Introduce <a href="#pull-request">Pull request project</a> (COM530 only)</li>
-            <li>Working with performance tools like <a href="https://developers.google.com/speed/pagespeed/">Google PageSpeed</a></li>
-            <li><a href="http://coderaiser.github.io/minify/">minify</a>, a simple minification tool built on Node.js</li>
+            <li><a href="https://github.com/karlstolley/wd/wiki/HAML-and-LESS-Lab-Workaround">Necessary computer setup</a></li>
+            <li><a href="https://github.com/netzpirat/haml-coffee">HAML HTML preprocessor</a> for Node (<a href="http://haml.info/docs/yardoc/file.REFERENCE.html#html_elements">HAML HTML elements reference</a>)</li>
+            <li><a href="http://lesscss.org/#">LESS CSS preprocessor</a></li>
           </ol>
         </div>
         <div class="assigned">
           <h4>Assigned Work</h4>
           <dl>
+            <dt>To Read</dt>
+            <dd>
+              <ol>
+                <li>Stolley, Chapters 23 &amp; 24; 19?</li>
+              </ol>
+            </dd>
             <dt>To Do</dt>
             <dd>
               <ol>
+                <li>Set up HAML &amp; Less on your computer by running <code>$ npm install -g coffee-script haml-coffee less</code> in your terminal</li>
                 <li>Work on remaining projects</li>
               </ol>
             </dd>
@@ -646,7 +655,6 @@
           reflect each set of changes that you make
         </li>
         <li>GitHub repository must contain <b>only</b> the files and commits from this project</li>
-      </ul>
       </ul>
       <h3 id="tumblr-theme">Tumblr Theme (<b>Due May 4, 11:59pm</b>)</h3>
       <p>
