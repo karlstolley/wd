@@ -1,0 +1,16 @@
+{
+    // names of npm modules to load into htmllint
+    "plugins": [],
+
+    // TODO: export htmllint"s default cfg
+    "indent-style": "spaces",  // use spaces to indent
+    "indent-width": 2, // use two spaces, to be precise
+    "attr-name-style": "dash", // allow hyphens/dashes in attributes, e.g., for data- attributes
+    "id-class-style": "dash", // allow hyphens/dashes in attribute values, e.g., week-one,
+    "attr-bans": ["align", "background", "bgcolor", "border", "frameborder", "longdesc", "marginwidth", "marginheight", "scrolling", "style", "width", "onload", "onclick"], // ban deprecated/obsolete attributes
+    "tag-name-lowercase": true, // only lowercase for tag names
+    "tag-name-match": true, // tag names must match, in both name and case
+    "tag-close": true, // tags that open must close
+    "tag-self-close": true, // tags like <meta> must self-close: <meta />
+    "tag-bans": ["style", "iframe"] // no on-pages styles (for now), no iframes
+}
