@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en" id="calendar">
+<head>
+  <meta charset="utf-8" />
+  <title>COM 330/530: Standards-Based Web Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <link rel="stylesheet" href="screen.css" media="screen" />
+  <script src="https://use.typekit.net/zol5yjt.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+<body>
+<div id="page">
+  <header id="header">
+    <h1><small>COM 330/530</small> Standards-Based Web Design</h1>
+    <p class="tagline">
+      Theory and applied practice of mobile-first, responsive web design according to current open
+      standards. Taught by <a href="#instructor">Professor Karl Stolley</a>, Fall 2017.
+    </p>
+    <nav id="navigation">
+      <ul class="nav">
+        <li id="nav-cal"><a href="#content">Calendar</a></li>
+        <li id="nav-pro"><a href="projects/">Projects</a></li>
+        <li id="nav-pol"><a href="policies/">Policies</a></li>
+        <li id="nav-lnk"><a href="#links">Links</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main id="content">
+  <article class="primary">
+    <h2 class="label">Course Calendar</h2>
+    <p><a href="https://github.com/profstolley/itmd-361-demos">All code written in class</a> available on GitHub.</p>
+    <ol class="calendar-weeks">
+      <li class="week" data-expires="2017-08-29T17:00:00-05:00">
+        <article id="week-01">
+          <h3>Git; HTML History, Syntax &amp; Fundamentals <small>Week&nbsp;One</small></h3>
+          <section class="agenda">
+            <ol>
+              <li class="meeting">
+                <h4>Tuesday, August 22</h4>
+                <ol>
+                  <li>Welcome &amp; introductions</li>
+                  <li>Course policies &amp; calendar</li>
+                  <li>Course technologies</li>
+                  <li>Web-standards history and theory</li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+          <section class="assigned">
+            <h3>Assigned Work</h3>
+            <ul>
+              <li>
+                <h4>To Read</h4>
+                <ol>
+                  <li>Stolley, <i>How to Design and Write Web Pages</i>, 2nd ed. Chapters 1–5</li>
+                  <li>David Heinemeier Hansson, <a href="https://signalvnoise.com/posts/3727-finding-your-workbench-muse">Finding your workbench muse</a></li>
+                </ol>
+              </li>
+              <li>
+                <h4>To Do</h4>
+                <ol>
+                  <li>Submit COM 330/530 Contract and Survey (link in your @hawk.iit.edu inbox)</li>
+                  <li>Create Basecamp account (invite will arrive after you submit the Contract and Survey)</li>
+                  <li>Sign up for a <a href="https://github.com/">GitHub account</a></li>
+                  <li>
+                    Computer setup (Firefox Developer Edition, Atom.io, Node.js, Git);
+                    follow <a href="https://gist.github.com/karlstolley/810e9cb69727ff20c3cf56ac33734b79">these instructions</a>
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </li>
+      <li class="week" data-expires="2017-09-05T17:00:00-05:00">
+        <article id="week-02">
+          <h3>Essential Languages: XHTML/HTML5, CSS, JavaScript; Version Control <small>Week&nbsp;Two</small></h3>
+          <section class="agenda">
+            <ol>
+              <li class="meeting">
+                <h4>Tuesday, August 29</h4>
+                <ol>
+                  <li>Reading discussion and Q&amp;A</li>
+                  <li>Introduce <a href="projects/#project-one">first project</a></li>
+                  <li>Working with the command-line interface (CLI)</li>
+                  <li>Working with plain text and version control (Git)</li>
+                  <li>Hands-on with XHTML/HTML5, CSS, and JavaScript</li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+          <section class="assigned">
+            <h3>Assigned Work</h3>
+            <ul>
+              <li>
+                <h4>To Read</h4>
+                <ol>
+                  <li>Stolley, Chapters 6, 10–13</li>
+                  <li>
+                      Swicegood, <i>Pragmatic Version Control Using Git</i>, Chapters 1–6 (skip the
+                      Installing Git section of Chapter 2; use
+                      <a href="https://gist.github.com/karlstolley/810e9cb69727ff20c3cf56ac33734b79">these instructions</a>
+                      instead, if you’ve not yet installed Git)
+                  <li>
+                    Get familiar with the contents and organization of <a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network’s (MDN)</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web">Web technology for developers</a>
+                  </li>
+                  <li>
+                    Web Standards Project,
+                    “<a href="http://www.webstandards.org/about/history/">History</a>”
+                  </li>
+                  <li>
+                    Video (40 mins): <a href="http://vimeo.com/104641191">Jeffrey Zeldman: 20 Years of Web Design and Community</a>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <h4>To Do</h4>
+                <ol>
+                  <li>Begin plain-text and Git work on first project</li>
+                  <li>Use your editor and Git for as much writing as possible (emails, to-do lists, etc. etc.)</li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </li>
+      <li class="week" data-expires="2017-09-12T17:00:00-05:00">
+        <article id="week-03">
+          <h3>Foundational Techniques: Semantic Structure; Mobile First; Typographic Scales <small>Week&nbsp;Three</small></h3>
+          <section class="agenda">
+            <ol>
+              <li class="meeting">
+                <h4>Tuesday, September 5</h4>
+                <ol>
+                  <li>Reading discussion and Q&amp;A</li>
+                  <li>Walk through a web project setup</li>
+                  <li>Theory and hands-on with three foundational techniques (and lots of <a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network, MDN, documentation</a>):
+                    <ul>
+                      <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list">Semantic HTML5 elements</a></li>
+                      <li>Eric Meyer’s <a href="http://meyerweb.com/eric/tools/css/reset/">Reset CSS</a></li>
+                      <li>MFRWD: <a href="https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag">viewport meta element</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries">media queries</a></li>
+                      <li>
+                        Apple docs on setting <a href="https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html#//apple_ref/doc/uid/TP40006509-SW26">the viewport</a>,
+                        including for <a href="https://developer.apple.com/library/prerelease/content/releasenotes/General/WhatsNewInSafari/Articles/Safari_9_0.html#//apple_ref/doc/uid/TP40014305-CH9-SW36">Safari 9.0 and later</a> on iOS
+                      </li>
+                      <li>
+                         Typographic scales: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust">text-size-adjust</a>;
+                        <a href="http://modularscale.com/">modular scale generation</a>; and relative
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">sizing</a>
+                        in <a href="http://dev.w3.org/csswg/css-values/#relative-lengths">em and rem</a>
+                        units
+                      </li>
+                    </ul>
+                  </li>
+                  <li>Overview of <a href="http://smacss.com">SMACSS</a> for organizing stylesheets</li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+          <section class="assigned">
+            <h3>Assigned Work</h3>
+            <ul>
+              <li>
+                <h4>To Read</h4>
+                <ol>
+                  <li>Stolley, Chapters 14–17</li>
+                  <li>Lupton, ed., <i>Type on Screen</i>, Chapters 01 &amp; 02</li>
+                  <li>Wilson Miner, “<a href="http://alistapart.com/article/settingtypeontheweb">Setting Type on the Web to a Baseline Grid</a>”</li>
+                  <li>Richard Rutter, “<a href="http://24ways.org/2006/compose-to-a-vertical-rhythm/">Compose to a Vertical Rhythm</a>”</li>
+                </ol>
+              </li>
+              <li>
+                <h4>To Do</h4>
+                <ol>
+                  <li>Push draft of project to GitHub</li>
+                  <li>Post to Basecamp with your project’s GitHub link</li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </li>
+      <li class="week" data-expires="2017-09-19T17:00:00-05:00">
+        <article id="week-04">
+          <h3>Accessibility: General Principles, Touchscreens <small>Week&nbsp;Four</small></h3>
+          <section class="agenda">
+            <ol>
+              <li class="meeting">
+                <h4>Tuesday, September 12</h4>
+                <ol>
+                  <li>Reading discussion and Q&amp;A</li>
+                  <li>Accessibility: General principles, touchscreens</li>
+                  <li>Working with accessible image media in HTML5:
+                    <ul>
+                      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"><code>img</code></a> and web-friendly image formats</li>
+                      <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure"><code>figure</code></a>
+                        and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption"><code>figcaption</code></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+          <section class="assigned">
+            <h3>Assigned Work</h3>
+            <ul>
+              <li>
+                <h4>To Read</h4>
+                <ol>
+                  <li>Stolley, Chapter 7</li>
+                  <li>Keith, Chapter 3 of <a href="http://html5forwebdesigners.com">HTML5 for Web Designers</a></li>
+                  <li>Clarissa Peterson, “<a href="http://www.clarissapeterson.com/2012/11/html5-accessibility/">Accessibility in HTML5</a>”</li>
+                  <li>W3C, “<a href="http://w3c.github.io/aria-in-html/">Using WAI-ARIA in HTML</a>” (Introduction; first thru fifth rules of Aria use; browse remainder)</li>
+                  <li>
+                    Stolley, Image Accessibility: <a href="http://www.digitalrhetoriccollaborative.org/2016/06/15/image-accessibility-part-i-beyond-alt-attributes/">Part I: Beyond alt Attributes</a>,
+                    <a href="http://www.digitalrhetoriccollaborative.org/2016/06/21/image-accessibility-part-ii-beyond-src-attributes/">Part II: Beyond src Attributes</a>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <h4>To Do</h4>
+                <ol>
+                  <li>
+                    Review <a href="projects/#project-one">Project One</a> description,
+                    requirements, and deliverables
+                  </li>
+                  <li>
+                    Project due by 11:59pm CT, Wednesday, September 20
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </li>
+      <li class="week" data-expires="2017-09-26T17:00:00-05:00">
+        <article id="week-05">
+          <h3>Project Presentations; Responsive Page-Layout Techniques <small>Week&nbsp;Five</small></h3>
+          <section class="agenda">
+            <ol>
+              <li class="meeting">
+                <h4>Tuesday, September 19</h4>
+                <ol>
+                  <li>Project presentations</li>
+                  <li>Reading discussion and Q&amp;A</li>
+                  <li>Introduce <a href="projects/#project-two">second project</a></li>
+                  <li>Media queries and responsive layout techniques</li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+          <section class="assigned">
+            <h3>Assigned Work</h3>
+            <ul>
+              <li>
+                <h4>To Read</h4>
+                <ol>
+                  <li>Stolley, Chapter 18  &amp; 19</li>
+                  <li>Mark Boulton, “<a href="http://www.markboulton.co.uk/journal/five-simple-steps-to-designing-grid-systems-part-1">Five Simple Steps to Designing Grid Systems</a>” (<a href="http://www.markboulton.co.uk/journal/five-simple-steps-to-designing-grid-systems-part-1">Part 1</a>, <a href="http://www.markboulton.co.uk/journal/five-simple-steps-to-designing-grid-systems-part-2">Part 2</a>, <a href="http://www.markboulton.co.uk/journal/five-simple-steps-to-designing-grid-systems-part-3">Part 3</a>, <a href="http://www.markboulton.co.uk/journal/five-simple-steps-to-designing-grid-systems-part-4">Part 4</a>, <a href="http://www.markboulton.co.uk/journal/five-simple-steps-to-designing-grid-systems-part-5">Part 5</a>)</li>
+                  <li>Nick Salloum, “<a href="http://www.sitepoint.com/easy-responsive-css-grid-layouts/">Easy Responsive CSS Grid Layouts: 4 Methods</a>”</li>
+                  <li>Inspiration: Typography (not all of it Web) on <a href="http://theinspirationgrid.com/category/typography/">Inspiration Grid</a></li>
+                </ol>
+              </li>
+              <li>
+                <h4>To Do</h4>
+                <ol>
+                  <li>
+                    Start a new GitHub repository and begin working on copy and media elements for
+                    project two
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </li>
+      <li class="week" data-expires="2017-10-03T17:00:00-05:00">
+        <article id="week-06">
+          <h3>CSS: Typography <small>Week&nbsp;Six</small></h3>
+          <section class="agenda">
+            <ol>
+              <li class="meeting">
+                <h4>Tuesday, September 26</h4>
+                <ol>
+                  <li>Introduce <a href="projects/#project-two">Project 2</a></li>
+                  <li>
+                    CSS style &amp; <a href="https://github.com/stylelint/stylelint/blob/master/docs/user-guide/cli.md">linting</a>;
+                    <a href="https://gist.github.com/profstolley/559aac5112928c7c24c628c6305b70b8#file-stylelintrc">ITMD 361 style</a>
+                  </li>
+                  <li>Typographic/modular scales</li>
+                  <li>Setting text on a baseline grids</li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+          <section class="assigned">
+            <h3>Assigned Work</h3>
+            <ul>
+              <li>
+                <h4>To Read</h4>
+                <ol>
+                  <li><i>On Web Typography</i>, Introduction; Chapters 1-3</li>
+                  <li><a href="http://www.fonts.com/content/learning/fontology/level-1/type-anatomy">Type anatomy and classifications</a></li>
+                  <li><a href="http://www.modularscale.com">ModularScale.com</a></li>
+                  <li>
+                    Rutter, “<a href="https://24ways.org/2006/compose-to-a-vertical-rhythm">Compose to a Vertical Rhythm</a>”
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <h4>To Do</h4>
+                <ol>
+                  <li>
+                    Production Problem 03: Relative Units in CSS &amp; Production Problem 04:
+                    Typographic Scales
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </li>
+      <li class="week" data-expires="2017-10-10T17:00:00-05:00">
+        <article id="week-07">
+          <h3>CSS: Page Layout (Fluid Grids), Responsive/Flexible Media <small>Week&nbsp;Seven</small></h3>
+          <section class="agenda">
+            <ol>
+              <li class="meeting">
+                <h4>Tuesday, October 3</h4>
+                <ol>
+                  <li>Page layout with <code>position</code> and <code>float</code></li>
+                  <li>Building responsive fluid grids at media-query breakpoints</li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+          <section class="assigned">
+            <h3>Assigned Work</h3>
+            <ul>
+              <li>
+                <h4>To Read</h4>
+                <ol>
+                  <li><i>Responsive Web Design 2nd ed.</i>, Chapters 2, 5</li>
+                </ol>
+              </li>
+              <li>
+                <h4>To Do</h4>
+                <ol>
+                  <li>Post video and draft of Project Two to Basecamp</li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </li>
+      <li class="week" data-expires="2017-10-17T17:00:00-05:00">
+        <article id="week-08">
+          <h3>Transition Week <small>Week&nbsp;Eight</small></h3>
+          <section class="agenda">
+            <ol>
+              <li class="meeting">
+                <h4>Tuesday, October 10</h4>
+                <ol>
+                  <li>Catch-up, review, open-ended Q&amp;A</li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+          <section class="assigned">
+            <h3>Assigned Work</h3>
+            <ul>
+              <li>
+                <h4>To Read</h4>
+                <ol>
+                  <li><i>Eloquent JavaScript 2nd ed.</i>, Introduction; Chapters 1-2</li>
+                  <li>Chris Coyier, <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a></li>
+                  <li>MDN, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">Using CSS Flexible Boxes</a> (browse property list in the subnav)</li>
+                </ol>
+              </li>
+              <li>
+                <h4>To Do</h4>
+                <ol>
+                  <li>Respond to at least three other student project drafts</li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </li>
+      <li class="week" data-expires="2017-10-24T17:00:00-05:00">
+        <article id="week-09">
+          <h3>CSS with Feature Detection; JavaScript: Syntax, Fundamentals, Data Structures <small>Week&nbsp;Nine</small></h3>
+          <section class="agenda">
+            <ol>
+              <li class="meeting">
+                <h4>Tuesday, October 17</h4>
+                <ol>
+                  <li>Responsive images</li>
+                  <li>
+                    Feature detection and <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">flexbox</a>
+                  </li>
+                  <li>
+                    Node utility: <a href="https://github.com/postcss/postcss">postcss</a> with
+                    <a href="https://github.com/postcss/autoprefixer#cli">autoprefixer</a> CLI
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+          <section class="assigned">
+            <h3>Assigned Work</h3>
+            <ul>
+              <li>
+                <h4>To Read</h4>
+                <ol>
+                  <li><i>Eloquent JavaScript 2nd ed.</i>, Chapters 3-4</li>
+                  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">MDN JavaScript Reference</a></li>
+                  <li>Brown, <a href="https://www.sitepoint.com/why-use-javascript-style-guide/">Why I Use a JavaScript Style Guide and Why You Should Too</a>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <h4>To Do</h4>
+                <ol>
+                  <li>Play <a href="http://flexboxfroggy.com">Flexbox Froggy</a></li>
+                  <li>
+                    Production Problem 05: The JavaScript Console &amp; Production Problem 06:
+                    CSS Flexbox
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </li>
+      <li class="week" data-expires="2017-10-31T17:00:00-05:00">
+        <article id="week-10">
+          <h3>JavaScript: Functional and Object-Oriented Programming Styles  <small>Week&nbsp;Ten</small></h3>
+          <section class="agenda">
+            <ol>
+              <li class="meeting">
+                <h4>Tuesday, October 24</h4>
+                <ol>
+                  <li><a href="http://jshint.com">JSHint (Web)</a></li>
+                  <li>Functional programming style in JavaScript</li>
+                  <li>
+                    Single-responsibility principle and pure functions in functional
+                    programming
+                  </li>
+                  <li>Using functions to control variable scope</li>
+                  <li>Self-invoking functions to protect the global namespace</li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+          <section class="assigned">
+            <h3>Assigned Work</h3>
+            <ul>
+              <li>
+                <h4>To Read</h4>
+                <ol>
+                  <li><i>Eloquent JavaScript 2nd ed.</i>, Chapters 5-6, 8-10</li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </li>
+      <li class="week" data-expires="2017-11-07T17:00:00-06:00">
+        <article id="week-11">
+          <h3>DOM Scripting: JavaScript + the Document Object Model; jQuery/Shoestring <small>Week&nbsp;Eleven</small></h3>
+          <section class="agenda">
+            <ol>
+              <li class="meeting">
+                <h4>Tuesday, October 31</h4>
+                <ol>
+                  <li>Remote meeting</li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+          <section class="assigned">
+            <h3>Assigned Work</h3>
+            <ul>
+              <li>
+                <h4>To Read</h4>
+                <ol>
+                  <li><i>Eloquent JavaScript 2nd ed.</i>, Chapters 12-14, 17-18</li>
+                  <li><i>HTML5 for Web Designers, 2nd ed.</i>, Chapter 4</li>
+                </ol>
+              </li>
+              <li>
+                <h4>To Do</h4>
+                <ol>
+                  <li>
+                    Production Problem 07: JavaScript Variable Scope,
+                    Production Problem 08: jQuery and the Global Namespace
+                  </li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </li>
+      <li class="week" data-expires="2017-11-14T17:00:00-06:00">
+        <article id="week-12">
+          <h3>Unobtrusive JavaScript &amp; Progressive Enhancement <small>Week&nbsp;Twelve</small></h3>
+          <section class="agenda">
+            <ol>
+              <li class="meeting">
+                <h4>Tuesday, November 7</h4>
+                <ol>
+                  <li>Unobtrusive JavaScript with event listeners</li>
+                  <li>Progressive enhancement: resizing text content</li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+          <section class="assigned">
+            <h3>Assigned Work</h3>
+            <ul>
+              <li>
+                <h4>To Read</h4>
+                <ol>
+                  <li>
+                    Gustafson, <a href="http://alistapart.com/article/understandingprogressiveenhancement">Understanding Progressive Enhancement</a>
+                  </li>
+                  <li>
+                    Six Revisions, <a href="http://sixrevisions.com/web-development/progressive-enhancement/">Progressive Enhancement 101</a>
+                  </li>
+                  <li>
+                    W3C, <a href="https://www.w3.org/wiki/The_principles_of_unobtrusive_JavaScript">The Principles of Unobtrusive JavaScript</a>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <h4>To Do</h4>
+                <ol>
+                  <li>(If not yet done): Production Problem 07: JavaScript Variable Scope,
+                    Production Problem 08: jQuery and the Global Namespace</li>
+                  <li>Production Problem 09: GitHub Pull Requests</li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </li>
+      <li class="week" data-expires="2017-11-21T17:00:00-06:00">
+        <article id="week-13">
+          <h3>JavaScript: Non-Blocking Asynchronous Patterns, Page Performance <small>Week&nbsp;Thirteen</small></h3>
+          <section class="agenda">
+            <ol>
+              <li class="meeting">
+                <h4>Tuesday, November 14</h4>
+                <ol>
+                  <li>
+                    PP 09 issues/collaborating on GitHub with
+                    <a href="https://help.github.com/articles/creating-a-new-organization-account/">GitHub Organizations</a></li>
+                  <li>Loading external assets and data asynchronously</li>
+                  <li>HTML forms and form elements</li>
+                  <li>Project Two due by 11:59pm CT</li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+          <section class="assigned">
+            <h3>Assigned Work</h3>
+            <ul>
+              <li>
+                <h4>To Read</h4>
+                <ol>
+                  <li><i>Eloquent JavaScript 2nd ed.</i>, Chapter 22</li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </li>
+      <li class="week" data-expires="2017-11-28T17:00:00-06:00">
+        <article id="week-14">
+          <h3>Work Week <small>Week&nbsp;Fourteen</small></h3>
+          <section class="agenda">
+            <ol>
+              <li class="meeting">
+                <h4>Tuesday, November 21</h4>
+                <ol>
+                  <li>Remote meeting: Open-ended Q&amp;A</li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+          <section class="assigned">
+            <h3>Assigned Work</h3>
+            <ul>
+              <li>
+                <h4>To Do</h4>
+                <ol>
+                  <li>Work on final project and presentation</li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </li>
+      <li class="week" data-expires="2017-12-13T17:00:00-06:00">
+        <article id="week-15">
+          <h3>Final Project Presentations <small>Week&nbsp;Fifteen</small></h3>
+          <section class="agenda">
+            <ol>
+              <li class="meeting">
+                <h4>Tuesday, November 28</h4>
+                <ol>
+                  <li>Project presentations</li>
+                </ol>
+              </li>
+            </ol>
+          </section>
+          <section class="assigned">
+            <h3>Assigned Work</h3>
+            <ul>
+              <li>
+                <h4>To Do</h4>
+                <ol>
+                  <li>Finish Final Project; Due December 4, 11:59pm</li>
+                </ol>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </li>
+    </ol>
+  </article>
+</main>
+
+  <aside id="links">
+    <h3>Important Links</h3>
+    <div class="link-group">
+      <section id="course-resources">
+        <h4>Course Resources</h4>
+        <ul>
+          <li><a href="https://3.basecamp.com/3058761/projects/1229178">Basecamp</a> (<a href="https://basecamp.com/help/3/guides/apps">apps</a>)</li>
+          <li><a href="https://github.com/profstolley/itmd-361-demos">Class Demos Repo</a></li>
+        </ul>
+      </section>
+      <section id="essential-tools">
+        <h4>Essential Tools</h4>
+        <ul>
+          <li><a href="https://validator.w3.org/">HTML Validator</a> (W3.org)</li>
+          <li><a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a> (W3.org)</li>
+          <li><a href="http://jshint.com/">JSHint</a> (Web)</li>
+          <li><a href="http://eslint.org/">ESLint</a> (CLI); <a href="https://gist.github.com/profstolley/559aac5112928c7c24c628c6305b70b8#file-eslintrc-json">ITMD 361-style .eslintrc.json</a></li>
+          <li><a href="https://github.com/htmllint/htmllint-cli">htmllint</a>; <a href="https://gist.github.com/profstolley/559aac5112928c7c24c628c6305b70b8">ITMD 361-style .htmllintrc</a></li>
+          <li>CSS <a href="https://github.com/stylelint/stylelint/blob/master/docs/user-guide/cli.md">stylelint</a>; <a href="https://gist.github.com/profstolley/559aac5112928c7c24c628c6305b70b8#file-stylelintrc">ITMD 361-style .stylelintrc</a></li>
+          <li><a href="http://meyerweb.com/eric/tools/css/reset/reset.css">Eric Meyer Reset CSS</a>; <a href="https://gist.github.com/profstolley/b1f851e061f98fcbc0e41d39adc32847#file-_reset-min-css">Modified, Minified 361 Reset</a></li>
+        </ul>
+      </section>
+      <section id="essential-references">
+      <h4>Essential References</h4>
+        <ul>
+          <li id="mdn"><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a> (MDN)
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">HTML Reference</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Reference</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript Reference</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference/API">Web APIs/DOM</a></li>
+            </ul>
+          </li>
+          <li id="technical-specifications">Technical Specifications
+            <ul>
+              <li><a href="http://www.w3.org/TR/html5/">HTML5</a> (W3C)</li>
+              <li><a href="https://developers.whatwg.org">HTML: The Living Standard</a> (WHATWG)</li>
+              <li><a href="http://www.w3.org/Style/CSS/Overview.en.html">CSS</a> (W3C)</li>
+              <li><a href="http://www.ecma-international.org/ecma-262/7.0/index.html">ECMAScript 2016</a> (Ecma)</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </aside>
+
+  <aside id="instructor" class="assigned">
+    <h3>Instructor</h3>
+    <ul>
+      <li>
+          <a href="https://karlstolley.com/">Dr. Karl Stolley</a>,
+          Associate Professor of Digital Writing &amp; Rhetoric
+      </li>
+      <li><a href="mailto:karl.stolley@gmail.com">karl.stolley@gmail.com</a></li>
+      <li><a href="https://twitter.com/karlstolley">@karlstolley</a> on Twitter</li>
+      <li>karl.stolley on GChat &amp; Skype</li>
+      <li id="office-hours">
+        <b>Office hours via GChat/Skype on Tuesdays, 2pm to 3pm</b>, or by
+        appointment or chance. I’m always signed into GChat, and closely monitor my Pings on
+        Basecamp. Message me any time—I always make students a priority.
+      </li>
+    </ul>
+  </aside>
+
+  <footer id="footer">
+    <p class="fineprint">
+      Course syllabus &amp; site design by <a href="https://karlstolley.com/">Karl Stolley</a>.
+      Syllabus licensed under
+      <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons</a>.
+      <a href="https://github.com/karlstolley/fwd">Source hosted on GitHub</a>. Big thanks to
+      <a href="https://basecamp.com">Basecamp</a> and
+      <a href="https://www.browserstack.com">BrowserStack</a> for donating resources to further
+      the educational goals of this class.
+    </p>
+  </footer>
+<!--#page-->
+</div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>
