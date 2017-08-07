@@ -1,0 +1,475 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable */
+/* Keep reset CSS to one minified line */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Custom Site Styles */
+
+/*
+  Use the text-size-adjust property
+  to prevent automatically inflating
+  text on orientation changes
+  (portrait to landscape on a phone,
+  for example):
+*/
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ie-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* HTML5 Elements as Blocks; Cribbed from HTML5 Boilerplate */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* ========== Base Styles ========== */
+
+/*
+  Using 19px/1.333 modular scale
+  http://www.modularscale.com/?19&px&1.333&web&text
+*/
+
+/*
+  Fall color palette, taken from
+  http://duoparadigms.com/2013/10/11/10-color-palettes-perfect-autumnfall-season/
+
+  Cream: #F7EFD4
+  Taupe: #D4C2B2
+  Butter: #FADDAF
+  Tea Leaf: #C2BC74
+  Pumpkin: #EB712F
+  Chili: #91371B
+  Coffee: #472C25
+
+*/
+
+html {
+  font-family: "ff-karbid-slab-web-pro", "Times New Roman", serif;
+  padding: 0.75em 9.2308%; /* 12px @ 16px/em; 60px / 650px*/
+  padding-top: 0;
+  color: #472C25; /* Coffee */
+  background: #F7EFD4; /* Cream */
+}
+header,
+footer,
+h2,
+h2 + p,
+#links,
+.assigned,
+.deliverables,
+.requirements {
+  font-family: "ff-dax-web-pro", Helvetica, Arial, sans-serif;
+}
+.assigned h3,
+aside h3 {
+  font-family: "ff-karbid-slab-web-pro", "Times New Roman", serif;
+}
+body {
+  font-size: 1.1875em;         /* ~ 19px base font size */
+  line-height: 1.2631578947em; /* ~ 24px base line height */
+}
+b,
+strong {
+  font-weight: bold;
+}
+cite,
+em,
+i {
+  font-style: italic;
+}
+ins {
+  text-decoration: none;
+}
+
+/* Links */
+a {
+  color: #91371B; /* Chili */
+  text-decoration: none;
+  border-bottom: 0.05263157895em dotted;
+}
+
+/* Paragraphs and Lists */
+p {
+  padding-bottom: 1.2631578947em;
+}
+ol,
+ul,
+li {
+  padding-bottom: 0.6315789474em; /* ~ 12px @ 19px/em */
+}
+li ul,
+li ol {
+  padding-top: 0.6315789474em; /* ~ 12px @ 19px/em */
+  margin-left: 1.2631578947em;
+}
+/* Avoid over-padding nested lists */
+li ol,
+li ul {
+  padding-bottom: 0;
+}
+ul > li {
+  list-style-type: square;
+}
+ol > li {
+  list-style-type: decimal;
+}
+
+/* Headings */
+
+h1 {
+  font-size: 1.7768947368em; /* ~ 33.761px @ 19px/em */
+  line-height: 1.0663191256em; /* ~ 36px @ 33.761px/em */
+  padding-bottom: 0.3554397085em; /* ~ 12px @ 33.761px/em */
+  font-weight: bold;
+  color: #91371B; /* Chili */
+}
+h1 small {
+  font-weight: normal;
+  color: #C2BC74;
+}
+h2 {
+  font-size: 1.3440526316em; /* ~ 25.537px @ 19px/em */
+  line-height: 0.9398128206em; /* ~ 24px @ 25.537px/em */
+  padding-bottom: 0.9398128206em;
+}
+h3,
+h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 1.2631578947em;
+}
+h4 {
+  text-transform: none;
+  padding-bottom: 0.6315789474em;
+}
+
+/* ========== Layout ========== */
+
+html {
+  /* Border for the nav to sit on */
+  border-top: 2.6875em solid #C2BC74; /* Tea Leaf */
+  /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
+}
+nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+#instructor {
+  padding-top: 1.2631578947em;
+}
+#links {
+  padding-top: 2.5263157895em;
+}
+/* ========== Modules ========== */
+
+/* Header & Footer */
+header {
+  padding-top: 2.5263157895em; /* ~ 48px @ 19px/em */
+  padding-bottom: 1.2631578947em;
+}
+footer {
+  padding-top: 3.7894736842em; /* ~ 72px @ 19px/em */
+}
+small,
+.tagline,
+.fineprint,
+.button {
+  font-family: "ff-dax-web-pro-condensed";
+  color: #555;
+  display: block;
+}
+small {
+  color: #C2BC74; /* Tea Leaf */
+  color: #EB712F; /* Pumpkin */
+  text-shadow: 1px 1px 4px #D4C2B2; /* Coffee */
+}
+.label .button {
+  font-size: 0.744018483em; /* ~ 19px @ 25.537px/em */
+  text-transform: uppercase;
+}
+/* Navigation */
+nav {
+  font-family: "ff-dax-web-pro-condensed";
+}
+.nav {
+  margin-left: 0;
+  padding-bottom: 0;
+}
+.nav li {
+  float: left;
+  width: 25%;
+  list-style-type: none;
+  padding-bottom: 0;
+}
+.nav a {
+  display: block;
+  text-align: center;
+  line-height: 1;
+  padding: 0.6842105263em 0.1578947368em 0.5789473684em 0.1578947368em; /* 13px 3px 11px 3px */
+  background-color: #C2BC74; /* Tea Leaf */
+  color: #472C25; /* Coffee */
+  border-bottom: 0;
+}
+
+#calendar #nav-cal a,
+#projects #nav-pro a,
+#policies #nav-pol a {
+  background-color: #EB712F; /* Pumpkin */
+  color: #472C25; /* Coffee */
+}
+
+/* Calendar */
+.calendar-weeks {
+  margin-left: 0;
+  padding-bottom: 0;
+}
+.week {
+  margin-left: 0;
+}
+.week,
+.meeting,
+.calendar-weeks .assigned > ul > li {
+  list-style-type: none;
+}
+.meeting {
+  padding-left: 1.2631578947em;
+}
+.meeting ol {
+  padding-top: 0;
+}
+.week h4 {
+  padding-right: 0.6315789474em;
+}
+.agenda .meeting {
+  padding-left: 0;
+}
+.agenda ol {
+  margin-left: 0;
+  padding-left: 0;
+}
+.calendar-weeks .assigned ol,
+.calendar-weeks .assigned ul {
+  margin-left: 0;
+}
+.agenda > ol:first-child {
+  padding-top: 0;
+}
+
+.assigned,
+.week,
+.preview,
+#projects article,
+#grading,
+.deliverables {
+  padding-top: 1.2631578947em;
+}
+.preview {
+  padding-bottom: 1.2631578947em;
+}
+.preview,
+.assigned,
+.deliverables,
+.requirements {
+  padding-left: 11.3208%;
+  padding-right: 11.3208%;
+  margin: 0 -11.3208%; /* 60px / 530px (650-120) */
+}
+.assigned h3 {
+  padding-bottom: 0.6315789474em;
+}
+li .assigned h4 {
+  padding-bottom: 0;
+}
+
+
+.assigned,
+.deliverables,
+.requirements {
+  background-color: #C2BC74; /* Tea Leaf */
+  color: #222;
+}
+.preview {
+  background-color: #472C25; /* Coffee */
+  color: #FADDAF; /* Butter */
+  box-shadow: 0px 0px 6px 3px #666;
+}
+.preview .deliverables,
+.preview .requirements {
+  background-color: #FADDAF; /* Butter */
+}
+.preview .assigned,
+.preview .deliverables,
+.preview .requirements {
+  background-color: #91371B; /* Chili */
+}
+.assigned small,
+.preview .deliverables,
+.preview .requirements,
+.preview .assigned,
+.preview .assigned h3,
+.preview .assigned small {
+  color: #FADDAF; /* Butter */
+}
+.preview small {
+  color: #C2BC74; /* Tea Leaf */
+  text-shadow: unset;
+}
+.preview a {
+  color: #EB712F; /* Pumpkin */
+}
+.preview .assigned a,
+.preview .deliverables a,
+.preview .requirements a {
+  color: #C2BC74; /* Tea Leaf */
+}
+
+/* Fix for the very last week; corrects spacing after .assigned */
+/* Still needs to be tweaked against margin-bottom on .assigned */
+/* May no longer be necessary after major top/bottom padding refactor */
+/*
+.week:last-child {
+  padding-bottom: 0.6315789474em;
+}
+*/
+
+/* ========== State ========== */
+
+.hasjs .extended {
+  display: none;
+}
+.is-visible .extended {
+  display: block;
+}
+
+/* Media Queries */
+
+/* @345px */
+
+@media screen and (min-width: 21.5625em) {
+  /* Let the nav breathe a bit more */
+  nav {
+    font-family: inherit;
+  }
+}
+
+/* @560px */
+
+@media screen and (min-width: 35em) {
+  .flexbox .agenda > ol {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flexbox .meeting {
+    flex: 0 1 43.5484%;
+  }
+  .assigned {
+    padding: 1.2631578947em 1.8947368421em 0.6315789474em 1.8947368421em;
+    margin-left: -1.8947368421em;
+    margin-right: -1.8947368421em;
+  }
+  #instructor.assigned {
+    padding-left: 11.3208%;
+    padding-right: 11.3208%;
+    margin: 0 -11.3208%; /* 60px / 530px (650-120) */
+  }
+  .meeting {
+    padding-bottom: 1.2631578947em; /* ~ 24px @ 19px/em */
+  }
+  .flexbox .link-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .flexbox #course-resources {
+    flex: 0 1 100%;
+  }
+  .flexbox #essential-tools,
+  .flexbox #essential-references {
+    flex: 0 1 43.5484%;
+  }
+}
+
+/* @650px */
+
+@media screen and (min-width: 40.625em) {
+  html {
+    padding: 0;
+  }
+  header,
+  footer,
+  .primary,
+  #instructor.assigned,
+  #links {
+    padding-left: 14.28571429%; /* 93/651 */
+    padding-right: 28.57142857%; /* 186/651 */
+  }
+  #instructor.assigned {
+    margin: 0;
+  }
+  .tagline,
+  .fineprint {
+  }
+  nav {
+    width: 57.14285714%;
+    left: 14.28571429%;
+  }
+  .preview {
+    margin-left: -25%; /* 93/372 */
+    padding-left: 25%;
+    margin-right: -50%; /* 186/372 */
+    padding-right: 50%;
+  }
+  .flexbox .agenda > ol {
+    display: block;
+  }
+}
+
+/* 830px */
+
+@media screen and (min-width: 51.875em) {
+  .flexbox .agenda > ol {
+    display: flex; /* My life for element/container queries...*/
+  }
+  .week,
+  .preview,
+  #projects article,
+  #grading {
+    padding-top: 2.5263157895em; /* ~ 48px @ 16px/em */
+  }
+  .preview .agenda {
+    padding-top: 1.2631578947em;
+  }
+  #instructor.assigned,
+  .assigned,
+  .deliverables {
+    padding-top: 1.8947368421em;
+  }
+  .assigned + .assigned {
+    padding-top: 0;
+  }
+  .preview,
+  .preview .meeting {
+    padding-bottom: 2.5263157895em; /* ~ 48px @ 16px/em */
+  }
+}
