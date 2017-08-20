@@ -208,6 +208,10 @@ small {
   font-size: 0.744018483em; /* ~ 19px @ 25.537px/em */
   text-transform: uppercase;
 }
+.is-current .button {
+  padding-top: 1.2631578947em;
+}
+.is-current .button .showing { display: none; }
 /* Navigation */
 nav {
   font-family: "ff-dax-web-pro-condensed";

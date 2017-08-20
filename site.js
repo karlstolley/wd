@@ -65,13 +65,13 @@
     // Watch for hashes pointing to #current-week or #week-XX
     if (window.location.hash.indexOf('week') === -1) {
 
-      toggledLabel = ' <small class="button"><span class="showing">Current Week</span> <a class="toggle" href="#current-week">Show All</a></small>';
+      toggledLabel = ' <small class="button"><span class="showing">Current Week</span> <a class="toggle" href="#current-week">Show All Weeks</a></small>';
 
     }
     else {
 
       $('.primary').addClass('is-visible');
-      toggledLabel = ' <small class="button"><span class="showing">All Weeks</span> <a class="toggle" href="#current-week">Show Current</a></small>';
+      toggledLabel = ' <small class="button"><span class="showing">All Weeks</span> <a class="toggle" href="#current-week">Show Current Week Only</a></small>';
 
     }
 
@@ -79,13 +79,13 @@
 
   // Toggles for showing full calendar
   // Append a show link (.button)
-  $('.label').append(toggledLabel);
+  $('.label, .is-current').append(toggledLabel);
 
   // Toggle to actually show/hide content
   $('.button').on('click', function(e) {
-    $(this).toggleClass('is-active');
-    $(this).find('.showing').toggleLabel('All Weeks','Current Week');
-    $(this).find('.toggle').toggleLabel('Show All', 'Show Current');
+    $('.button').toggleClass('is-active');
+    $('.button').find('.showing').toggleLabel('All Weeks','Current Week');
+    $('.button').find('.toggle').toggleLabel('Show All Weeks', 'Show Current Week Only');
     $(this).closest('.primary').toggleClass('is-visible');
   });
 
