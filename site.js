@@ -65,7 +65,7 @@
     // Watch for hashes pointing to #current-week or #week-XX
     if (window.location.hash.indexOf('week') === -1) {
 
-      toggledLabel = ' <small class="button"><span class="showing">Current Week</span> <a class="toggle" href="#current-week">Show All Weeks</a></small>';
+      toggledLabel = ' <small class="button"><span class="showing">Current Week</span> <a class="toggle" href="#all-weeks">Show All Weeks</a></small>';
 
     }
     else {
