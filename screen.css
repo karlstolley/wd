@@ -63,25 +63,11 @@ summary {
 */
 
 html {
-  font-family: "ff-karbid-slab-web-pro", "Times New Roman", serif;
+  font-family: ff-karbid-slab-web-pro, "Times New Roman", serif;
   padding: 0.75em 9.2308%; /* 12px @ 16px/em; 60px / 650px*/
   padding-top: 0;
   color: #472C25; /* Coffee */
   background: #F7EFD4; /* Cream */
-}
-header,
-footer,
-h2,
-h2 + p,
-#links,
-.assigned,
-.deliverables,
-.requirements {
-  font-family: "ff-dax-web-pro", Helvetica, Arial, sans-serif;
-}
-.assigned h3,
-aside h3 {
-  font-family: "ff-karbid-slab-web-pro", "Times New Roman", serif;
 }
 body {
   font-size: 1.1875em;         /* ~ 19px base font size */
@@ -142,10 +128,6 @@ h1 {
   font-weight: bold;
   color: #91371B; /* Chili */
 }
-h1 small {
-  font-weight: normal;
-  color: #C2BC74;
-}
 h2 {
   font-size: 1.3440526316em; /* ~ 25.537px @ 19px/em */
   line-height: 0.9398128206em; /* ~ 24px @ 25.537px/em */
@@ -160,6 +142,20 @@ h4 {
 h4 {
   text-transform: none;
   padding-bottom: 0.6315789474em;
+}
+header,
+footer,
+h2,
+h2 + p,
+#links,
+.assigned,
+.deliverables,
+.requirements {
+  font-family: ff-dax-web-pro, Helvetica, Arial, sans-serif;
+}
+aside h3,
+.assigned h3 {
+  font-family: ff-karbid-slab-web-pro, "Times New Roman", serif;
 }
 
 /* ========== Layout ========== */
@@ -195,14 +191,17 @@ small,
 .tagline,
 .fineprint,
 .button {
-  font-family: "ff-dax-web-pro-condensed";
+  font-family: ff-dax-web-pro-condensed;
   color: #555;
   display: block;
 }
 small {
-  color: #C2BC74; /* Tea Leaf */
   color: #EB712F; /* Pumpkin */
-  text-shadow: 1px 1px 4px #D4C2B2; /* Coffee */
+  text-shadow: 0.052em 0.052em 0.211em #D4C2B2; /* Coffee */
+}
+h1 small {
+  font-weight: normal;
+  color: #C2BC74;
 }
 .label .button {
   font-size: 0.744018483em; /* ~ 19px @ 25.537px/em */
@@ -212,20 +211,8 @@ small {
   padding-top: 1.2631578947em;
 }
 .is-current .button .showing { display: none; }
-/* Navigation */
-nav {
-  font-family: "ff-dax-web-pro-condensed";
-}
-.nav {
-  margin-left: 0;
-  padding-bottom: 0;
-}
-.nav li {
-  float: left;
-  width: 25%;
-  list-style-type: none;
-  padding-bottom: 0;
-}
+
+/* Links */
 .nav a {
   display: block;
   text-align: center;
@@ -236,11 +223,37 @@ nav {
   border-bottom: 0;
 }
 
+.preview a {
+  color: #EB712F; /* Pumpkin */
+}
+
+.preview .assigned a,
+.preview .deliverables a,
+.preview .requirements a {
+  color: #C2BC74; /* Tea Leaf */
+}
+
 #calendar #nav-cal a,
 #projects #nav-pro a,
 #policies #nav-pol a {
   background-color: #EB712F; /* Pumpkin */
   color: #472C25; /* Coffee */
+}
+
+
+/* Navigation */
+nav {
+  font-family: ff-dax-web-pro-condensed;
+}
+.nav {
+  margin-left: 0;
+  padding-bottom: 0;
+}
+.nav li {
+  float: left;
+  width: 25%;
+  list-style-type: none;
+  padding-bottom: 0;
 }
 
 /* Calendar */
@@ -316,7 +329,7 @@ li .assigned h4 {
 .preview {
   background-color: #472C25; /* Coffee */
   color: #FADDAF; /* Butter */
-  box-shadow: 0px 0px 6px 3px #666;
+  box-shadow: 0 0 0.316em 0.158em #666;
 }
 .preview .deliverables,
 .preview .requirements {
@@ -327,6 +340,10 @@ li .assigned h4 {
 .preview .requirements {
   background-color: #91371B; /* Chili */
 }
+.preview small {
+  color: #C2BC74; /* Tea Leaf */
+  text-shadow: unset;
+}
 .assigned small,
 .preview .deliverables,
 .preview .requirements,
@@ -334,18 +351,6 @@ li .assigned h4 {
 .preview .assigned h3,
 .preview .assigned small {
   color: #FADDAF; /* Butter */
-}
-.preview small {
-  color: #C2BC74; /* Tea Leaf */
-  text-shadow: unset;
-}
-.preview a {
-  color: #EB712F; /* Pumpkin */
-}
-.preview .assigned a,
-.preview .deliverables a,
-.preview .requirements a {
-  color: #C2BC74; /* Tea Leaf */
 }
 
 /* Fix for the very last week; corrects spacing after .assigned */
@@ -384,6 +389,9 @@ li .assigned h4 {
     display: flex;
     justify-content: space-between;
   }
+  .meeting {
+    padding-bottom: 1.2631578947em; /* ~ 24px @ 19px/em */
+  }
   .flexbox .meeting {
     flex: 0 1 43.5484%;
   }
@@ -396,9 +404,6 @@ li .assigned h4 {
     padding-left: 11.3208%;
     padding-right: 11.3208%;
     margin: 0 -11.3208%; /* 60px / 530px (650-120) */
-  }
-  .meeting {
-    padding-bottom: 1.2631578947em; /* ~ 24px @ 19px/em */
   }
   .flexbox .link-group {
     display: flex;
@@ -430,9 +435,6 @@ li .assigned h4 {
   }
   #instructor.assigned {
     margin: 0;
-  }
-  .tagline,
-  .fineprint {
   }
   nav {
     width: 57.14285714%;
