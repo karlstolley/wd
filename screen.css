@@ -86,7 +86,7 @@ ins {
   text-decoration: none;
 }
 code {
-  font-family: Monaco, "Courier New", Courier, monospace;
+  font-family: Monaco, Menlo, "Droid Sans Mono", Courier, "Courier New", monospace;
   font-size: 90%;
   background-color: rgba(0,0,0,.1);
 }
