@@ -5,12 +5,19 @@
 (function($) {
 
   // Helper for toggling label text
-  $.fn.toggleLabel = function(beforetxt, aftertxt) {
-    var txt = beforetxt;
-    if (this.html()==txt) {
-      txt = aftertxt;
+  // Need to change .showing, .toggle, and .toggle's href
+  // $('.button').toggleLabel('All Weeks', 'Current Week', 'Show All', 'Show Current')
+  // $('.button').toggleLabel(
+  //   {status: 'All Weeks', action: 'Show Current Week Only', href: '#current-week'},
+  //   {status: 'Current Week', action: 'Show All Weeks', href: '#all'}
+  // );
+  $.fn.toggleLabel = function(current, all) {
+    var state = current;
+    if ($('.showing').html()==state.status) {
+      state = all;
     }
-    this.html(txt);
+    $('.showing').html(state.status);
+    $('.toggle').html(state.action).attr('href',state.href);
   };
 
   // Utility class for JavaScript detection in CSS
@@ -62,10 +69,10 @@
       $('#current-week .assigned h3').html('Assigned Work <small>Due ' + namedDays[dueDate.getDay()] + ' ' + namedMonths[dueDate.getMonth()] + ' ' + dueDate.getDate() +'</small>');
     }
 
-    // Watch for hashes pointing to #current-week or #week-XX
-    if (window.location.hash.indexOf('week') === -1) {
+    // Watch for hashes pointing to #week-XX
+    if (window.location.hash.indexOf('week-') === -1) {
 
-      toggledLabel = ' <small class="button"><span class="showing">Current Week</span> <a class="toggle" href="#all-weeks">Show All Weeks</a></small>';
+      toggledLabel = ' <small class="button"><span class="showing">Current Week</span> <a class="toggle" href="">Show All Weeks</a></small>';
 
     }
     else {
@@ -80,12 +87,12 @@
   // Toggles for showing full calendar
   // Append a show link (.button)
   $('.label, .is-current').append(toggledLabel);
-
   // Toggle to actually show/hide content
-  $('.button').on('click', function(e) {
-    $('.button').toggleClass('is-active');
-    $('.button').find('.showing').toggleLabel('All Weeks','Current Week');
-    $('.button').find('.toggle').toggleLabel('Show All Weeks', 'Show Current Week Only');
+  $('.toggle').on('click', function(e) {
+    $('.toggle').toggleLabel(
+      {status: 'All Weeks', action: 'Show Current Week Only', href: '#current-week'},
+      {status: 'Current Week', action: 'Show All Weeks', href: ''}
+    );
     $(this).closest('.primary').toggleClass('is-visible');
   });
 
