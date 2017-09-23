@@ -5,12 +5,6 @@
 (function($) {
 
   // Helper for toggling label text
-  // Need to change .showing, .toggle, and .toggle's href
-  // $('.button').toggleLabel('All Weeks', 'Current Week', 'Show All', 'Show Current')
-  // $('.button').toggleLabel(
-  //   {status: 'All Weeks', action: 'Show Current Week Only', href: '#current-week'},
-  //   {status: 'Current Week', action: 'Show All Weeks', href: '#all'}
-  // );
   $.fn.toggleLabel = function(current, all) {
     var state = current;
     if ($('.showing').html()==state.status) {
