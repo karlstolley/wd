@@ -68,7 +68,7 @@ ins {
 code {
   font-family: Monaco, Menlo, "Droid Sans Mono", Courier, "Courier New", monospace;
   font-size: 90%;
-  background-color: rgba(0,0,0,.1);
+  background-color: rgba(0,0,0,0.1);
 }
 
 /* Links */
@@ -91,10 +91,6 @@ li ul,
 li ol {
   padding-top: 0.6315789474em; /* ~ 12px @ 19px/em */
   margin-left: 1.2631578947em;
-}
-/* Avoid over-padding nested lists */
-li ol,
-li ul {
   padding-bottom: 0;
 }
 ul > li {
