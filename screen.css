@@ -9,38 +9,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Custom Site Styles */
 
-/*
-  Use the text-size-adjust property
-  to prevent automatically inflating
-  text on orientation changes
-  (portrait to landscape on a phone,
-  for example):
-*/
-
-html {
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ie-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-/* HTML5 Elements as Blocks; Cribbed from HTML5 Boilerplate */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-
 /* ========== Base Styles ========== */
 
 /*
@@ -63,6 +31,18 @@ summary {
 */
 
 html {
+  /*
+    Use the text-size-adjust property
+    to prevent automatically inflating
+    text on orientation changes
+    (portrait to landscape on a phone,
+    for example):
+  */
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ie-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
   font-family: ff-karbid-slab-web-pro, "Times New Roman", serif;
   padding: 0.75em 9.2308%; /* 12px @ 16px/em; 60px / 650px*/
   padding-top: 0;
