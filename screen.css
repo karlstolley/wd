@@ -284,6 +284,9 @@ nav {
 }
 .preview {
   padding-bottom: 1.2631578947em;
+  background-color: #472C25; /* Coffee */
+  color: #FADDAF; /* Butter */
+  box-shadow: 0 0 0.316em 0.158em #666;
 }
 .preview,
 .assigned,
@@ -292,6 +295,9 @@ nav {
   padding-left: 11.3208%;
   padding-right: 11.3208%;
   margin: 0 -11.3208%; /* 60px / 530px (650-120) */
+}
+#projects .preview {
+  margin-top: 1.2631578947em;
 }
 .assigned h3 {
   padding-bottom: 0.6315789474em;
@@ -306,11 +312,6 @@ li .assigned h4 {
 .requirements {
   background-color: #C2BC74; /* Tea Leaf */
   color: #222;
-}
-.preview {
-  background-color: #472C25; /* Coffee */
-  color: #FADDAF; /* Butter */
-  box-shadow: 0 0 0.316em 0.158em #666;
 }
 .preview .deliverables,
 .preview .requirements {
@@ -447,6 +448,13 @@ li .assigned h4 {
   .preview .agenda {
     padding-top: 1.2631578947em;
   }
+  .preview,
+  .preview .meeting {
+    padding-bottom: 2.5263157895em; /* ~ 48px @ 16px/em */
+  }
+  #projects .preview {
+    margin-top: 2.5263157895em; /* ~ 48px @ 16px/em */
+  }
   #instructor.assigned,
   .assigned,
   .deliverables {
@@ -454,9 +462,5 @@ li .assigned h4 {
   }
   .assigned + .assigned {
     padding-top: 0;
-  }
-  .preview,
-  .preview .meeting {
-    padding-bottom: 2.5263157895em; /* ~ 48px @ 16px/em */
   }
 }
