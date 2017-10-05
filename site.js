@@ -90,4 +90,17 @@
     $(this).closest('.primary').toggleClass('is-visible');
   });
 
+  var github_url = 'https://api.github.com/repos/karlstolley/wd/commits?per_page=1'
+  $.get(github_url, function(data) {
+    var time_stamp, commit_time, commit_message;
+    time_stamp = data[0]['commit']['author']['date'];
+    commit_time = new Date(time_stamp);
+    commit_time = namedDays[commit_time.getDay()] + ', ' + namedMonths[commit_time.getMonth()] + ' ' + commit_time.getDate() + ' at ' + commit_time.toLocaleTimeString();
+    commit_message = data[0]['commit']['message'];
+    commit_message = commit_message.charAt(0).toLowerCase() + commit_message.slice(1);
+    commit_url = data[0]['html_url'];
+    $('#footer p').append(' Course last updated on <time datetime="'+time_stamp+'">'
+      + commit_time + '</time> to <a href="'+ commit_url +'">' + commit_message + '</a>.');
+  });
+
 })(jQuery);
