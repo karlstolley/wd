@@ -346,7 +346,7 @@
       </li>
       <li class="week" data-expires="2017-10-10T17:00:00-05:00">
         <article id="week-07">
-          <h3>CSS: Feature Detection, Modern Approaches to Layout <small>Week&nbsp;Seven</small></h3>
+          <h3>CSS: Grid Theory, Classic Approaches to Layout <small>Week&nbsp;Seven</small></h3>
           <section class="agenda">
             <ol>
               <li class="meeting">
@@ -356,11 +356,6 @@
                   <li>Grid composition and theory</li>
                   <li>Old-school page layout with <code>position</code> and <code>float</code></li>
                   <li>Feature detection with <a href="https://modernizr.com">Modernizr</a></li>
-                  <li>Introduction to JavaScript</li>
-                  <li>CSS <code>display: flex</code> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide</a></li>
-                  <li>CSS <code>display: grid</code> <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">A Complete Guide</a></li>
-                  <li>Working with HTML and CSS linters</li>
-                  <li>Node utility: <a href="https://github.com/postcss/postcss">postcss</a></li>
                 </ol>
               </li>
             </ol>
@@ -382,10 +377,6 @@
                     <a href="http://www.markboulton.co.uk/journal/five-simple-steps-to-designing-grid-systems-part-4">Part 4</a>,
                     <a href="http://www.markboulton.co.uk/journal/five-simple-steps-to-designing-grid-systems-part-5">Part 5</a>)
                   </li>
-                  <li>Chris Coyier, <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a></li>
-                  <li>MDN, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">Using CSS Flexible Boxes</a> (browse property list in the subnav)</li>
-                  <li>MDN, <a href="https://mozilladevelopers.github.io/playground/">Introduction to CSS Grid Layout</a></li>
-                  <li>MDN, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">CSS Grid Layout</a></li>
                 </ol>
               </li>
               <li>
@@ -400,20 +391,17 @@
       </li>
       <li class="week" data-expires="2017-10-17T17:00:00-05:00">
         <article id="week-08">
-          <h3>Richer Media Elements: HTML5/CSS Techniques <small>Week&nbsp;Eight</small></h3>
+          <h3>Feature Detection; Modern Approaches to Layout <small>Week&nbsp;Eight</small></h3>
           <section class="agenda">
             <ol>
               <li class="meeting">
                 <h4>Tuesday, October 10</h4>
                 <ol>
                   <li>In-progress Project Two presentations (students TBD)</li>
+                  <li>Refresher: Feature detection with <a href="https://modernizr.com">Modernizr</a></li>
+                  <li>CSS <code>display: flex</code> <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide</a></li>
+                  <li>CSS <code>display: grid</code> <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">A Complete Guide</a></li>
                   <li>Git LFS: <a href="https://github.com/github/git-lfs/wiki/Installation">setup</a> and <a href="https://git-lfs.github.com">usage</a></li>
-                  <li>Working with accessible non-text media in HTML5:
-                    <ul>
-                      <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video">Audio and Video</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats">browser media-format support</a></li>
-                      <li>CSS <code>background-image</code> <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Scaling_background_images">like a boss</a></li>
-                    </ul>
-                  </li>
                 </ol>
               </li>
             </ol>
@@ -425,6 +413,10 @@
                 <h4>To Read</h4>
                 <ol>
                   <li>Stolley, Chapter 21, 24–25</li>
+                  <li>Chris Coyier, <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a></li>
+                  <li>MDN, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">Using CSS Flexible Boxes</a> (browse property list in the subnav)</li>
+                  <li>MDN, <a href="https://mozilladevelopers.github.io/playground/">Introduction to CSS Grid Layout</a></li>
+                  <li>MDN, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">CSS Grid Layout</a></li>
                   <li>
                     MDN, <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video">Audio and Video</a>,
                     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats">browser media-format support</a>
@@ -445,7 +437,7 @@
       </li>
       <li class="week" data-expires="2017-10-24T17:00:00-05:00">
         <article id="week-09">
-          <h3>Usability and Sustainability; RWD Refresher<small>Week&nbsp;Nine</small></h3>
+          <h3>RWD Refresher; Responsive, Accessible Media<small>Week&nbsp;Nine</small></h3>
           <section class="agenda">
             <ol>
               <li class="meeting">
@@ -453,6 +445,20 @@
                 <ol>
                   <li>In-progress Project Two presentations (students TBD)</li>
                   <li>Refresher on RWD &amp; media queries</li>
+                  <li>
+                    Responsive images:
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">srcset</a>
+                    and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">&lt;picture&gt;</a>
+                  </li>
+                  <li>
+                    Responsive images polyfill: <a href="https://scottjehl.github.io/picturefill/">Picturefill.js</a>
+                  </li>
+                  <li>Working with accessible non-text media in HTML5:
+                    <ul>
+                      <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML5_audio_and_video">Audio and Video</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats">browser media-format support</a></li>
+                      <li>CSS <code>background-image</code> <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Scaling_background_images">like a boss</a></li>
+                    </ul>
+                  </li>
                   <li>Preprocessors (SASS)</li>
                 </ol>
               </li>
@@ -464,7 +470,6 @@
               <li>
                 <h4>To Read</h4>
                 <ol>
-                  <li>Usability and sustainability</li>
                   <li>Stolley, Chapters 8 &amp; 9; 22</li>
                 </ol>
               </li>
