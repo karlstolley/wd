@@ -15,30 +15,36 @@
     content="https://courses.karlstolley.com/wd/wd.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:type" content="website" />
-  <script src="https://use.typekit.net/zol5yjt.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 <body>
-<div id="page">
-  <header id="header">
-    <h1><small>COM 330/530</small> Standards-Based Web Design</h1>
-    <p class="tagline">
-      Theory and applied practice of mobile-first, responsive web design according to current open
-      standards. Taught by <a href="#instructor">Professor Karl Stolley</a>, Fall 2017.
-    </p>
-    <nav id="navigation">
-      <ul class="nav">
-        <li id="nav-cal"><a href="../">Calendar</a></li>
-        <li id="nav-pro"><a href="../projects/#current">Projects</a></li>
-        <li id="nav-pol"><a href="../policies/">Policies</a></li>
-        <li id="nav-lnk"><a href="../#links">Links</a></li>
-      </ul>
-    </nav>
-  </header>
+<header id="header">
+  <a href="https://courses.karlstolley.com/wd/">
+    <small>COM 330/530</small>
+    <h1>
+      Standards-Based Web Design
+    </h1>
+  </a>
+  <p class="tagline">
+    Theory and applied practice of mobile-first, responsive web design according to current open
+    standards. Taught by <a href="../#instructor">Professor Karl Stolley</a>, Fall 2017.
+  </p>
+  <nav id="navigation">
+    <ul class="nav">
+      <li id="nav-cal"><a href="../#current-week">Calendar</a></li>
+      <li id="nav-bcp"><a href="https://3.basecamp.com/3058761/projects/7580688">Basecamp</a></li>
+      <li id="nav-dem"><a href="https://github.com/2018-summer-apis">GitHub</a></li>
+      <li id="nav-lnk"><a href="../#links">Links</a></li>
+      <li id="nav-pro"><a href="../projects/#current">Projects</a></li>
+      <li id="nav-pol"><a href="../policies/">Policies</a></li>
+    </ul>
+  </nav>
+</header>
 
 <main id="content">
   <article class="primary">
-    <h2 class="label">Course Policies</h2>
+    <header>
+      <h2>Course Policies</h2>
+    </header>
     <section id="general">
       <h3>Course Description</h3>
       <p>
@@ -82,16 +88,8 @@
     </section>
     <section id="materials">
       <h3>Books and Technologies</h3>
-      <section id="books" class="assigned">
+      <section id="books">
         <h4>Required Books</h4>
-        <p>
-          My policy for assigning books: they are all required in the edition indicated; the total
-          retail pricetag for the entire course should be less than $100 (this one is $88 on the
-          high end, assuming you opt for the formats indicated below); and each book should be
-          worthy of a place on your bookshelf or electronic device of choice long after the class
-          has ended. My aim is to help you build your professional library, while also being
-          sensitive to your bank account.
-        </p>
         <ul>
           <li>
             Stolley, K. <i>How to Design and Write Web Pages Today, 2nd ed.</i> Santa Barbara, CA:
@@ -107,8 +105,21 @@
             Bookshelf, 2012. $25 (eBook)
           </li>
         </ul>
+        <p class="note">
+          <b>My policy for assigning books:</b> Required Books are all required in the edition
+          indicated; the total retail pricetag for the entire course should be less than $100 (this
+          one is $95 on the high end, assuming you opt for the electronic formats, including the
+          Recommended Books); and each book should be worthy of a place on your bookshelf or
+          electronic device of choice long after the class has ended.
+        </p>
+        <p class="note">
+          I want to help you build your professional library while also being sensitive to your
+          personal finances. While many things about the <a href="../">course calendar</a> may
+          change, the reading schedule will not. I invite you to hold off on purchasing specific
+          books until closer to the time that we read them.
+        </p>
       </section>
-      <section id="technologies" class="assigned">
+      <section id="technologies">
         <h4>Required Materials and Technologies</h4>
         <ul>
           <li>A blank, bound paper sketchbook of 100 pages or more</li>
@@ -223,9 +234,10 @@
       </p>
       <h3>Late Work</h3>
       <p>
-        I do not accept late work. No exceptions. All work must be submitted before the date and
-        time specified in each project description. Weekly reading discussion posts are due before
-        the start of the first class meeting each week.
+        I do not accept late work. All work must be submitted before the date and time specified in
+        each project description. Weekly Problems are due Sunday nights. <b>COM 330/530 deadlines,
+        including for draft work, are no different from exam dates in classes that have exams.</b>
+        Treat them accordingly.
       </p>
       <h3>Participation</h3>
       <p>
@@ -315,18 +327,16 @@
     </section>
   </article>
 </main>
+
 <footer id="footer">
   <p class="fineprint">
     Course syllabus &amp; site design by <a href="https://karlstolley.com/">Karl Stolley</a>.
     Syllabus licensed under
     <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons</a>.
-    <a href="https://github.com/karlstolley/wd">Source hosted on GitHub</a>. Big thanks to
-    <a href="https://basecamp.com">Basecamp</a> and
-    <a href="https://www.browserstack.com">BrowserStack</a> for donating resources to further
-    the educational goals of this class.
+    <a id="github" href="https://github.com/karlstolley/fwd">Source hosted on GitHub</a>.
   </p>
 </footer>
-<!--#page-->
-</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="../site.js"></script>
 </body>
 </html>
