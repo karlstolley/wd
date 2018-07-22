@@ -1,34 +1,17 @@
+@import "//fast.fonts.net/cssapi/d645cd83-c955-4277-a114-11f6324025d4.css";
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 /* stylelint-disable */
 /* Keep reset CSS to one minified line */
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}html,.reset{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
 /* Custom Site Styles */
 
 /* ========== Base Styles ========== */
-
-/*
-  Using 19px/1.333 modular scale
-  http://www.modularscale.com/?19&px&1.333&web&text
-*/
-
-/*
-  Fall color palette, taken from
-  http://duoparadigms.com/2013/10/11/10-color-palettes-perfect-autumnfall-season/
-
-  Cream: #F7EFD4
-  Taupe: #D4C2B2
-  Butter: #FADDAF
-  Tea Leaf: #C2BC74
-  Pumpkin: #EB712F
-  Chili: #91371B
-  Coffee: #472C25
-
-*/
 
 html {
   /*
@@ -43,424 +26,404 @@ html {
   -ie-text-size-adjust: 100%;
   text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
-  font-family: ff-karbid-slab-web-pro, "Times New Roman", serif;
-  padding: 0.75em 9.2308%; /* 12px @ 16px/em; 60px / 650px*/
-  padding-top: 0;
-  color: #472C25; /* Coffee */
-  background: #F7EFD4; /* Cream */
+  /*
+    Major Third Modular Scale
+    http://www.modularscale.com/?19&px&1.25
+  */
+  font-size: 1.1875em; /* 19 / 16px */
+  line-height: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
+  font-family: "Camphor W04", Verdana, Helvetica, Arial, sans-serif;
+  color: #296c94; /* blue */
+  background: #e1fdff;
 }
-body {
-  font-size: 1.1875em;         /* ~ 19px base font size */
-  line-height: 1.2631578947em; /* ~ 24px base line height */
-}
-b,
-strong {
+
+h1,
+h2,
+h3,
+h4 {
   font-weight: bold;
 }
-cite,
-em,
-i {
-  font-style: italic;
+h3 {
+  font-size: 1.25em; /* 23.75 / 19 = 1.25 */
+  line-height: 1.5157894737em; /* 36 / 23.75 = 1.5157894737 */
 }
-ins {
-  text-decoration: none;
-}
-code {
-  font-family: Monaco, Menlo, "Droid Sans Mono", Courier, "Courier New", monospace;
-  font-size: 90%;
-  background-color: rgba(0,0,0,0.1);
+h4 {
+  font-size: 0.8em; /* 15.2px / 19px */
+  line-height: 1.5789473684em; /* 24 / 15.2px = 1.5789473684 */
+  padding-bottom: 0.7894736842em; /* 12 / 15.2 = 0.7894736842 */
+  text-transform: uppercase;
 }
 
-/* Links */
-a {
-  color: #91371B; /* Chili */
-  text-decoration: none;
-  border-bottom: 0.05263157895em dotted;
-}
-
-/* Paragraphs and Lists */
 p {
   padding-bottom: 1.2631578947em;
 }
-ol,
-ul,
-li {
-  padding-bottom: 0.6315789474em; /* ~ 12px @ 19px/em */
-}
-li ul,
-li ol {
-  padding-top: 0.6315789474em; /* ~ 12px @ 19px/em */
-  margin-left: 1.2631578947em;
-  padding-bottom: 0;
-}
-ul > li {
+
+ul {
   list-style-type: square;
 }
-ol > li {
-  list-style-type: decimal;
+
+ol {
+  counter-reset: enum;
+}
+ol, ul, li {
+  padding-bottom: 0.6315789474em; /* 12 / 19 = 0.6315789474 */
 }
 
-/* Headings */
-
-h1 {
-  font-size: 1.7768947368em; /* ~ 33.761px @ 19px/em */
-  line-height: 1.0663191256em; /* ~ 36px @ 33.761px/em */
-  padding-bottom: 0.3554397085em; /* ~ 12px @ 33.761px/em */
-  font-weight: bold;
-  color: #91371B; /* Chili */
-}
-h2 {
-  font-size: 1.3440526316em; /* ~ 25.537px @ 19px/em */
-  line-height: 0.9398128206em; /* ~ 24px @ 25.537px/em */
-  padding-bottom: 0.9398128206em;
-}
-h3,
-h4 {
-  text-transform: uppercase;
-  font-weight: bold;
-  padding-bottom: 1.2631578947em;
-}
-h4 {
-  text-transform: none;
-  padding-bottom: 0.6315789474em;
-}
-header,
-footer,
-h2,
-h2 + p,
-#links,
-.assigned,
-.deliverables,
-.requirements {
-  font-family: ff-dax-web-pro, Helvetica, Arial, sans-serif;
-}
-aside h3,
-.assigned h3 {
-  font-family: ff-karbid-slab-web-pro, "Times New Roman", serif;
+ol ol,
+ol ul,
+ul ul,
+ul ol {
+  padding-top: 0.6315789474em; /* 12 / 19 = 0.6315789474 */
+  padding-bottom: 0;
 }
 
-/* ========== Layout ========== */
-
-html {
-  /* Border for the nav to sit on */
-  border-top: 2.6875em solid #C2BC74; /* Tea Leaf */
-  /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
+li ol,
+li ul {
+  padding-left: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
 }
-nav {
+
+ol > li::before {
+  counter-increment: enum;
+  content: counter(enum) ". ";
   position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
+  margin-left: -1.2631578947em; /* 24 / 19px = 1.2631578947 */
+  font-weight: bold;
 }
-#instructor {
-  padding-top: 1.2631578947em;
-}
-#links {
-  padding-top: 2.5263157895em;
-}
-/* ========== Modules ========== */
 
-/* Header & Footer */
+a {
+  color: #a63140; /* red */
+}
+b, strong {
+  font-weight: bold;
+}
+cite, em, i {
+  font-style: italic;
+}
+code {
+  font-family: Menlo, Monaco, "Droid Sans Mono", Courier, "Courier New", monospace;
+  font-size: 0.85em;
+  background: #b1c1c5;
+}
+
 header {
-  padding-top: 2.5263157895em; /* ~ 48px @ 19px/em */
-  padding-bottom: 1.2631578947em;
+  padding-bottom: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
 }
-footer {
-  padding-top: 3.7894736842em; /* ~ 72px @ 19px/em */
-}
-small,
-.tagline,
-.fineprint,
-.button {
-  font-family: ff-dax-web-pro-condensed;
-  color: #555;
+
+header small {
   display: block;
 }
-small {
-  color: #EB712F; /* Pumpkin */
-  text-shadow: 0.052em 0.052em 0.211em #D4C2B2; /* Coffee */
-}
-h1 small {
-  font-weight: normal;
-  color: #C2BC74;
-}
-.label .button {
-  font-size: 0.744018483em; /* ~ 19px @ 25.537px/em */
-  text-transform: uppercase;
-}
-.is-current .button {
-  padding-top: 1.2631578947em;
-}
-.is-current .button .showing { display: none; }
 
-/* Links */
+/* Layout Styles */
+#header {
+  position: relative;
+  padding-top: 3.7894736842em; /* 72 / 19 = 3.7894736842 */
+}
+#header small,
+#nav-menu a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0.6315789474em; /* 12 / 19 = 0.6315789474 */
+  padding-top: 0.6315789474em; /* 12 / 19 = 0.6315789474 */
+  padding-bottom: 0.6315789474em; /* 12 / 19 = 0.6315789474 */
+  font-weight: bold;
+}
+#nav-menu a {
+  left: auto;
+  top: 0.3157894737em; /* 6 / 19 = 0.3157894737em */
+  right: 0.3157894737em; /* 6 / 19 = 0.3157894737em */
+  padding: 0.3157894737em; /* 6 / 19 = 0.3157894737em */
+  border-radius: 0.3157894737em; /* 6 / 19 = 0.3157894737em */
+  font-weight: normal;
+  text-transform: uppercase;
+  background: #a63140;
+  color: #ffd58e;
+}
+.week h4 a {
+  display: inline-block;
+  padding: 0.1973684211em 0.3157894737em; /* 6 / 19 = 0.3157894737em; 3 / 15.2 = 0.1973684211 */
+  margin-left: 0.3618421053em;
+  border-radius: 0.3618421053em; /* 5.5 / 15.2 = 0.2894736842em */
+  font-weight: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #b20064;
+  color: #d9e3de;
+}
+
+#header,
+#this-week,
+#content,
+#links,
+#instructor,
+#footer {
+  padding-left: 11%; /* 33 / 300 = 0.11 */
+  padding-right: 11%; /* 33 / 300 = 0.11 */
+}
+
+#links,
+#instructor,
+#footer {
+  padding-top: 2.5263157895em; /* 48 / 19 = 2.5263157895 */
+}
+#projects article {
+  padding-bottom: 2.5263157895em; /* 48 / 19 = 2.5263157895 */
+}
+
+/* Modular Styles */
+#header a {
+  text-decoration: none;
+}
+#header a small {
+  color: #a63140; /* red */
+}
+#header h1,
+#header .tagline,
+#footer {
+  color: #a63140; /* red */
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 1.9531052632em; /* 37.109 / 19 = 1.9531052632 */
+  line-height: 1.2934867552em; /* 48 / 37.109 = 1.2934867552 */
+  padding-bottom: 0.6467433776em; /* 24 / 37.109 = 0.6467433776 */
+}
+h2#nav-menu {
+  font-size: inherit;
+  line-height: inherit;
+  padding-bottom: inherit;
+}
+.assigned h3 {
+  font-size: inherit;
+  line-height: inherit;
+}
+#policies h3,
+#links h3,
+#instructor h3 {
+  padding-bottom: 0.5052631579em; /* 12 / 23.75 = 0.5052631579 */
+}
+h3 + small {
+  padding-bottom: 0.6315789474em; /* 12 / 19 = 0.6315789474 */
+}
+
+#this-week {
+  padding-top: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
+  padding-bottom: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
+  background: #296c94; /* blue */
+  color: #e1fdff;
+}
+#this-week .assigned {
+  background-color: rgba(0,0,0,.2);
+}
+#this-week a {
+  color: #ffd58e;
+}
+.tagline,
+.note,
+#footer p {
+  font-size: 0.8em; /* 15.2px / 19px */
+  line-height: 1.5789473684em; /* 24 / 15.2px = 1.5789473684 */
+  padding-bottom: 1.5789473684em;
+}
+
+.tagline a,
+#footer a {
+  color: #296c94; /* blue */
+}
+
+.nav,
+.agenda,
+.assignments {
+  list-style-type: none;
+}
+
 .nav a {
   display: block;
+  padding: 0.3157894737em; /* 6 / 19 = 0.3157894737em */
+  border-radius: 0.3157894737em;
   text-align: center;
-  line-height: 1;
-  padding: 0.6842105263em 0.1578947368em 0.5789473684em 0.1578947368em; /* 13px 3px 11px 3px */
-  background-color: #C2BC74; /* Tea Leaf */
-  color: #472C25; /* Coffee */
-  border-bottom: 0;
-}
-
-.preview a {
-  color: #EB712F; /* Pumpkin */
-}
-
-.preview .assigned a,
-.preview .deliverables a,
-.preview .requirements a {
-  color: #C2BC74; /* Tea Leaf */
+  background: #a63140;
+  color: #ffd58e;
 }
 
 #calendar #nav-cal a,
-#projects #nav-pro a,
-#policies #nav-pol a {
-  background-color: #EB712F; /* Pumpkin */
-  color: #472C25; /* Coffee */
+#policies #nav-pol a,
+#projects #nav-pro a {
+  color: #333;
+  background-color: #ffd58e;
 }
 
-
-/* Navigation */
-nav {
-  font-family: ff-dax-web-pro-condensed;
-}
-.nav {
-  margin-left: 0;
-  padding-bottom: 0;
-}
-.nav li {
-  float: left;
-  width: 25%;
-  list-style-type: none;
-  padding-bottom: 0;
-}
-
-/* Calendar */
-.calendar-weeks {
-  margin-left: 0;
-  padding-bottom: 0;
-}
-.week {
-  margin-left: 0;
-}
-.week,
-.meeting,
-.calendar-weeks .assigned > ul > li {
-  list-style-type: none;
-}
-.meeting {
-  padding-left: 1.2631578947em;
-}
-.meeting ol {
-  padding-top: 0;
-}
-.week h4 {
-  padding-right: 0.6315789474em;
-}
-.agenda .meeting {
+.agenda ol,
+.assignments ol {
   padding-left: 0;
-}
-.agenda ol {
-  margin-left: 0;
-  padding-left: 0;
-}
-.calendar-weeks .assigned ol,
-.calendar-weeks .assigned ul {
-  margin-left: 0;
-}
-.agenda > ol:first-child {
   padding-top: 0;
 }
 
-.assigned,
-.week,
-.preview,
-#projects article,
-#grading,
-.deliverables {
-  padding-top: 1.2631578947em;
+.meeting::before {
+  content: "";
 }
-.preview {
-  padding-bottom: 1.2631578947em;
-  background-color: #472C25; /* Coffee */
-  color: #FADDAF; /* Butter */
-  box-shadow: 0 0 0.316em 0.158em #666;
-}
-.preview,
-.assigned,
-.deliverables,
-.requirements {
-  padding-left: 11.3208%;
-  padding-right: 11.3208%;
-  margin: 0 -11.3208%; /* 60px / 530px (650-120) */
-}
-#projects .preview {
-  margin-top: 1.2631578947em;
-}
-.assigned h3 {
-  padding-bottom: 0.6315789474em;
-}
-li .assigned h4 {
+
+.week .assigned {
+  padding: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
+  padding-left: 1.8947368421em; /* 36 / 19 = 1.8947368421 */
   padding-bottom: 0;
+  background-color: rgba(41,108,148,.2); /* dark blue shade */
+}
+.week + .week {
+  margin-top: 2.5263157895em; /* 48 / 19 */
 }
 
-
-.assigned,
-.deliverables,
-.requirements {
-  background-color: #C2BC74; /* Tea Leaf */
-  color: #222;
-}
-.preview .deliverables,
-.preview .requirements {
-  background-color: #FADDAF; /* Butter */
-}
-.preview .assigned,
-.preview .deliverables,
-.preview .requirements {
-  background-color: #91371B; /* Chili */
-}
-.preview small {
-  color: #C2BC74; /* Tea Leaf */
-  text-shadow: unset;
-}
-.assigned small,
-.preview .deliverables,
-.preview .requirements,
-.preview .assigned,
-.preview .assigned h3,
-.preview .assigned small {
-  color: #FADDAF; /* Butter */
-}
-
-/* Fix for the very last week; corrects spacing after .assigned */
-/* Still needs to be tweaked against margin-bottom on .assigned */
-/* May no longer be necessary after major top/bottom padding refactor */
-/*
-.week:last-child {
-  padding-bottom: 0.6315789474em;
-}
-*/
-
-/* ========== State ========== */
-
-.hasjs .extended {
-  display: none;
-}
-.is-visible .extended {
+.button .toggle {
   display: block;
+  margin-top: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
+  padding: 0.3157894737em; /* 6 / 19 = 0.3157894737em */
+  border-radius: 0.3157894737em; /* 6 / 19 = 0.3157894737em */
+  width: 50%;
+  text-decoration: none;
+  text-align: center;
+  background: #b20064;
+  color: #d9e3de;
 }
 
-/* Media Queries */
+/* State Styles */
+.js .nav {
+  height: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+.js .expandable .nav {
+  transition: height .2s ease-out;
+}
+.js .is-expanded .nav {
+  height: 15.1578947368em; /* (12 gridlines) 288 / 19 = 15.1578947368em */
+}
+.js .is-expanded #nav-menu a {
+  background: inherit;
+  color: #666;
+}
+.js body::after {
+  display: none;
+  content: 'menu';
+}
 
-/* @345px */
+.js #this-week + h2 {
+  padding-top: 2.5869735105em; /* 96 / 37.109 = 2.5869735105 */
+}
 
-@media screen and (min-width: 21.5625em) {
-  /* Let the nav breathe a bit more */
-  nav {
-    font-family: inherit;
+/* 660px / 16 = 37.5em */
+@media screen and (min-width: 41.25em) {
+  #header {
+    padding-top: 5.0526315789em; /* 96 / 19 = 5.0526315789 */
+  }
+  #content h2 {
+    padding-top: 1.2934867552em; /* 48 / 37.109 = 1.2934867552 */
+  }
+  .nav {
+    position: absolute;
+    right: 0.3157894737em; /* 6 / 19 = 0.3157894737em */
+    top: 0.3157894737em; /* 6 / 19 = 0.3157894737em */
+  }
+  .nav li {
+    float: left;
+    margin-left: 0.3157894737em; /* 6 / 19 = 0.3157894737em */
+  }
+  .flexbox .nav {
+    display: flex;
+  }
+  .flexbox .nav li {
+    float: none;
+  }
+  .js .nav {
+    height: auto;
+    padding-bottom: 0.6315789474em; /* 12 / 19 = 0.6315789474 */
+    overflow-y: auto;
+  }
+  .js body::after {
+    content: '';
   }
 }
 
-/* @560px */
-
-@media screen and (min-width: 35em) {
-  .flexbox .agenda > ol {
-    display: flex;
-    justify-content: space-between;
+/* 820 / 16 = 51.25em */
+@media screen and (min-width: 51.25em) {
+  #header h1,
+  #header .tagline,
+  #footer p {
+    width: 40%;
+  }
+  #header small {
+    left: 11%;
+  }
+  .nav {
+    right: 11%; /* TODO: Align with RH column on calendar */
+  }
+  #instructor {
+    width: 60%;
+  }
+  .week .agenda {
+    float: left;
+    width: 40%;
+  }
+  .week .assigned {
+    margin-left: 45%;
+  }
+  .week > header {
+    clear: both;
+    padding-top: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
+    padding-bottom: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
+  }
+  #calendar.cssgrid .is-visible .extended {
+    display: grid; /* Yuck, yuck, yuck */
+  }
+  .cssgrid .week {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+    "header header"
+    "agenda assigned";
+    grid-column-gap: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
+  }
+  .cssgrid .week > header {
+    grid-area: header;
+  }
+  .cssgrid .week .agenda {
+    grid-area: agenda;
+    float: none;
+    width: auto;
   }
   .meeting {
-    padding-bottom: 1.2631578947em; /* ~ 24px @ 19px/em */
+    padding-bottom: 1.8947368421em; /* 36 / 19 = 1.8947368421 */
   }
-  .flexbox .meeting {
-    flex: 0 1 43.5484%;
+  .cssgrid .week .assigned {
+    grid-area: .assigned;
+    margin-left: 0;
   }
-  .assigned {
-    padding: 1.2631578947em 1.8947368421em 0.6315789474em 1.8947368421em;
-    margin-left: -1.8947368421em;
-    margin-right: -1.8947368421em;
+  .cssgrid #links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "course tools references";
+    grid-column-gap: 1.8947368421em; /* 36 / 19 = 1.8947368421 */
   }
-  #instructor.assigned {
-    padding-left: 11.3208%;
-    padding-right: 11.3208%;
-    margin: 0 -11.3208%; /* 60px / 530px (650-120) */
+  .cssgrid header {
+    grid-area: header;
   }
-  .flexbox .link-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  .cssgrid #course-resources {
+    grid-area: course;
   }
-  .flexbox #course-resources {
-    flex: 0 1 100%;
+  .cssgrid #essential-tools {
+    grid-area: tools;
   }
-  .flexbox #essential-tools,
-  .flexbox #essential-references {
-    flex: 0 1 43.5484%;
-  }
-}
-
-/* @650px */
-
-@media screen and (min-width: 40.625em) {
-  html {
-    padding: 0;
-  }
-  header,
-  footer,
-  .primary,
-  #instructor.assigned,
-  #links {
-    padding-left: 14.28571429%; /* 93/651 */
-    padding-right: 28.57142857%; /* 186/651 */
-  }
-  #instructor.assigned {
-    margin: 0;
-  }
-  nav {
-    width: 57.14285714%;
-    left: 14.28571429%;
-  }
-  .preview {
-    margin-left: -25%; /* 93/372 */
-    padding-left: 25%;
-    margin-right: -50%; /* 186/372 */
-    padding-right: 50%;
-  }
-  .flexbox .agenda > ol {
-    display: block;
+  .cssgrid #essential-references {
+    grid-area: references;
   }
 }
 
-/* 830px */
-
-@media screen and (min-width: 51.875em) {
-  .flexbox .agenda > ol {
-    display: flex; /* My life for element/container queries...*/
-  }
-  .week,
-  .preview,
-  #projects article,
-  #grading {
-    padding-top: 2.5263157895em; /* ~ 48px @ 16px/em */
-  }
-  .preview .agenda {
-    padding-top: 1.2631578947em;
-  }
-  .preview,
-  .preview .meeting {
-    padding-bottom: 2.5263157895em; /* ~ 48px @ 16px/em */
-  }
-  #projects .preview {
-    margin-top: 2.5263157895em; /* ~ 48px @ 16px/em */
-  }
-  #instructor.assigned,
-  .assigned,
-  .deliverables {
-    padding-top: 1.8947368421em;
-  }
-  .assigned + .assigned {
-    padding-top: 0;
+/* 1040 / 16 = 65em */
+@media screen and (min-width: 65em) {
+  #projects #content,
+  #policies #content {
+    width: 60%;
   }
 }
