@@ -50,7 +50,8 @@
       <li>Sorry, no pages are cached.</li>
     </ul>
     <script>
-      caches.open('pages')
+      const detected_scope = '/'+location.href.split('/')[3]+'/';
+      caches.open('pages-' + detected_scope)
       .then(pagesCache => {
         pagesCache.keys()
         .then(keys => {

@@ -15,9 +15,9 @@ const preloaded_manifests = {
 };
 
 const cache_of = {
-  assets: 'assets-' + version,
-  requests: 'requests',
-  pages: 'pages'
+  assets: 'assets-' + version + '-' + detected_scope,
+  requests: 'requests-' + detected_scope,
+  pages: 'pages-' + detected_scope
 };
 
 const cache_list = [];
