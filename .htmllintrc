@@ -1,11 +1,11 @@
 {
-    // Stolley House Config, v. 1.1.0, 20170920
+    // Stolley House Config, v. 1.1.1, 20170923
 
     // names of npm modules to load into htmllint
     "plugins": [],
 
     // Configuration options:
-    "attr-bans": ["align", "background", "bgcolor", "border", "frameborder", "longdesc", "marginwidth", "marginheight", "scrolling", "style", "width", "height", "onload", "onclick"], // ban deprecated/obsolete attributes
+    "attr-bans": ["align", "background", "bgcolor", "border", "frameborder", "longdesc", "marginwidth", "marginheight", "scrolling", "style", "target", "width", "height", "onload", "onclick"], // ban deprecated/obsolete attributes
     "attr-name-style": "dash", // allow hyphens/dashes in attributes, e.g., for data- attributes
     "attr-no-dup": true, // no duplicate attributes
     "attr-validate": true, // well-formed attribute style

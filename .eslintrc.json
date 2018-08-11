@@ -1,34 +1,42 @@
 {
   "settings": {
-    "_version": "Stolley House Config, v. 1.0.1, 20171025",
-    "_eslint_version": "4.9.0",
-    "_rules_url": "https://eslint.org/docs/rules/"
+    "_version": "Stolley Browser Config, v. 2.0.2, 20180811",
+    "_eslint_version": "4.19.1",
+    "_rules_url": "https://eslint.org/docs/rules/",
+    "_repo_url": "https://github.com/karlstolley/eslint-config"
+  },
+  "parserOptions": {
+    "ecmaVersion": 5
   },
   "root": true,
   "env": {
-    "browser": true,
-    "jquery": true
+    "browser": true
   },
   "extends": "eslint:recommended",
   "rules": {
     "no-console": "off",
+    "no-template-curly-in-string": "error",
     "block-scoped-var": "warn",
-    "curly": ["error", "all"],
-    "default-case": "warn",
-    "eqeqeq": "error",
-    "no-alert": "warn",
-    "no-implicit-globals": "warn",
-    "vars-on-top": 1,
+    "curly": ["warn", "all"],
+    "dot-location": ["warn", "property"],
+    "dot-notation": "warn",
+    "eqeqeq": ["warn", "always"],
+    "no-multi-spaces": ["warn", { "ignoreEOLComments": true, "exceptions": { "Property": true } }],
+    "no-sequences": "error",
+    "require-await": "error",
+    "vars-on-top": "error",
     "yoda": "error",
+    "strict": ["error", "global"],
     "no-undefined": "error",
-    "comma-dangle": ["error", "never"],
-    "comma-spacing": ["error", { "before": false, "after": true }],
+    "comma-dangle": ["warn", "never"],
+    "comma-spacing": ["warn", { "before": false, "after": true }],
     "func-call-spacing": "warn",
-    "indent": ["error", 2],
+    "indent": ["warn", 2],
     "linebreak-style": ["error", "unix"],
     "multiline-comment-style": ["warn", "separate-lines"],
+    "newline-per-chained-call": ["warn", { "ignoreChainWithDepth": 2 }],
     "spaced-comment": ["warn", "always"],
     "semi": ["warn", "always"],
-    "semi-spacing": ["error", {"before": false, "after": true}]
+    "semi-spacing": ["warn", {"before": false, "after": true}]
   }
 }
