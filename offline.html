@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" id="offline">
+<head>
+  <meta charset="utf-8" />
+  <title>COM 330/530: Standards-Based Web Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <base href="/fwd/" />
+  <link rel="stylesheet" href="screen.css" media="screen" />
+</head>
+<body>
+<header id="header">
+  <a href="https://courses.karlstolley.com/wd/" rel="home">
+    <small>COM 330/530</small>
+    <h1>
+      Standards-Based Web Design
+    </h1>
+  </a>
+  <p class="tagline">
+    Foundational, research-based principles and practices of web development and client-server
+    architecture according to current open standards. Taught by
+    <a href="#instructor">Professor Karl Stolley</a>, Fall 2018.
+  </p>
+  <nav id="navigation">
+    <ul class="nav">
+      <li id="nav-cal"><a href="#this-week">Calendar</a></li>
+      <li id="nav-bcp"><a href="https://3.basecamp.com/3058761/projects/8576255">Basecamp</a></li>
+      <li id="nav-dem"><a href="https://github.com/sbwd-2018">GitHub</a></li>
+      <li id="nav-lnk"><a href="#links">Links</a></li>
+      <li id="nav-pro"><a href="projects/#current">Projects</a></li>
+      <li id="nav-pol"><a href="policies/">Policies</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="content">
+  <article class="primary">
+    <header>
+      <h2>Course Site Offline</h2>
+    </header>
+
+    <p>
+      Something is currently wonky with your Internet connection, or possibly the course site
+      itself. Sorry about that.
+    </p>
+    <p>
+      Your browser has cached versions of the following pages, which you can view while offline.
+      Note that the calendar in particular may have changed:
+    </p>
+    <ul id="cached_pages">
+      <li>Sorry, no pages are cached.</li>
+    </ul>
+    <script>
+      caches.open('pages')
+      .then(pagesCache => {
+        pagesCache.keys()
+        .then(keys => {
+          let markup = '';
+          keys.forEach( request => {
+            let request_url = request.url;
+            // Remove the fragment identifier and the course prefix
+            let slug = request_url.split('#')[0].split('/')[4];
+            if (slug.length === 0) {
+              slug = "calendar";
+            }
+            // Capitalize the first letter of the slug
+            let page_title = slug.charAt(0).toUpperCase() + slug.substr(1);
+            // Exclude the offline page itself from the list
+            if(!page_title.includes('Offline')) {
+              markup += `<li><a href="${request_url}">${page_title}</a></li>`;
+            }
+          });
+          document.getElementById('cached_pages').innerHTML = markup;
+        });
+      });
+    </script>
+
+  </article>
+</main>
+<footer id="footer">
+  <p class="fineprint">
+    Course syllabus &amp; site design by <a href="https://karlstolley.com/">Karl Stolley</a>.
+    Syllabus licensed under
+    <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons</a>.
+    <a id="github" href="https://github.com/karlstolley/wd">Source hosted on GitHub</a>.
+  </p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
