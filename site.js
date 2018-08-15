@@ -134,7 +134,7 @@
     // Identify the due date for assigned work based on the week's expiration
     dueDate = new Date(futureWeeks[0].attr('data-expires'));
     // Append a human-readable due-date to the assigned header
-    $('#this-week .assigned h3').after('<small>Complete by ' + namedDays[dueDate.getDay()] + ' ' + namedMonths[dueDate.getMonth()] + ' ' + dueDate.getDate() +'</small>');
+    $('#this-week .assigned h3').after('<small>Complete by ' + namedDays[dueDate.getDay()] + ', ' + namedMonths[dueDate.getMonth()] + ' ' + dueDate.getDate() +'</small>');
 
 
     if (typeof(futureWeeks[1])!=="undefined") {
