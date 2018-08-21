@@ -237,7 +237,8 @@ h3 + small {
 
 #calendar #nav-cal a,
 #policies #nav-pol a,
-#projects #nav-pro a {
+#projects #nav-pro a,
+.week h4 a {
   background: #A00;
   color: #EEE;
 }
