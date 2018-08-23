@@ -283,8 +283,8 @@ h3 + small {
   content: 'menu';
 }
 
-.js #this-week + h2 {
-  padding-top: 2.5869735105em; /* 96 / 37.109 = 2.5869735105 */
+.js #this-week + #content h2 {
+  padding-top: 1.2934867552em; /* 48 / 37.109 = 1.2934867552 */
 }
 
 /* 660px / 16 = 37.5em */
