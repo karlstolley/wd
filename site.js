@@ -127,7 +127,7 @@
     });
 
     // Identify the current week
-    $('#this-week').html('<header><h2>This Week</h2></header>');
+    $('#this-week').html('<header><h2>This Week</h2><small class="next"><a href="#next-week">Jump Ahead to Next Week</a></small></header>');
     $('#calendar .primary > header h2').text('Full Calendar');
     futureWeeks[0].clone().removeClass('is-future').appendTo('#this-week');
     futureWeeks[0].addClass('is-current').removeClass('is-future').attr('id', 'current-week');
