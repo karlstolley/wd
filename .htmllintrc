@@ -1,5 +1,5 @@
 {
-    // Stolley House Config, v. 1.1.1, 20170923
+    // Stolley House Config, v. 1.1.2, 20180910
 
     // names of npm modules to load into htmllint
     "plugins": [],
@@ -11,7 +11,7 @@
     "attr-validate": true, // well-formed attribute style
     "class-no-dup": true, // no duplicate classes on same element
     "doctype-first": true, // <!DOCTYPE html> must be first line
-    "fig-require-figcaption": true, // require <figcaption>
+    "fig-req-figcaption": true, // require <figcaption>
     "html-req-lang": true, // <html> tag must have lang attribute
     "head-req-title": true, // All documents must have <title>
     "head-valid-content-model": true, // Only valid <head> children
