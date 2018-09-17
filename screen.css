@@ -210,7 +210,7 @@ h3 + small {
   color: #EEE;
 }
 .assigned {
-  background-color: rgba(0,0,0,.1);
+  background-color: rgba(0,0,0,0.1);
 }
 .tagline,
 .note,
@@ -269,7 +269,7 @@ h3 + small {
   overflow-y: hidden;
 }
 .js .expandable .nav {
-  transition: height .2s ease-out;
+  transition: height 0.2s ease-out;
 }
 .js .is-expanded .nav {
   height: 15.1578947368em; /* (12 gridlines) 288 / 19 = 15.1578947368em */
@@ -280,7 +280,7 @@ h3 + small {
 }
 .js body::after {
   display: none;
-  content: 'menu';
+  content: "menu";
 }
 
 .js #this-week + #content h2 {
@@ -316,7 +316,7 @@ h3 + small {
     overflow-y: auto;
   }
   .js body::after {
-    content: '';
+    content: "";
   }
 }
 
@@ -355,8 +355,8 @@ h3 + small {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-areas:
-    "header header"
-    "agenda assigned";
+      "header header"
+      "agenda assigned";
     grid-column-gap: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
   }
   .cssgrid .week > header {
