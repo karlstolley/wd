@@ -1,4 +1,4 @@
-const version = '0.0.4';
+const version = '0.0.5';
 // Detect the service worker's location to set a scope for absolute paths
 const detected_scope = '/'+location.href.split('/')[3]+'/';
 

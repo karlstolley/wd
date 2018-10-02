@@ -100,9 +100,10 @@ cite, em, i {
   font-style: italic;
 }
 code {
+  background: #CCC;
+  color: #222;
   font-family: Menlo, Monaco, "Droid Sans Mono", Courier, "Courier New", monospace;
   font-size: 0.85em;
-  background: #CCC;
 }
 code a,
 a code {
