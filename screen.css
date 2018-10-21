@@ -372,7 +372,7 @@ h3 + small {
     padding-bottom: 1.8947368421em; /* 36 / 19 = 1.8947368421 */
   }
   .cssgrid .week .assigned {
-    grid-area: .assigned;
+    grid-area: assigned;
     margin-left: 0;
   }
   .cssgrid #links {
