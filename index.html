@@ -548,20 +548,8 @@
           <ol>
             <li>In-progress Project Two presentations</li>
             <li>
-              Responsive images:
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">srcset</a>
-              and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">&lt;picture&gt;</a>
+              Building a responsive image gallery with Flexbox
             </li>
-            <li>
-              Responsive images polyfill: <a href="https://scottjehl.github.io/picturefill/">Picturefill.js</a>
-            </li>
-            <li>Working with accessible non-text media in HTML5:
-              <ul>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content">Audio and Video</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats">browser media-format support</a></li>
-                <li>CSS <code>background-image</code> <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Scaling_background_images">like a boss</a></li>
-              </ul>
-            </li>
-            <li>Preprocessors (SASS)</li>
           </ol>
         </li>
       </ol>
@@ -591,22 +579,79 @@
 
     <article id="week-10" class="week" data-expires="2018-10-29T16:30:00-05:00">
       <header>
-        <h3>JavaScript: A Fuller Introduction</h3>
+        <h3>Responsive Media; Code Quality</h3>
         <small>Week&nbsp;Ten</small>
       </header>
       <ol class="agenda">
         <li class="meeting">
           <h4>Monday, October 22</h4>
           <ol>
-            <li>JavaScript overview</li>
+            <li>
+              Responsive images:
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">srcset</a>
+              and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture">&lt;picture&gt;</a>
+            </li>
+            <li>
+              Responsive images polyfill: <a href="https://scottjehl.github.io/picturefill/">Picturefill.js</a>
+            </li>
+            <li>Working with accessible non-text media in HTML5:
+              <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content">Audio and Video</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats">Browser media-format support</a></li>
+              </ul>
+            </li>
           </ol>
         </li>
         <li class="meeting">
           <h4>Wednesday, October 24</h4>
           <ol>
+            <li>Code quality: hinting and linting</li>
+            <li>
+              <a href="https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-2-change-npms-default-directory-to-another-directory">npm global directory location</a>
+            </li>
+            <li>Emergency HTML semantics and validation refresher</li>
+            <li>Linting HTML with <a href="#links">htmllint</a></li>
+          </ol>
+        </li>
+      </ol>
+      <aside class="assigned">
+        <header>
+          <h3>Assigned Work</h3>
+        </header>
+        <ul class="assignments">
+          <li>
+            <h4>To Do</h4>
+            <ol>
+              <li>
+                Project Two due by Sunday, October 28 at 11:59pm CT; check your work against the
+                <a href="projects/#project-two">project description</a>
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </aside>
+    </article>
+
+    <article id="week-11" class="week" data-expires="2018-11-05T16:30:00-06:00">
+      <header>
+        <h3>JavaScript: A Fuller Introduction</h3>
+        <small>Week&nbsp;Eleven</small>
+      </header>
+      <ol class="agenda">
+        <li class="meeting">
+          <h4>Monday, October 29</h4>
+          <ol>
+            <li>Introduce <a href="projects/#project-three">project three</a></li>
+            <li>JavaScript overview</li>
             <li>Values and variables in JavaScript</li>
             <li>Collections: arrays and objects</li>
             <li><a href="http://jshint.com">JSHint (Web)</a></li>
+          </ol>
+        </li>
+        <li class="meeting">
+          <h4>Wednesday, October 31</h4>
+          <ol>
+            <li>Remote meeting: review and general Q&amp;A</li>
           </ol>
         </li>
       </ol>
@@ -628,44 +673,6 @@
             <h4>To Do</h4>
             <ol>
               <li>
-                Project Two due by Sunday, October 28 at 11:59pm CT; check your work against the
-                <a href="projects/#project-two">project description</a>
-              </li>
-            </ol>
-          </li>
-        </ul>
-      </aside>
-    </article>
-
-    <article id="week-11" class="week" data-expires="2018-11-05T16:30:00-06:00">
-      <header>
-        <h3>Review and Catch-up Week</h3>
-        <small>Week&nbsp;Eleven</small>
-      </header>
-      <ol class="agenda">
-        <li class="meeting">
-          <h4>Monday, October 29</h4>
-          <ol>
-            <li>Introduce <a href="projects/#project-three">project three</a></li>
-            <li>Review and general Q&amp;A</li>
-          </ol>
-        </li>
-        <li class="meeting">
-          <h4>Wednesday, October 31</h4>
-          <ol>
-            <li>Remote meeting: remaining review and general Q&amp;A</li>
-          </ol>
-        </li>
-      </ol>
-      <aside class="assigned">
-        <header>
-          <h3>Assigned Work</h3>
-        </header>
-        <ul class="assignments">
-          <li>
-            <h4>To Do</h4>
-            <ol>
-              <li>
                 Begin work on Project Three
               </li>
             </ol>
@@ -677,7 +684,7 @@
     <article id="week-12" class="week" data-expires="2018-11-12T16:30:00-06:00">
       <header>
         <h3>
-          Unobtrusive DOM Scripting: JavaScript + the Document Object Model; jQuery and Friends
+          Unobtrusive DOM Scripting: JavaScript + the Document Object Model
         </h3>
         <small>Week&nbsp;Twelve</small>
       </header>
@@ -685,12 +692,8 @@
         <li class="meeting">
           <h4>Monday, November 5</h4>
           <ol>
-            <li>
-              <a href="https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-2-change-npms-default-directory-to-another-directory">npm global directory location</a>
-            </li>
-            <li>Emergency HTML semantics and validation refresher</li>
-            <li>Linting HTML with <a href="#links">htmllint</a></li>
             <li>JavaScript control structures</li>
+            <li>Accessing the DOM</li>
           </ol>
         </li>
         <li class="meeting">
@@ -698,7 +701,6 @@
           <ol>
             <li>Functional &amp; object-oriented programming styles</li>
             <li>Unobtrusive JavaScript with event listeners</li>
-            <li>DOM-scripting libraries</li>
           </ol>
         </li>
       </ol>
