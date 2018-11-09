@@ -15,26 +15,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   /*
-    Use the text-size-adjust property
-    to prevent automatically inflating
-    text on orientation changes
-    (portrait to landscape on a phone,
-    for example):
-  */
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ie-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  text-rendering: optimizeLegibility;
-  /*
     Major Third Modular Scale
     http://www.modularscale.com/?19&px&1.25
   */
   font-size: 1.1875em; /* 19 / 16px */
-  line-height: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
   font-family: "Camphor W04", Verdana, Helvetica, Arial, sans-serif;
-  color: #222;
+  line-height: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
+  text-rendering: optimizeLegibility;
+
   background: #EEE;
+  color: #222;
 }
 
 h1,
@@ -42,6 +32,17 @@ h2,
 h3,
 h4 {
   font-weight: bold;
+}
+h2 {
+  font-size: 1.9531052632em; /* 37.109 / 19 = 1.9531052632 */
+  font-weight: normal;
+  line-height: 1.2934867552em; /* 48 / 37.109 = 1.2934867552 */
+  padding-bottom: 0.6467433776em; /* 24 / 37.109 = 0.6467433776 */
+}
+h2#nav-menu {
+  font-size: inherit;
+  line-height: inherit;
+  padding-bottom: inherit;
 }
 h3 {
   font-size: 1.25em; /* 23.75 / 19 = 1.25 */
@@ -83,11 +84,13 @@ li ul {
 }
 
 ol > li::before {
-  counter-increment: enum;
-  content: counter(enum) ". ";
   position: absolute;
   margin-left: -1.2631578947em; /* 24 / 19px = 1.2631578947 */
+
   font-weight: bold;
+
+  counter-increment: enum;
+  content: counter(enum) ". ";
 }
 
 a {
@@ -100,10 +103,11 @@ cite, em, i {
   font-style: italic;
 }
 code {
-  background: #CCC;
-  color: #222;
   font-family: Menlo, Monaco, "Droid Sans Mono", Courier, "Courier New", monospace;
   font-size: 0.85em;
+
+  background: #CCC;
+  color: #222;
 }
 code a,
 a code {
@@ -121,6 +125,7 @@ header small {
 /* Layout Styles */
 #header {
   position: relative;
+
   padding-top: 3.7894736842em; /* 72 / 19 = 3.7894736842 */
 }
 #header small,
@@ -129,27 +134,34 @@ header small {
   position: absolute;
   top: 0;
   left: 0.6315789474em; /* 12 / 19 = 0.6315789474 */
+
   padding-top: 0.6315789474em; /* 12 / 19 = 0.6315789474 */
   padding-bottom: 0.6315789474em; /* 12 / 19 = 0.6315789474 */
+
   font-weight: bold;
 }
 #nav-menu a {
-  left: auto;
   top: 0.3157894737em; /* 6 / 19 = 0.3157894737em */
   right: 0.3157894737em; /* 6 / 19 = 0.3157894737em */
+  left: auto;
+
   padding: 0.3157894737em; /* 6 / 19 = 0.3157894737em */
   border-radius: 0.3157894737em; /* 6 / 19 = 0.3157894737em */
+
   font-weight: normal;
   text-transform: uppercase;
 }
 .week h4 a {
+  line-height: 1;
   display: inline-block;
-  padding: 0.1973684211em 0.3157894737em; /* 6 / 19 = 0.3157894737em; 3 / 15.2 = 0.1973684211 */
+
   margin-left: 0.3618421053em;
+  padding: 0.2894736842em; /* 4.4 / 15.2  (24 - 15.2 = 8.8)*/
   border-radius: 0.3618421053em; /* 5.5 / 15.2 = 0.2894736842em */
+
   font-weight: normal;
-  text-transform: uppercase;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 #header,
@@ -158,8 +170,8 @@ header small {
 #links,
 #instructor,
 #footer {
-  padding-left: 11%; /* 33 / 300 = 0.11 */
   padding-right: 11%; /* 33 / 300 = 0.11 */
+  padding-left: 11%; /* 33 / 300 = 0.11 */
 }
 
 #links,
@@ -180,25 +192,17 @@ header small {
   text-decoration: none;
 }
 
-h2 {
-  font-weight: normal;
-  font-size: 1.9531052632em; /* 37.109 / 19 = 1.9531052632 */
-  line-height: 1.2934867552em; /* 48 / 37.109 = 1.2934867552 */
-  padding-bottom: 0.6467433776em; /* 24 / 37.109 = 0.6467433776 */
-}
-h2#nav-menu {
-  font-size: inherit;
-  line-height: inherit;
-  padding-bottom: inherit;
-}
 .assigned h3 {
-  font-size: inherit;
-  line-height: inherit;
+  font-size: 1em; /* 19 / 19px */
+  line-height: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
 }
 #policies h3,
 #links h3,
 #instructor h3 {
   padding-bottom: 0.5052631579em; /* 12 / 23.75 = 0.5052631579 */
+}
+#instructor header {
+  padding-bottom: 0;
 }
 h3 + small {
   padding-bottom: 0.6315789474em; /* 12 / 19 = 0.6315789474 */
@@ -207,6 +211,7 @@ h3 + small {
 #this-week {
   padding-top: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
   padding-bottom: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
+
   background: #222;
   color: #EEE;
 }
@@ -254,9 +259,9 @@ h3 + small {
   content: "";
 }
 
-.week .assigned {
-  padding: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
-  padding-left: 1.8947368421em; /* 36 / 19 = 1.8947368421 */
+.assigned {
+  padding: 1.8947368421em; /* 36 / 19 = 1.8947368421 */
+  margin: auto -1.8947368421em; /* 36 / 19 = 1.8947368421 */
   padding-bottom: 0;
 }
 .week + .week {
@@ -332,73 +337,73 @@ h3 + small {
     left: 11%;
   }
   .nav {
-    right: 11%; /* TODO: Align with RH column on calendar */
+    right: 11%;
   }
   #instructor {
     width: 60%;
   }
-  .week .agenda {
+  .agenda,
+  #course-resources {
     float: left;
     width: 40%;
   }
-  .week .assigned {
+  .assigned,
+  #essential-tools,
+  #essential-references {
     margin-left: 45%;
+    margin-right: auto;
   }
   .week > header {
     clear: both;
     padding-top: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
-    padding-bottom: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
+    padding-bottom: 0;
   }
-  #calendar.cssgrid .is-visible .extended {
-    display: grid; /* Yuck, yuck, yuck */
+  .meeting,
+  .assigned {
+    padding-top: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
   }
-  .cssgrid .week {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-areas:
-      "header header"
-      "agenda assigned";
-    grid-column-gap: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
-  }
-  .cssgrid .week > header {
-    grid-area: header;
-  }
-  .cssgrid .week .agenda {
-    grid-area: agenda;
-    float: none;
-    width: auto;
-  }
-  .meeting {
-    padding-bottom: 1.8947368421em; /* 36 / 19 = 1.8947368421 */
-  }
-  .cssgrid .week .assigned {
-    grid-area: assigned;
-    margin-left: 0;
-  }
-  .cssgrid #links {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-      "header header header"
-      "course tools references";
-    grid-column-gap: 1.8947368421em; /* 36 / 19 = 1.8947368421 */
-  }
-  .cssgrid header {
-    grid-area: header;
-  }
-  .cssgrid #course-resources {
-    grid-area: course;
-  }
-  .cssgrid #essential-tools {
-    grid-area: tools;
-  }
-  .cssgrid #essential-references {
-    grid-area: references;
+
+  @supports (display:grid) {
+    .agenda,
+    .assigned,
+    #course-resources,
+    #essential-tools,
+    #essential-references {
+      margin: 0;
+      width: auto;
+    }
+    #essential-tools,
+    #essential-references {
+      padding: 0 1.8947368421em; /* 36 / 19 = 1.8947368421 */
+    }
+    .week,
+    #links {
+      display: grid;
+      grid-template-columns: 4fr 6fr;
+      grid-template-rows: repeat(3, auto);
+      grid-column-gap: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
+    }
+    .week > header,
+    #links h3 {
+      grid-column: 1/3;
+    }
+    #essential-references {
+      grid-column: 2/3;
+    }
   }
 }
 
 /* 1040 / 16 = 65em */
 @media screen and (min-width: 65em) {
+  #links {
+    grid-template-columns: 4fr 3fr 3fr;
+  }
+  #links h3 {
+    grid-column: 1/4;
+  }
+  #essential-references {
+    grid-column: 3/4;
+  }
   #projects #content,
   #policies #content {
     width: 60%;
