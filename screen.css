@@ -201,9 +201,6 @@ header small {
 #instructor h3 {
   padding-bottom: 0.5052631579em; /* 12 / 23.75 = 0.5052631579 */
 }
-#instructor header {
-  padding-bottom: 0;
-}
 h3 + small {
   padding-bottom: 0.6315789474em; /* 12 / 19 = 0.6315789474 */
 }
@@ -384,7 +381,7 @@ h3 + small {
       grid-column-gap: 1.2631578947em; /* 24 / 19px = 1.2631578947 */
     }
     .week > header,
-    #links h3 {
+    #links header {
       grid-column: 1/3;
     }
     #essential-references {
@@ -398,7 +395,7 @@ h3 + small {
   #links {
     grid-template-columns: 4fr 3fr 3fr;
   }
-  #links h3 {
+  #links header {
     grid-column: 1/4;
   }
   #essential-references {
