@@ -1,4 +1,4 @@
-const version = '1.1.1';
+const version = '1.1.2';
 // Detect the service worker's location to set a scope for absolute paths
 const detected_scope = '/'+location.href.split('/')[3]+'/';
 
@@ -26,7 +26,8 @@ for (let what in cache_of) {
 }
 
 addEventListener('install', e => {
-  console.log('The service worker is waiting to install...');
+  console.log('The service worker is preparing to install...');
+  self.skipWaiting();
   console.log(cache_list);
   e.waitUntil(
     caches.open(cache_of.assets)
