@@ -62,16 +62,16 @@
       futureWeeks[0].classList.add('is-current');
       futureWeeks[0].classList.remove('is-future');
       futureWeeks[0].setAttribute('id', 'current-week');
-      // Identify the due date for assigned work based on the week's expiration
-      dueDate = new Date(futureWeeks[0].getAttribute('data-expires'));
-      // Append a human-readable due-date to the assigned header
-      var small = document.createElement('small');
-      small.innerHTML = 'Complete by ' + namedDays[dueDate.getDay()] + ', ' + namedMonths[dueDate.getMonth()] + ' ' + dueDate.getDate();
-      document.querySelector('#this-week .assigned header').appendChild(small);
 
       if (typeof(futureWeeks[1])!=="undefined") {
         // If there is another week beyond the current one, identify it as well
         futureWeeks[1].setAttribute('id', 'next-week');
+        // Identify the due date for assigned work based on the week's expiration
+        dueDate = new Date(futureWeeks[0].getAttribute('data-expires'));
+        // Append a human-readable due-date to the assigned header
+        var small = document.createElement('small');
+        small.innerHTML = 'Complete by ' + namedDays[dueDate.getDay()] + ', ' + namedMonths[dueDate.getMonth()] + ' ' + dueDate.getDate();
+        document.querySelector('#this-week .assigned header').appendChild(small);
       }
 
       // Insert upcoming deadlines at the end of current week's assigned work
