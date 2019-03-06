@@ -1,0 +1,31 @@
+#navigation,
+#this-week,
+#links,
+.fineprint + .fineprint,
+.week h4 a {
+  display: none;
+}
+#header,
+#this-week,
+#content,
+#links,
+#instructor,
+#footer {
+  padding-right: 0.1in;
+  padding-left: 0.3in;
+}
+#header small {
+  position: static;
+}
+html {
+  color: #000;
+  font-size: 11pt;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a[href^='http']::after {
+  content: " (" attr(href) ")";
+  color: #666;
+}
