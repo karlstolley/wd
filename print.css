@@ -1,0 +1,37 @@
+b,strong { font-weight: bold; }
+i,em,cite { font-style: italic; }
+code { 
+  font-family: Monaco, "Courier New", monospace;
+  background: #444;
+  color: #7F0;
+  padding-left: .5ex;
+  padding-right: .5ex;
+}
+ul#navigation,.dates div#news { display: none; }
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
+  margin-top: 1em;
+}
+p,ul,ol { margin-bottom: .5em; }
+div#content ul, div#content h4 {
+  margin-left: 0.42857142857143em; /* 6px / 14px = */
+}
+div#schedule ol ul, div#schedule ol h4 { margin-bottom: 0; }
+div#content p { margin-left: 0.42857142857143em; /* 6px / 14px = */ }
+div#content h2 + p, div#content div.preview p { margin-left: 0; }
+div#content ul li { 
+  margin-left: 1.71428571428571em; /* 24px / 14px = 1.71428571428571 */ 
+  list-style-type: disc; 
+}
+
+* { color: black; }
+a { text-decoration: none; }
+
+a[href^=http]:link:after,
+a[href^=http]:visited:after {
+   content: " (" attr(href) ")";
+   font-size: 90%;
+   font-family: Monaco, "Courier New", Courier, monospace;
+}
+
+div#footer { font-size: 10pt; border-top: 1pt solid black; padding-top: 1em; margin-top: 2em; }

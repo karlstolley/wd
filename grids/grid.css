@@ -1,0 +1,63 @@
+/* Typographic Grids */
+
+.t10 {
+  line-height: 10px;
+  font-size: 8px;
+  background-image: url('img/10px-baseline.png');
+}
+.t12 {
+  line-height: 12px;
+  font-size: 8px;
+  background-image: url('img/12px-baseline.png');
+}
+.t14 {
+  line-height: 14px;
+  font-size: 10px;
+  background-image: url('img/14px-baseline.png');
+}
+.t16 {
+  line-height: 16px;
+  font-size: 12px;
+  background-image: url('img/16px-baseline.png');
+}
+.t18 {
+  line-height: 18px;
+  font-size: 12px;
+  background-image: url('img/18px-baseline.png');
+}
+.t20 {
+  line-height: 20px;
+  font-size: 14px;
+  background-image: url('img/20px-baseline.png');
+}
+.t22 {
+  line-height: 22px;
+  font-size: 14px;
+  background-image: url('img/22px-baseline.png');
+}
+.t24 {
+  line-height: 24px;
+  font-size: 16px;
+  background-image: url('img/24px-baseline.png');
+}
+
+/* Column Grids */
+/* See http://960.gs/ */
+@media screen and (min-width: 1010px) {
+  .g960 #page {
+    width: 940px; /*Total width works out to 960*/
+    padding: 0px 10px 0px 10px;
+    background-image: url('img/960px-10-60-10-unit.png');
+  }
+  /* See http://978.gs/ */
+  .g978 #page {
+    width: 978px; /*Total with works out to 1008*/
+    padding: 0px 15px 0px 15px;
+    background-image: url('img/978px-15-54-15-unit.png');
+  }
+}
+
+/* Example-specific Styles */
+a {
+  text-decoration: none; /*Lose underlining on links to make grid easier to see*/
+}

@@ -1,0 +1,56 @@
+/* Mobile Designs (apply to non-mobile also) */
+
+/* Page Divisions - NO LAYOUT HERE; Think Linear, Mobile Design */
+div#header {}
+div#content {}
+div#main {}
+div#supporting {}
+ul#navigation {}
+div#footer {}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 { font-family: Georgia, "Times New Roman", serif; } /* Make all headings Georgia/serif */
+
+h1 {}
+h2 {}
+
+/* Paragraphs */
+p.tagline {}
+div#content p {}
+
+/* Lists */
+div#content ul {}
+div#content ul > li {}
+
+
+/* Phrase Styles */
+
+/* Hide Stuff */
+ul.accessibility { display: none; }
+
+/* Basic Media Query for Screens wider than 1010 pixels */
+
+@media screen and (min-width: 1010px) {
+  html {}
+  body {}
+  /*Page Divisions*/
+
+  /*
+    Helpful hint:
+    While working to position page divisions into regions,
+    use the rgba(); color syntax to keep the grid images
+    visible, e.g.,
+
+    div#header { background-color: rgba(255,0,0,.2) }
+
+    The forth/alpha value ranges from 0 (completely transparent)
+    to 1.0 (completely opaque).
+  */
+  div#header {}
+  div#content {}
+  div#main {}
+  div#supporting {}
+  ul#navigation {}
+  div#footer {}
+/*Close curly-brace from media query:*/
+}

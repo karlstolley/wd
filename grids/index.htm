@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--The use of a class attribute on html will throw an error in the XHTML 1.0 Strict Validator. So be it.-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="example-com" class="t22 g960">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <!--
+    Use device width on iPhone, no scaling; maximum-scale keeps things cool on orientation changes.
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <title>Typographic Grid Example</title>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="grid.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="screen.css" />
+
+</head>
+
+<body>
+
+<div id="page">
+
+  <div id="header">
+
+    <h1><a href="#page" rel="home">Typographic Grids Rule</a></h1>
+
+    <p class="tagline">
+      When it comes to <code>line-height</code>, set it...but don’t forget it.
+    </p>
+
+    <ul class="accessibility">
+      <li><a href="#navigation">Jump to Navigation</a></li>
+      <li><a href="#content">Jump to Content</a></li>
+    </ul>
+
+  </div>
+
+  <div id="content">
+
+    <div id="main">
+      <h2>Typographic Grids: Simple Concept, Tricky Execution</h2>
+      <p>
+        Let’s face it: people inclined toward communication and design don’t usually think of math
+        as their strong suit. But the foundation of any well constructed grid is mathematical.
+      </p>
+      <p>
+        The good news is that the only math you need is addition and multiplication. If, for
+        example, your baseline grid is 18 pixels, then everything you do to enhance your design
+        (borders, margin, padding) must add up to 18 pixels or a multiple of 18 (36, 54, and so on).
+      </p>
+      <p>
+        While thinking this mathematically about design may not be fun, it also takes a lot of the
+        guesswork out of design. You don’t have to worry, for example, as to what to set the
+        <code>line-height</code> as on your list items or your headings or paragraphs. That’s
+        already been decided.
+      </p>
+      <p>
+        And when you do make the decision about your baseline grid, make sure that it’s an even
+        number. 16, not 15. 18, not 17. The simple reason for this is that browsers will put your
+        text right in the middle of the value you specify; an even number ensures that there is the
+        same amount of space above and below each line of text. See also the “Mind Your Math”
+        sidebar.
+      </p>
+    </div>
+
+    <div id="supporting">
+      <h2>Mind Your Math</h2>
+      <ul>
+        <li>
+          <strong>Don’t get mad, get even.</strong> When working with grids, look for numbers that
+          divide evenly into both 2 and 3 (e.g. 12, 18); numbers that divide into 2 and 3 that also
+          divide into 4 (e.g., 24, 32) and/or 5 (e.g., 30, 40) are even better (but harder to find
+          at small intervals). Numbers that divide into 2, 3, and 6 are somewhat easier to find,
+          being simply multiples of 6 (e.g., 6, 12, 18, 24).
+        </li>
+        <li>
+          <strong>A pixel might as well be a mile.</strong> They sound small, but look big. When
+          creating graphics to help gauge your grid alignment, go with colored bands, not grid
+          lines--as the lines themselves have dimension. This page features a <a
+          href="img/18px-baseline.png">graphic</a> that's 36 pixels tall, split into two 18px-tall
+          bands. Use the same technique for images that guide vertical units and columns.
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <ul id="navigation">
+    <li><a href="#/">Home</a></li>
+    <li><a href="#/about.htm">About</a></li>
+  </ul>
+
+  <div id="footer">
+    <p class="credits">
+      This is an in-class exercise by Karl Stolley. Licensed under <a href="http://creativecommons.org/licenses/by-nc/2.0/">Creative Commons</a>.
+    </p>
+    <ul class="validators">
+      <li><a href="http://validator.w3.org/check?uri=referer"
+        title="Validate this page's XHTML">XHTML</a></li>
+      <li><a href="http://jigsaw.w3.org/css-validator/check/referer"
+        title="Validate this page's CSS">CSS</a></li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+
+</html>

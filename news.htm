@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <!--
+    Use device width on iPhone, no scaling; maximum-scale keeps things cool on orientation changes.
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+  <title>News: Standards-Based Web Design</title>
+  <link rel="stylesheet" type="text/css" media="screen,print" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="screen.css" />
+  <link rel="stylesheet" type="text/css" media="print" href="print.css" />
+
+  <script type="text/javascript" src="respond.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script type="text/javascript" src="site.js"></script>
+
+  <meta name="title" content="Standards-Based Web Design" />
+  <meta name="description" content="A graduate course in the theory and practice of designing for web-enabled devices." />
+  <link rel="image_src" href="http://courses.karlstolley.com/530/thumbnail.png" />
+
+</head>
+<body class="news">
+<div id="header">
+  <h1>Standards-Based <b>Web Design</b></h1>
+  <p class="tagline">
+    A graduate course in the theory and practice of designing for web-enabled devices.
+  </p>
+  <ul id="contact">
+    <li><a href="http://karlstolley.com/">Professor Karl Stolley</a><span class="e">, <a href="http://www.iit.edu/">Illinois Institute of Technology</a></span></li>
+    <li><a href="mailto:karl.stolley@gmail.com">karl.stolley@gmail.com</a></li>
+    <li>+1.872.228.5275</li>
+    <li>SH208 M/T 3:30-5:30 and by appointment</li>
+  </ul>
+  <ul id="navigation">
+    <li id="nav-news"><a href="news.htm">News</a></li>
+    <li id="nav-dates"><a href="index.htm">Dates</a></li>
+    <li id="nav-projects"><a href="projects.htm">Projects</a></li>
+    <li id="nav-policies"><a href="policies.htm">Policies</a></li>
+  </ul>
+</div>
+
+<div id="content">
+  <div id="news">
+    <h2>Course News</h2>
+    <div class="post">
+      <h3>Respond.js</h3>
+      <p class="summary">
+        <b>11/01/2011</b>: Be sure to add respond.js to your site so that your media queries have a better
+        chance of working in Internet Explorer and older browsers.
+      </p>
+      <p>
+        First, grab a copy of <a href="https://raw.github.com/scottjehl/Respond/master/respond.min.js">respond.min.js</a>;
+        you can follow that link, and then copy and paste its contents into a blank file in your text editor.
+        Save the file as <code>respond.min.js</code>, perhaps in a <code>js/</code> (JavaScript) folder in your site,
+        if you have one.
+      </p>
+      <p>
+        Next, in the <code>&lt;head&gt;</code> of each of your site's pages, load the <code>respond.min.js</code>
+        file using the code below; the example below assumes that you have a <code>js/</code> folder in your site containing the
+        <code>respond.min.js</code> file. Change the <code>src=""</code> path to reflect the actual location in your site:
+      </p>
+        <pre>
+<b>&lt;!--Change the path to respond.min.js to reflect its location in your site--&gt;</b>
+&lt;script type="text/javascript" src="/js/respond.min.js"&gt;&lt;/script&gt;
+        </pre>
+      <p>
+        Have a look at the source of any page on our course website if you need to see an
+        example of where to place this code in your own pages.
+      </p>
+    </div>
+    <div class="post">
+      <h3>Helpful-hint Checklist for Project One</h3>
+      <p class="summary">
+        <b>9/13/2011</b>: Be sure to check the <a href="projects.htm">project requirements</a>, but
+        here are some additional, helpful things to double-check before you email
+        the link to your GitHub repository to turn in your first project next week:
+      </p>
+      <ul>
+        <li>
+          <strong>File names:</strong> Are all of your file names and folders lower-case, without
+          any spaces or punctuation other than the hyphen?
+        </li>
+        <li>
+          <strong>Writing:</strong> Is your writing web-ready? Interesting, concise, and meaningful
+          (no <a href="http://www.codinghorror.com/blog/2004/12/happy-talk-must-die.html">“happy
+          talk,”</a> for example)?
+        </li>
+        <li>
+          <strong>Validation:</strong> Do all of your XHTML 1.0 Strict and CSS files validate
+          against the W3C validators?
+        </li>
+        <li>
+          <strong>Source formatting:</strong> Do all of your files use Unix-style line endings, and
+          the UTF-8 character set? Have you neatly indented all of your source code for nested tags
+          and shared properties on a given CSS selector to keep it tidy, organized, and readable? Do you have hard breaks on long lines at 80 or 100 characters?
+        </li>
+      </ul>
+    </div>
+    <div class="post">
+      <h3>Git Fu, Command-Line Fu References</h3>
+      <p class="summary">
+        <b>8/30/2011</b>: As promised, here are two quick references: <a href="cli-fu.htm">one for the command line</a> and <a href="git-fu.htm">one for Git</a>.
+      </p>
+      <p>
+        Also, we will use <a href="https://gist.github.com/558053">this Gist of a bare-bones XHTML file</a> tonight.
+      </p>
+    </div>
+    <div class="post">
+      <h3>First night of class: some tech setup</h3>
+      <p class="summary"><b>8/23/2011</b>: We will be setting up some unusual technologies tonight. They’ll all be better explained in the coming weeks, but tonight you’ll just have to take a leap of faith.</p>
+      <p>
+        One of the technologies that we’ll set up is <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>, a set of scripts that will enhance the Z shell (<code>zsh</code>) command-line shell that we’ll be using in this course.
+      </p>
+      <ol class="instructions">
+        <li>Open the Terminal program (aka the command line); it’s under Applications &gt; Accessories.</li>
+        <li>
+          You’ll be greeted with a screen full of dire sounding text that begins with <code>You are
+          seeing this message because you have no zsh startup files (the files .zshenv, .zprofile,
+          .zshrc, .zlogin in the directory ~).</code>. <b>Hit the letter q</b> and you’ll be dropped
+          out on the command line.
+        </li>
+        <li>
+          At the prompt (represented here as a dollar-sign, <code>$</code>, which you should NOT type/copy-and-paste), type or copy and paste the following (without the dollar sign):
+          <pre><b>$ </b>git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh</pre>
+        </li>
+        <li>
+          Once that command is finished running and you have your prompt again, you’ll need to make a start-up file (<code>.zshrc</code>) that we’ll do more things with as the semester goes on. For now, type or copy and paste this line (without the dollar sign):
+          <pre><b>$ </b>cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc</pre>
+        </li>
+        <li>
+          The command line can be used to launch graphical programs; that’s what we’ll do here, bringing up your new <code>.zshrc</code> file in the gedit text editor:
+          <pre><b>$ </b>gedit .zshrc &amp;</pre>
+        </li>
+        <li>
+          To start, we’ll uncomment out this line in the <code>.zshrc</code>file by deleting the <code>#</code> (hash) in front of it:
+          <pre class="file"># DISABLE_AUTO_UPDATE="true"</pre>
+        </li>
+        <li>
+          Next, we’ll set the visual theme to <code>gallois</code> (just so it looks like your instructor’s):
+          <pre class="file">ZSH_THEME="gallois"</pre>
+        </li>
+        <li>
+          Save the file and close the gedit editor. Then close your Terminal program and reopen it.
+        </li>
+      </ol>
+      <p>
+        Once that’s done, we will configure Git so that it knows your name and email address, and outputs color when we run it.
+      </p>
+      <ol class="instructions">
+        <li>
+          At the command line, run
+          <pre><b>$ </b>git config --global user.name "Firstname Lastname" </pre>
+          replacing <code>Firstname Lastname</code> your own first and last name; keep the quotation marks.
+        </li>
+        <li>
+          Next, run
+          <pre><b>$ </b>git config --global user.email "your.email@example.com"</pre>
+          replacing <code>your.email@example.com</code> with your actual email address.
+        </li>
+        <li>
+          To set up colorized out put, run
+          <pre><b>$ </b>git config --global color.ui "auto"</pre>
+        </li>
+        <li>
+          To check that all of your information is correct, run the following command; the
+          output will look similar to this (but have your information):
+          <pre><b>$ </b>git config --global --list
+<b>user.name=Firstname Lastname
+user.email=your.email@example.com
+color.ui=auto</b></pre>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <p>
+    Course content and site design by <a href="http://karlstolley.com/">Karl Stolley</a>. Licensed
+    under <a href="http://creativecommons.org/licenses/by-nc/2.0/">Creative Commons (NC-BY)</a>.
+    View development and download the source on
+    <a href="https://github.com/karlstolley/com530">GitHub</a>. Powered by
+    <a href="http://developer.yahoo.com/yui/">Yahoo! Developer YUI Library</a>,
+    <a href="http://jquery.com/">jQuery</a>, and <a href="http://typekit.com/">Typekit</a>.
+  </p>
+</div>
+
+</body>
+</html>
