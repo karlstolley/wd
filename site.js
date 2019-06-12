@@ -187,7 +187,7 @@
 
   // Register service worker
   if (typeof navigator.serviceWorker !== 'undefined') {
-    // Grab the course directory from the URL off of courses.karlstolley.com:
+    // Grab the course directory from the URL off of courses.stolley.co:
     sw_path = '/' + window.location.href.split('/')[3] + '/';
     navigator.serviceWorker.register(sw_path + 'sw.js')
     .then(function(registration) {
