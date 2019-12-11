@@ -1,0 +1,35 @@
+day_offsets:
+  monday: 0
+  tuesday: 86400
+  wednesday: 172800
+  thursday: 259200
+  friday: 345600
+  saturday: 432000
+  sunday: 518400
+spelled_nums:
+  - Zero
+  - One
+  - Two
+  - Three
+  - Four
+  - Five
+  - Six
+  - Seven
+  - Eight
+  - Nine
+  - Ten
+  - Eleven
+  - Twelve
+  - Thirteen
+  - Fourteen
+  - Fifteen
+  - Sixteen
+  - Seventeen
+  - Eighteen
+  - Nineteen
+  - Twenty
+  - Twenty-One
+  - Twenty-Two
+  - Twenty-Three
+  - Twenty-Four
+  - Twenty-Five

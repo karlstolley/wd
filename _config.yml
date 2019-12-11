@@ -1,0 +1,69 @@
+url: https://courses.stolley.co
+baseurl: /wd/
+
+timezone: America/Chicago
+
+course:
+  number: COM 330/530
+  title: Standards-Based Web Design
+  uid: wd
+  tagline: >
+    Write a course tagline in `_config.yml`
+  term: 2020
+  # Set `days: ""` (empty string) for weekly/asynchronous classes
+  days: ""    
+  license:
+    name: Creative Commons
+    url: https://creativecommons.org/licenses/by/4.0/
+  instructor:
+    honorific: Dr.
+    name: Karl Stolley
+    title: Professor
+    full_title: Enter a full professional title in `_config.yml`
+    url: https://example.com/instructor/
+    github: https://github.com/example/
+    email: karl.stolley@gmail.com
+    office_hours: >
+      Detail your office hours in `_config.yml`
+
+collections_dir: syllabus
+
+collections:
+  weeks:
+  projects:
+  policies:
+    # Rearrange the files listed here to change their order on the policies page.
+    # To remove a section from the policies page, you *must* delete the file in the
+    # /syllabus/_policies/ directory
+    order:
+      - description.md
+      - goals.md
+      - outcomes.md
+      - objectives.md
+      - books.md
+      - materials.md
+      - special-needs.md
+      - participation.md
+      - assignment-submission.md
+      - late-work.md
+      - grading-policy.md
+      - grading-criteria.md
+      - technology-policy.md
+      - academic-integrity.md
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+theme: jekyll-theme-open-course
+
+exclude:
+  - backstop_data
+  - backstop.json
+  - exe
+  - lib
+  - Rakefile
+  - "*.gemspec"
