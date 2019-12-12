@@ -20,12 +20,14 @@ course:
     honorific: Dr.
     name: Karl Stolley
     title: Professor
-    full_title: Enter a full professional title in `_config.yml`
-    url: https://example.com/instructor/
-    github: https://github.com/example/
+    full_title: Associate Professor of Digital Writing & Rhetoric
+    url: https://stolley.co/
+    github: https://github.com/karlstolley/
     email: karl.stolley@gmail.com
     office_hours: >
-      Detail your office hours in `_config.yml`
+      Office hours via Basecamp Chat or Pings on Tuesdays, 4pm to 5pm, or by appointment or chance.
+      I’m always signed into Basecamp and closely monitor my notifications. Message or email any
+      time—I make students a priority, and I will repond as soon as I am able.
 
 collections_dir: syllabus
 
