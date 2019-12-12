@@ -8,10 +8,11 @@ course:
   title: Standards-Based Web Design
   uid: wd
   tagline: >
-    Write a course tagline in `_config.yml`
-  term: 2020
+    Theory and applied practice of mobile-first, responsive web design according to current open
+    standards.
+  term: Spring 2020
   # Set `days: ""` (empty string) for weekly/asynchronous classes
-  days: ""    
+  days: ""
   license:
     name: Creative Commons
     url: https://creativecommons.org/licenses/by/4.0/
