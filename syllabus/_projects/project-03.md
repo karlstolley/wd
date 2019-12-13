@@ -1,24 +1,38 @@
 ---
-title: Project Three
+title: Project Title
 due_date: &deadline 2020-05-25
 goals:
- - The first goal.
- - The second goal.
- - The third goal.
+  - The first goal.
+  - The second goal.
+  - The third goal.
+requirements:
+  -
 deliverables:
- -
+  -
+    action:
     description: Thing one.
+    details:
+      -
     deadline: 2020-01-15
- -
-    description: Thing two.
-    deadline: *deadline
+  -
+    action:
+    description: Thing one.
+    details:
+      -
+    deadline: 2020-01-15
 milestones:
   -
-    description: Do a thing.
-    deadline: 2020-03-01
+    action:
+    description: Thing one.
+    details:
+      -
+    deadline: 2020-01-15
   -
-    description: Do another thing.
-    deadline: 2020-04-01
+    action:
+    description: Thing one.
+    details:
+      -
+    deadline: 2020-01-15
 ---
 
 The full project description goes here. You know how instructors love to go on and on.
