@@ -1,6 +1,6 @@
 - begins: 2020-01-13T00:00
-  expires: &two 2020-01-20T00:00
-- begins: *two
+  expires: 2020-01-21T00:00
+- begins: 2020-01-20T00:00
   expires: &three 2020-01-27T00:00
 - begins: *three
   expires: &four 2020-02-03T00:00
@@ -29,4 +29,4 @@
 - begins: *fifteen
   expires: &sixteen 2020-04-27T00:00
 - begins: *sixteen
-  expires: &seventeen 2020-05-04T00:00
+  expires: &seventeen 2020-05-13T00:00
