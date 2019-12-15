@@ -1,38 +1,13 @@
 ---
-title: Project Title
-due_date: &deadline 2020-05-25
-goals:
-  - The first goal.
-  - The second goal.
-  - The third goal.
-requirements:
-  -
+title: COM 530 Students Only
+due_date: &deadline 2020-05-07
 deliverables:
   -
-    action:
-    description: Thing one.
-    details:
-      -
-    deadline: 2020-01-15
+    action: "Graduate students must have established Project Five details with instructor."
+    deadline: 2020-03-05
   -
-    action:
-    description: Thing one.
-    details:
-      -
-    deadline: 2020-01-15
-milestones:
-  -
-    action:
-    description: Thing one.
-    details:
-      -
-    deadline: 2020-01-15
-  -
-    action:
-    description: Thing one.
-    details:
-      -
-    deadline: 2020-01-15
+    action: "Graduate students must submit final Project Five deliverables to instuctor."
+    deadline: *deadline
 ---
 
-The full project description goes here. You know how instructors love to go on and on.
+COM 530 students will work with the instructor to determine a suitable, additional project.

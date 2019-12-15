@@ -1,38 +1,8 @@
 ---
-title: Project Title
-due_date: &deadline 2020-05-25
-goals:
-  - The first goal.
-  - The second goal.
-  - The third goal.
-requirements:
-  -
-deliverables:
-  -
-    action:
-    description: Thing one.
-    details:
-      -
-    deadline: 2020-01-15
-  -
-    action:
-    description: Thing one.
-    details:
-      -
-    deadline: 2020-01-15
-milestones:
-  -
-    action:
-    description: Thing one.
-    details:
-      -
-    deadline: 2020-01-15
-  -
-    action:
-    description: Thing one.
-    details:
-      -
-    deadline: 2020-01-15
+title: Revised Web Presence
+due_date: &deadline 2020-05-07
 ---
 
-The full project description goes here. You know how instructors love to go on and on.
+Based on feedback from Project Three and your own personal ambitions, you will make additional
+revisions and improvements to your site. You will also deploy your site to a public URL, if you have
+not done so previously. Full project details to be posted by April 2, 2020.
