@@ -1,5 +1,5 @@
 ---
-theme: JavaScript: A Fuller Introduction
+theme: "JavaScript: A Fuller Introduction"
 meetings:
   - agenda:
       -
