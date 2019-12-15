@@ -1,6 +1,6 @@
 ---
-theme: Theme for Week Thirteen
-meetings: 
+theme: "Unobtrusive DOM Scripting: JavaScript + the Document Object Model"
+meetings:
   - agenda:
       -
     video:

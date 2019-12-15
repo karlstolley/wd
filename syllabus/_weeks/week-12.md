@@ -1,6 +1,6 @@
 ---
-theme: Theme for Week Twelve
-meetings: 
+theme: JavaScript: A Fuller Introduction
+meetings:
   - agenda:
       -
     video:

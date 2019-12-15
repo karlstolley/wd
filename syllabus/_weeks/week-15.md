@@ -1,6 +1,6 @@
 ---
-theme: Theme for Week Fifteen
-meetings: 
+theme: Deploying a Live Site
+meetings:
   - agenda:
       -
     video:

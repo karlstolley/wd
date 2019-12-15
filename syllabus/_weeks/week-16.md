@@ -1,6 +1,6 @@
 ---
-theme: Theme for Week Sixteen
-meetings: 
+theme: Work Week
+meetings:
   - agenda:
       -
     video:

@@ -1,6 +1,6 @@
 ---
-theme: Theme for Week Four
-meetings: 
+theme: Progressive Enhancement; Responsive Media and Accessibility Basics
+meetings:
   - agenda:
       -
     video:
