@@ -55,8 +55,7 @@ collections:
       - academic-integrity.md
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: "default"

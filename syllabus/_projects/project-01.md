@@ -18,17 +18,14 @@ requirements:
   - >
     A Git repository with frequent commits and meaningful commit messages that accurately reflect
     each set of changes that you make
-  - Your Git repository must contain **only** the files and commits from this project 
+  - Your Git repository must contain **only** the files and commits from this project
 deliverables:
-  -
-    action: Post draft project-repository GitHub link to Basecamp.
+  - action: Post draft project-repository GitHub link to Basecamp.
     description: Include in your post a few questions for peer and instructor feedback.
     deadline: 2020-01-30
-  -
-    action: Respond with helpful feedback to at least 3 other student projects on Basecamp.
+  - action: Respond with helpful feedback to at least 3 other student projects on Basecamp.
     deadline: 2020-02-02
-  -
-    action: Email instructor with final project deliverables.
+  - action: Email instructor with final project deliverables.
     description: "The email should contain:"
     details:
       - The https:// link to your project’s GitHub repository
