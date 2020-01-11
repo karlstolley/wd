@@ -2,7 +2,7 @@
 title: Materials
 ---
 
-<h4>Required</h4>
+<h3>Required</h3>
 
 - A blank, bound paper sketchbook of 100 pages or more
 - An email account that you check regularly

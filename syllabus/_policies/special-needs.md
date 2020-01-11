@@ -15,7 +15,7 @@ successfully participate in and complete the class should contact me privately, 
 electronically, at the start of the semester or as a documented difficulty arises. I will adjust
 methods, materials, or deadlines as necessary to ensure equitable participation for all students.
 
-<h4>Mental Health and Wellness</h4>
+<h3>Mental Health and Wellness</h3>
 
 It’s no secret that attending school while managing and balancing other life concerns is incredibly
 stressful and at times completely overwhelming. All of us, no matter how outwardly strong,

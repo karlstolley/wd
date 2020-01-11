@@ -2,7 +2,7 @@
 title: Books
 ---
 
-<h4>Required</h4>
+<h3>Required</h3>
 
 - Andrew, Rachel. <cite>The New CSS Layout</cite>. New York, NY: A Book Apart, 2017. $14 (eBook),
   ISBN 9781937557683
@@ -11,7 +11,7 @@ title: Books
 - Stolley, Karl. <cite>How to Design and Write Web Pages Today</cite>. 2nd ed. Santa Barbara, CA:
   Greenwood/ABC-CLIO, 2017. $40 (paperback), ISBN 9781440857423
 
-<h4>Recommended</h4>
+<h3>Recommended</h3>
 
 - Demaree, David. <cite>Git for Humans</cite>. New York, NY: A Book Apart, 2016. $14 (eBook),
   ISBN 9781937557386

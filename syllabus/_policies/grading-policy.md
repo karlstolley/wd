@@ -2,7 +2,7 @@
 title: Grading Policy
 ---
 
-<h4>COM 330 Students</h4>
+<h3>COM 330 Students</h3>
 
 - Project 1: 10 pts
 - Project 2: 15 pts
@@ -13,7 +13,7 @@ title: Grading Policy
 
 A = 90+ pts; B = 80-89 pts; C = 70-79 pts; D = 60-69 pts; E ≤ 59 pts
 
-<h4>COM 530 Students</h4>
+<h3>COM 530 Students</h3>
 
 - Project 1: 10 pts
 - Project 2: 10 pts
