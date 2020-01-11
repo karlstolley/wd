@@ -1,5 +1,6 @@
 ---
 title: Single-Page Web Presence
+preview: true
 due_date: &deadline 2020-03-12
 goals:
   - Engage the rhetorical complexities of writing content for a single-page presence

@@ -1,5 +1,6 @@
 ---
 title: Expanded Web Presence
+preview: true
 due_date: &deadline 2020-04-16
 goals:
   - Engage the rhetorical complexities of writing content for a multi-page presence

@@ -1,5 +1,6 @@
 ---
 title: Revised Web Presence
+preview: true
 due_date: &deadline 2020-05-07
 ---
 

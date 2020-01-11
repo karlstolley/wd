@@ -1,5 +1,6 @@
 ---
 title: COM 530 Students Only
+preview: true
 due_date: &deadline 2020-05-07
 deliverables:
   -
