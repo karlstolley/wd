@@ -18,7 +18,7 @@ tasks:
   - Sign up for a [GitHub account](https://github.com/)
   - "As soon as possible: Submit COM 330/530 Contract and Survey (link in your @hawk.iit.edu inbox)"
   - >
-    As soon as possible: Create Basecamp and ClickMeeting accounts (invites will arrive after you
+    As soon as possible: Create Basecamp account (invite will arrive after you
     submit the Contract and Survey)
   - >
     Computer setup (Firefox Developer Edition, Atom.io, Node.js, Git); [follow these
