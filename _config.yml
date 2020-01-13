@@ -28,6 +28,22 @@ course:
       Office hours via Basecamp Chat or Pings on Tuesdays, 4pm to 5pm, or by appointment or chance.
       I’m always signed into Basecamp and closely monitor my notifications. Message or email any
       time—I make students a priority, and I will repond as soon as I am able.
+  navigation:
+    - label: Calendar
+      href: "#this-week" # Stock for policies, projects.
+      id: cal # read this into SCSS somehow?
+    - label: Basecamp
+      href: "https://3.basecamp.com/3058761/projects/15262139"
+      id: bcp
+    - label: Demos
+      href: "https://github.com/wd-2020"
+      id: dmo
+    - label: Projects
+      href: "projects/#current" # Stock for policies, projects.
+      id: pro # read this into SCSS somehow?
+    - label: Policies
+      href: "policies/" # Stock for policies, projects.
+      id: pol # read this into SCSS somehow?
 
 collections_dir: syllabus
 
