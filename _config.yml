@@ -35,6 +35,9 @@ course:
     - label: Basecamp
       href: "https://3.basecamp.com/3058761/projects/15262139"
       id: bcp
+    - label: ClickMeeting
+      href: "https://stolley.clickmeeting.com/com-330-530-meeting"
+      id: clm
     - label: Demos
       href: "https://github.com/wd-2020"
       id: dmo
