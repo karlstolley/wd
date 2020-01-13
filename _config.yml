@@ -9,7 +9,7 @@ course:
   uid: wd
   tagline: >
     Theory and applied practice of mobile-first, responsive web design according to current open
-    standards. An experimental only-online class.
+    standards. An experimental online-only class.
   term: Spring 2020
   # Set `days: ""` (empty string) for weekly/asynchronous classes
   days: ""
