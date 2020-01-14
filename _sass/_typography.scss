@@ -53,6 +53,18 @@ h3 {
   text-transform: none;
   font-weight: 500;
 }
+.agenda h3 a {
+  color: $back-color;
+  background: $spot-color;
+  border-radius: $base-line * 0.25;
+  display: inline-block;
+  height: $base-line;
+  padding-left: $base-line * 0.25;
+  padding-right: $base-line * 0.25;
+}
+.agenda h3 a::before {
+  content: "‣ ";
+}
 #content header {
   padding-bottom: $base-line;
 }
