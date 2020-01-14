@@ -13,5 +13,6 @@ readings:
   - HDWWP, Ch. 6, 10–13
   - Begin familiarizing yourself with the contents and organization of [Mozilla Developer Network’s (MDN)](https://developer.mozilla.org/en-US/) [Web technology for developers](https://developer.mozilla.org/en-US/docs/Web)
 tasks:
+  - Participate in Week One/Two reading discussion on Basecamp
   - Continue writing material for Project One.
 ---
