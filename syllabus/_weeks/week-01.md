@@ -22,6 +22,6 @@ tasks:
     submit the Contract and Survey)
   - >
     Computer setup (Firefox Developer Edition, Atom.io, Node.js, Git); [follow these
-    instructions](https://gist.github.com/karlstolley/810e9cb69727ff20c3cf56ac33734b79
+    instructions](https://gist.github.com/karlstolley/810e9cb69727ff20c3cf56ac33734b79)
   - Participate in Week One/Two reading discussion on Basecamp
 ---
