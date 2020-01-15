@@ -6,7 +6,7 @@ meetings:
     - Course policies & calendar
     - Introduce [Project One](/wd/projects/#project-one)
     - Technology setup
-    video:
+    video: https://youtu.be/RsStyHemJYY
 readings:
   - >
     <cite>Graphic Design: The New Basics</cite>, 2nd ed. (GDTNB), Foreword, Back to the Bauhaus,
