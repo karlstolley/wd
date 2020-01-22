@@ -7,7 +7,7 @@ meetings:
     - Overview of HTML, CSS, JavaScript
     - Basic source-formatting rules
     - HTML structure and semantics
-    video:
+    video: https://youtu.be/TuXk6w9Rvwk
 readings:
   - GDTNB, Point, Line, Plane (pp. 32–47)
   - HDWWP, Ch. 6, 10–13
