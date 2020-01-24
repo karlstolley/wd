@@ -21,7 +21,9 @@ requirements:
   - Your Git repository must contain **only** the files and commits from this project
 deliverables:
   - action: Post draft project-repository GitHub link to Basecamp.
-    description: Include in your post a few questions for peer and instructor feedback.
+    description: >
+      Create a new message thread with your name and Project One, something like “Scarlet Hawk:
+      Project One.” Include in your post a few questions for peer and instructor feedback.
     deadline: 2020-01-30
   - action: Respond with helpful feedback to at least 3 other student projects on Basecamp.
     deadline: 2020-02-02
