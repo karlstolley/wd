@@ -2,6 +2,7 @@
 theme: CSS and Basic Typography and Typesetting
 meetings:
   - agenda:
+      - Working small
       - CSS syntax
       - CSS’s relationship to HTML
       - "[HTML validation](https://validator.w3.org)"
