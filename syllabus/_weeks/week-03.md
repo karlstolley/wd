@@ -9,7 +9,7 @@ meetings:
       - Typesetting concepts
       - "[Modular Scales](https://www.modularscale.com/)"
       - Foundational typography in CSS
-    video:
+    video: https://youtu.be/V-rIj30x_LM
 readings:
   - GDTNB, Rhythm and Balance, Scale (pp. 48–67)
   - HDWWP, Ch. 14–17
