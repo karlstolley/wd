@@ -24,9 +24,9 @@ deliverables:
     description: >
       Create a new message thread with your name and Project One, something like “Scarlet Hawk:
       Project One.” Include in your post a few questions for peer and instructor feedback.
-    deadline: 2020-01-30
+    deadline: 2020-01-31
   - action: Respond with helpful feedback to at least 3 other student projects on Basecamp.
-    deadline: 2020-02-02
+    deadline: 2020-02-03
   - action: Email instructor with final project deliverables.
     description: "The email should contain:"
     details:
