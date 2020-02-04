@@ -1,7 +1,9 @@
 ---
-theme: Color and Texture
+theme: Responsive Media; Color and Texture
 meetings:
   - agenda:
+      - Responsive images with `srcset` and `<picture>`
+      - Responsive audio and video
       - Basics of color theory
       - Selecting and auditioning colors
       - Use of textures (gradients, tessellation)

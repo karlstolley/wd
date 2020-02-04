@@ -8,6 +8,4 @@ meetings:
     video:
 readings:
   - HDWWP, Ch. 7
-tasks:
-  - TBD
 ---
