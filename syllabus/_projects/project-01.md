@@ -1,6 +1,6 @@
 ---
 title: Background and Ambitions
-due_date: &deadline 2020-02-06
+due_date: &deadline 2020-02-09
 goals:
   - Learn to work with plain text and do basic HTML and CSS source-formatting
   - Learn to name files for the web
