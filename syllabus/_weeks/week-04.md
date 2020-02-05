@@ -7,7 +7,7 @@ meetings:
       - Basic accessible, responsive images
       - Understanding progressive enhancement
       - Executing an accessible, progressively enhanced site design
-    video:
+    video: https://youtu.be/UBumpHtTato
 readings:
   - HDWWP, Ch. 7
 ---
