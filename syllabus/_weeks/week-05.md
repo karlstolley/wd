@@ -9,7 +9,10 @@ meetings:
     video:
 readings:
   - GDTNB, Gestalt Principles, Framing, Hierarchy (pp. 98–139)
-  - <cite>The New CSS Layout</cite> (TNCL), Foreword, Ch. 1–3
+  - Rachel Andrew, <cite>The New CSS Layout</cite> (TNCL), Foreword, Ch. 1–3
+  - >
+    Rachel Andrew, [Refactoring (the way we talk about) CSS](https://www.youtube.com/watch?v=tqYWDGzhZKM)
+    [Video, 50 minutes]
 tasks:
-  - TBD
+  - Begin work on Project Two
 ---
