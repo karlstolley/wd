@@ -1,6 +1,5 @@
 ---
 title: Single-Page Web Presence
-preview: true
 due_date: &deadline 2020-03-12
 goals:
   - Engage the rhetorical complexities of writing content for a single-page presence
@@ -48,7 +47,7 @@ deliverables:
     deadline: *deadline
 ---
 
-You will create a mobile-first, responsively designed single-page web presence for yourself or a
+You will create a mobile-first, responsively designed single-page web presence for yourself for or a
 club, organization, or business that you are affiliated with that currently has no web presence. If
 you already have a web presence that you do not wish to alter, you will create a GitHub homepage for
 yourself on `github.io` using [GitHub pages](https://pages.github.com/).
