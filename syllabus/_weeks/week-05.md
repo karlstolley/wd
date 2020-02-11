@@ -3,6 +3,7 @@ theme: Sketching and Executing Mobile-First Design; Stylesheet Organization
 meetings:
   - agenda:
       - Introduce [Project Two](projects/#project-two)
+      - Foundations for understanding CSS layout
       - Conceiving a site design from the smallest possible screen
       - Building with `min-width` media queries in CSS
       - Organizing CSS (SMACSS)
