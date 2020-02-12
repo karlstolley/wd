@@ -7,7 +7,7 @@ meetings:
       - Conceiving a site design from the smallest possible screen
       - Building with `min-width` media queries in CSS
       - Organizing CSS (SMACSS)
-    video:
+    video: https://youtu.be/2eVHFwnBf9s
 readings:
   - GDTNB, Gestalt Principles, Framing, Hierarchy (pp. 98–139)
   - Rachel Andrew, <cite>The New CSS Layout</cite> (TNCL), Foreword, Ch. 1–3
