@@ -9,6 +9,10 @@ meetings:
 readings:
   - GDTNB, Modularity, Grid (pp. 166–199)
   - TNCL, Ch. 4–6
-tasks:
-  - TBD
+  - >
+    Jen Simmons, [Modern Layouts: Getting Out of Our Ruts](https://www.youtube.com/watch?v=jreccgYLfx8)
+    [Video, 61 minutes]
+  - >
+    Jen Simmons, [Videos on CSS Grid](https://www.youtube.com/playlist?list=PLbSquHt1VCf1x_-1ytlVMT0AMwADlWtc1)
+    [15 videos; watch as many as you can]
 ---
