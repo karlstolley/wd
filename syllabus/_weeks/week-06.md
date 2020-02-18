@@ -2,9 +2,13 @@
 theme: Grids and Layout I
 meetings:
   - agenda:
-      - Theorizing grids
+      - "HTML foundations: sectioning structures; in praise of lists"
+      - "Theorizing layouts: macro and micro"
+      - "SMACSS: Base, Layout, Module, and State"
       - Legacy CSS layout (floats, positioning)
       - "The new CSS layout: Flexbox, CSS Grid"
+      - Reasoning through the use of one layout method over another
+      - "Grids: bespoke and columnar/modular"
     video:
 readings:
   - GDTNB, Modularity, Grid (pp. 166–199)
