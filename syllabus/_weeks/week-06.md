@@ -9,7 +9,7 @@ meetings:
       - "The new CSS layout: Flexbox, CSS Grid"
       - Reasoning through the use of one layout method over another
       - "Grids: bespoke and columnar/modular"
-    video:
+    video: https://youtu.be/HP5oArDXJOs
 readings:
   - GDTNB, Modularity, Grid (pp. 166–199)
   - TNCL, Ch. 4–6
