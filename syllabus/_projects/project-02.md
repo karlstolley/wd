@@ -34,7 +34,7 @@ deliverables:
         Q. Student: Single-Page Presence Draft`
       - the URL to the video of your work in progress
       - the URL to your project’s GitHub repository
-    deadline: 2020-02-27
+    deadline: 2020-03-01
   -
     action: Respond with helpful feedback to at least 3 other student projects on Basecamp.
     deadline: 2020-03-05
