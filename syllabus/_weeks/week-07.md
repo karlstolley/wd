@@ -6,7 +6,7 @@ meetings:
       - Building layouts as slowly as possible
       - Isolating experimental or exploratory work in throwaway repos
       - Coordinating legacy and new CSS layout methods
-    video:
+    video: https://youtu.be/EsIk0u7yOE4
 readings:
   - GDTNB, Layers, Transparency (pp. 140–165)
   - TNCL, Ch. 7–8
