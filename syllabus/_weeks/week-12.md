@@ -1,11 +1,13 @@
 ---
-theme: "JavaScript: A Fuller Introduction"
+theme: Web Typography; Feature Detection; Code Quality (Validators & Linters)
 meetings:
   - agenda:
-      - JavaScript fundamentals
+      - Deeper into web typography
+      - Working with hosted typefaces (Google Fonts)
+      - Validating and linting your code
     video:
 readings:
-  - TBD
+  - Butterick, [Practical Typography](https://practicaltypography.com/)
 tasks:
   - TBD
 ---

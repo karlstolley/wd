@@ -1,13 +1,15 @@
 ---
-theme: Web Typography; Feature Detection; Code Quality (Validators & Linters)
+theme: Responsive Media; Color and Texture
 meetings:
   - agenda:
-      - Deeper into web typography
-      - Working with hosted typefaces (Google Fonts)
-      - Validating and linting your code
+      - Responsive images with `srcset` and `<picture>`
+      - Responsive audio and video
+      - Basics of color theory
+      - Selecting and auditioning colors
+      - Use of textures (gradients, tessellation)
     video:
 readings:
-  - Butterick, [Practical Typography](https://practicaltypography.com/)
+  - GDTNB, Texture, Color (pp. 68–97)
 tasks:
   - TBD
 ---

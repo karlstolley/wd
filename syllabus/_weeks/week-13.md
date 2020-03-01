@@ -1,8 +1,8 @@
 ---
-theme: "Unobtrusive DOM Scripting: JavaScript + the Document Object Model (DOM)"
+theme: "JavaScript: A Fuller Introduction"
 meetings:
   - agenda:
-      - Manipulating HTML with JavaScript via the DOM
+      - JavaScript fundamentals
     video:
 readings:
   - TBD

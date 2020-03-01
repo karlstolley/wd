@@ -1,11 +1,11 @@
 ---
-theme: Refining a Site’s Design
+theme: "Unobtrusive DOM Scripting: JavaScript + the Document Object Model (DOM)"
 meetings:
   - agenda:
-      - Setting up front-end testing with BackstopJS
+      - Manipulating HTML with JavaScript via the DOM
     video:
 readings:
-  - GDTNB, Time and Motion, Rules and Randomness (pp. 232–259)
+  - TBD
 tasks:
   - TBD
 ---
