@@ -15,8 +15,8 @@
 - begins: *eight
   expires: &nine 2020-03-09T00:00
 - begins: *nine
-  expires: &ten 2020-03-16T00:00
-- begins: *ten
+  expires: 2020-03-23T00:00
+- begins: 2020-03-16T00:00
   expires: &eleven 2020-03-23T00:00
 - begins: *eleven
   expires: &twelve 2020-03-30T00:00
