@@ -1,6 +1,6 @@
 ---
 title: Single-Page Web Presence
-due_date: &deadline 2020-03-12
+due_date: &deadline 2020-03-26
 goals:
   - Engage the rhetorical complexities of writing content for a single-page presence
   - Increase your sophistication in writing HTML and CSS
