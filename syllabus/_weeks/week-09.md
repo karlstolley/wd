@@ -7,7 +7,7 @@ meetings:
       - Use of textures (gradients, tessellation)
       - Responsive images with `srcset` and `<picture>`
       - Responsive audio and video
-    video:
+    video: https://youtu.be/1WYe7yOxe6I
 readings:
   - GDTNB, Texture, Color (pp. 68–97)
   - MDN, [Responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
