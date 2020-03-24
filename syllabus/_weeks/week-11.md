@@ -10,4 +10,5 @@ meetings:
     video: https://youtu.be/S0PXk94mYhA
 readings:
   - GDTNB, Pattern, Diagram (pp. 200–231)
+  - HDWWP, Ch. 8, 21
 ---
