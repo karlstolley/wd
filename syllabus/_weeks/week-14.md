@@ -5,7 +5,7 @@ meetings:
       - Manipulating HTML with JavaScript via the DOM
     video:
 readings:
-  - TBD
-tasks:
-  - TBD
+  - >
+    MDN, [Dynamic Client-side Scripting](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
+    (all sections)
 ---

@@ -5,7 +5,7 @@ meetings:
       - JavaScript fundamentals
     video:
 readings:
-  - TBD
-tasks:
-  - TBD
+  - HDWWP, Ch. 13, 20
+  - >
+    MDN, [Guide: JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 ---

@@ -9,6 +9,5 @@ meetings:
     video:
 readings:
   - GDTNB, Time and Motion, Rules and Randomness (pp. 232–259)
-tasks:
-  - TBD
+  - HDWWP, Ch. 22–25 (especially Ch. 24)
 ---
