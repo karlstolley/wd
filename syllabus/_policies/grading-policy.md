@@ -6,7 +6,8 @@ title: Grading Policy
 
 - Project 1: 10 pts
 - Project 2: 20 pts
-- Project 3: 30 pts
+- Project 3: 20 pts
+- Project 4: 10 pts
 - Discussion Participation: 40 pts
 - TOTAL: 100 pts
 
