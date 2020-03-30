@@ -1,9 +1,10 @@
 ---
-theme: Revisiting Web Typography, Responsive Design, and Responsive Media
+theme: Creating Reusable Markup Patterns; Revisiting Responsive Topics and Typography
 meetings:
   - agenda:
+      - Creating reusable markup patterns
+      - Leveraging the Snippets package in Atom.io
       - Deeper into web typography
-      - Working with hosted typefaces (Google Fonts)
       - Taking another look at RWD and responsive media
     video:
 readings:
