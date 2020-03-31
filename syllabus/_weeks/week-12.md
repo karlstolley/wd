@@ -4,6 +4,7 @@ meetings:
   - agenda:
       - Creating reusable markup patterns
       - Leveraging the Snippets package in Atom.io
+      - "Navigation: structure and styles"
       - Deeper into web typography
       - Taking another look at RWD and responsive media
     video:
