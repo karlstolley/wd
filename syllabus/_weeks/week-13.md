@@ -3,7 +3,7 @@ theme: "JavaScript: A Fuller Introduction"
 meetings:
   - agenda:
       - JavaScript fundamentals
-    video:
+    video: https://youtu.be/OR_ISnPF09I
 readings:
   - HDWWP, Ch. 13, 20
   - >
