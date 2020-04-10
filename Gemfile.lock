@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/karlstolley/jekyll-theme-open-course.git
-  revision: 4a68104cb24be25b4fea5ac7cb1bd375b58f5d1a
+  revision: d56b0710758e6399ce31048442b288d3881e6e04
   specs:
-    jekyll-theme-open-course (1.0.0)
+    jekyll-theme-open-course (1.0.1)
       jekyll (~> 4.0)
 
 GEM
@@ -50,17 +50,17 @@ GEM
     mercenary (0.3.6)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (4.0.3)
+    public_suffix (4.0.4)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rouge (3.16.0)
+    rouge (3.17.0)
     safe_yaml (1.0.5)
     sassc (2.2.1)
       ffi (~> 1.9)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    unicode-display_width (1.6.1)
+    unicode-display_width (1.7.0)
 
 PLATFORMS
   ruby
