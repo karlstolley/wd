@@ -6,6 +6,6 @@ meetings:
     video:
 readings:
   - >
-    MDN, [Dynamic Client-side Scripting](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
-    (all sections)
+    Haverbeke, <cite>[Eloquent JavaScript](https://eloquentjavascript.net)</cite> (open access),
+    Chapters 13, 14, & 15
 ---
