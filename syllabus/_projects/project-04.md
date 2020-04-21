@@ -24,8 +24,7 @@ deliverables:
     details:
       - The https:// link to your project’s GitHub repository
       - The link to your live, world-viewable site
-      - A 1-2 paragraph self-critique of your project, including the improvements you made, and your
-      - progress in class this semester
+      - A 1-2 paragraph self-critique of your project, including the improvements you made, and your progress in class this semester
     deadline: *deadline
 
 ---
