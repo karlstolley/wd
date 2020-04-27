@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/karlstolley/jekyll-theme-open-course.git
-  revision: 48c7118bf66c4305b805a0ab07443ede742eb4e0
+  revision: 9d7a1971a8e7dffc30c27da9700146e6d15fe32f
   specs:
     jekyll-theme-open-course (1.0.1)
       jekyll (~> 4.0)
