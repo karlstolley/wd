@@ -2,6 +2,7 @@
 title: Materials
 ---
 
+<section class="required" markdown="1">
 <h3>Required</h3>
 
 - A blank, bound paper sketchbook of 100 pages or more
@@ -22,3 +23,4 @@ title: Materials
   - Image-editing software (such as the free and open-source GIMP)
   - As many different browsers as your operating system supports (e.g., Chrome, Opera, Firefox,
     Vivaldi; all free)
+</section>
