@@ -1,3 +1,3 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "jekyll-theme-open-course", git: "https://github.com/karlstolley/jekyll-theme-open-course.git"
+gem 'jekyll-theme-open-course', '~> 1.2'
